@@ -1,0 +1,55 @@
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: fixed;
+    background: #fff;
+
+    &__holder {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, .25%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-loader {
+            background: linear-gradient(to right, #f04a76 10%, rgba(255, 88, 81, 0) 42%);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: relative;
+            animation: load .8s infinite linear;
+            transform: translateZ(0);
+    
+            &::before {
+                content: '';
+                background: #f04a76;
+                width: 50%;
+                height: 50%;
+                border-radius: 100% 0 0 0;
+                position: absolute;
+                transition: all 300ms ease-in-out;
+            }
+            &::after {
+                content: '';
+                background: #fff;
+                width: 75%;
+                height: 75%;
+                border-radius: 50%;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                transition: all 300ms ease-in-out;
+            }
+        }
+    }
+}
