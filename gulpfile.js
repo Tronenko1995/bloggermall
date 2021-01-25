@@ -25,7 +25,8 @@ const cssFiles = [
   './src/scss/animation.scss',
   './src/scss/preloader.scss',
   './src/scss/sticky.scss',
-  './src/scss/header.scss'
+  './src/scss/header.scss',
+  './src/scss/main/*.scss'
 ]
 // //Порядок подключения js файлов
 // const jsFiles = [
