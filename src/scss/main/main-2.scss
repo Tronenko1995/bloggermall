@@ -5,14 +5,14 @@
             position: absolute;
             bottom: -224px;
             width: 480px;
-            z-index: 200;
+            z-index: 2;
             left: -178px;
         }
         &--right {
             position: absolute;
             bottom: -100px;
             width: 680px;
-            z-index: 200;
+            z-index: 2;
             right: 50px;
         }
     }
@@ -23,7 +23,7 @@
         }
         &--right {
             width: 680px;
-            height: 689px;
+            height: 688px;
         }
     }
 }
@@ -32,7 +32,8 @@
     .main-2 {
         &__img-block {
             &--left {
-                bottom: -320px;
+                bottom: -277px;
+                left: -283px;
             }
             &--right {
                 width: 380px;

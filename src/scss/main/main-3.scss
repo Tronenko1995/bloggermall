@@ -1,0 +1,118 @@
+.main-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px 130px 0px;
+    &__wrap {
+        width: 1024px;
+    }
+    &__title {
+        font-family: "SF Pro Display", Sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: none;
+        line-height: 1.4em;
+        color: #363636;
+        text-align: center;
+    }
+    &__items {
+        display: flex;
+        margin-top: 80px;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 191px;
+        height: 340px;
+        position: relative;
+        margin-right: 10px;
+        transition: all .5s ease 0.1s;
+        &::before {
+            transition: all .5s ease 0.1s;
+        }
+        &:hover {
+            background-color: transparent;
+            &::before {
+                border: 2px solid transparent;
+            }
+            .main-3__text {
+                color: transparent;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &--purple {
+            background-color: rgba(255, 229, 0, 0.8);
+            &::before {
+                border: 2px solid #ff0099;
+            }
+        }
+        &--yellow {
+            background-color: rgba(105, 221, 202, .8);
+            &::before {
+                border: 2px solid #ffe500;
+            }
+        }
+        &--green {
+            background-color: rgba(255, 0, 153, .8);
+            &::before {
+                border: 2px solid #69ddca;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 80%;
+            padding-bottom: 77.695%;
+            border-radius: 50%;
+        }
+    }
+    &__text {
+        color: #363636;
+        font-family: "SF Pro Display", Sans-serif;
+        font-size: 19px;
+        font-weight: 800;
+        position: absolute;
+        transition: all .5s ease 0.1s;
+    }
+    &__img {
+        width: 191px;
+        height: 340px;
+        z-index: -1;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .main-3 {
+        &__wrap {
+            width: 96%;
+        }
+        &__items {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            margin: 0 0 10px 0;
+            width: 100%;
+            height: auto;
+            &:last-child {
+                margin: 0;
+            }
+        }
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .main-3 {
+        &__title {
+            font-size: 24px;
+        }
+    }
+}

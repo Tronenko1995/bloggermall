@@ -1,0 +1,26 @@
+.main-6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__wrap {
+        width: 1024px;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__text {
+        margin-top: 60px;
+        text-align: center;
+        color: #363636;
+        font-family: "SF Pro Display", Sans-serif;
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 1.5em;
+    }
+    &__items {
+
+    }
+    &__item {
+
+    }
+}
