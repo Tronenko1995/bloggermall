@@ -16,11 +16,126 @@
         font-size: 19px;
         font-weight: 500;
         line-height: 1.5em;
+        text-size-adjust: 100%;
+        &--link {
+            margin-bottom: 50px;
+            color: #989898;
+            font-size: 14px;
+            a {
+                span {
+                    color: #69ddca;
+                }
+            }
+        }
     }
-    &__items {
-
+    &__row {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
     }
-    &__item {
+    &__circle {
+        width: 390px;
+        height: 390px;
+        padding: 5px 25px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 50%;
+        overflow: hidden;
+        font-family: "SFProDisplay", Sans-serif;
+        margin-right: 40px;
+        .main-6__text {
+            font-size: 20px;
+            margin-top: 0;
+            &--percent {
+                font-weight: 800;
+                font-size: 50px;
+                line-height: 50px;
+            }
+            &--description {
+                font-size: 15px;
+                line-height: 19.5px;
+            }
+            &--top {
+                margin-top: 0;
+                line-height: 30px;
+            }
+            &--center {
+                margin-top: 25px;
+            }
+            &--bottom {
+                margin-top: 28px;
+            }
+        }
+        &--green {
+            border: 2px solid rgb(105, 221, 202);
+            box-shadow: 0 0 10px rgba(105, 221, 202, .5);
+            .main-6__text {
+                color: #69ddca;
+            }
+        }
+        &--purple {
+            border: 2px solid rgb(255, 0, 153);
+            box-shadow: 0 0 10px rgba(255, 0, 153, .5);
+            .main-6__text {
+                color: #ff0099;
+            }
+            
+        }
+        &-text {
+            margin-top: 100px;   
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
 
+@media (max-width: 1100px) {
+    .main-6 {
+        &__wrap {
+            width: 96%;
+        }
+        &__circle {
+            width: 270px;
+            height: 270px;
+
+            &-text {
+                margin-top: 65px;
+            }
+            .main-6__text {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 1.3em;
+                &--top {
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+                &--center,
+                &--bottom {
+                    margin-top: 12px;
+                }
+                &--percent {
+                    font-size: 30px;
+                    line-height: 1;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 650px) {
+    .main-6 {
+        &__row {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__circle {
+            margin: 0 0 40px 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }
