@@ -1,0 +1,92 @@
+.faq {
+    &__item {
+        border-top: 1px solid #E6E6E6;
+        &[open] > .faq__title {
+            color: #FF0099;
+            border-bottom: 2px solid #FF0099;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDMwMCAzMDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwMCAzMDA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCgkJPHBhdGggZmlsbD0iI0ZGMDA5OSIgZD0iTTE1MCwwQzY3LjE1NywwLDAsNjcuMTU3LDAsMTUwYzAsODIuODQxLDY3LjE1NywxNTAsMTUwLDE1MHMxNTAtNjcuMTU5LDE1MC0xNTBDMzAwLDY3LjE1NywyMzIuODQzLDAsMTUwLDB6DQoJCQkgTTE5NS43MDgsMTYwLjE1OWMtMC43MzEsMC43MzEtMS41MzMsMS4zNDktMi4zNjgsMS44ODZsLTU2LjI5NSw1Ni4yOTVjLTIuNzM0LDIuNzM2LTYuMzE4LDQuMTAzLTkuOTAyLDQuMTAzDQoJCQlzLTcuMTY2LTEuMzY3LTkuOTAyLTQuMTAzYy01LjQ3LTUuNDctNS40Ny0xNC4zNCwwLTE5LjgwOGw0OC41MDktNDguNTE2bC00OC4yNjUtNDguMjY1Yy01LjQ3LTUuNDczLTUuNDctMTQuMzQsMC0xOS44MDgNCgkJCWM1LjQ3LTUuNDcsMTQuMzM4LTUuNDY3LDE5LjgwOC0wLjAwM2w1Ni4wNDYsNTYuMDQzYzAuODM1LDAuNTM3LDEuNjM3LDEuMTU0LDIuMzY1LDEuODg2YzIuNzk2LDIuNzk2LDQuMTQ1LDYuNDc5LDQuMDgyLDEwLjE0Ng0KCQkJQzE5OS44NTIsMTUzLjY4LDE5OC41MDYsMTU3LjM2MSwxOTUuNzA4LDE2MC4xNTl6Ii8+DQo8L3N2Zz4NCg==');
+                background-size: 25px 25px;
+                background-repeat: no-repeat;
+                transform: translateY(-50%) rotate(90deg);
+            }
+        }
+        &[open] {
+            border-bottom: 1px solid #E6E6E6;
+        }
+    }
+    &__title {
+        border-width: 1px;
+        border-color: #E6E6E6;
+        color: #363636;
+        font-family: "SF Pro Display", Sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 33px;
+        padding: 30px 0px 30px 5px;
+        border-bottom: 1px solid #D4D4D4;
+        position: relative;
+        cursor: pointer;
+
+        &::marker,
+        &::-webkit-details-marker {
+            display:none;
+        }
+        &::-moz-list-bullet {
+            list-style-type:none;
+        }
+        &:focus,
+        &:hover {
+            color: #F04A76;
+        }
+        &::after {  
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDMwMCAzMDAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMwMCAzMDA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCgkJPHBhdGggZmlsbD0iIzU5NWY4YSIgZD0iTTE1MCwwQzY3LjE1NywwLDAsNjcuMTU3LDAsMTUwYzAsODIuODQxLDY3LjE1NywxNTAsMTUwLDE1MHMxNTAtNjcuMTU5LDE1MC0xNTBDMzAwLDY3LjE1NywyMzIuODQzLDAsMTUwLDB6DQoJCQkgTTE5NS43MDgsMTYwLjE1OWMtMC43MzEsMC43MzEtMS41MzMsMS4zNDktMi4zNjgsMS44ODZsLTU2LjI5NSw1Ni4yOTVjLTIuNzM0LDIuNzM2LTYuMzE4LDQuMTAzLTkuOTAyLDQuMTAzDQoJCQlzLTcuMTY2LTEuMzY3LTkuOTAyLTQuMTAzYy01LjQ3LTUuNDctNS40Ny0xNC4zNCwwLTE5LjgwOGw0OC41MDktNDguNTE2bC00OC4yNjUtNDguMjY1Yy01LjQ3LTUuNDczLTUuNDctMTQuMzQsMC0xOS44MDgNCgkJCWM1LjQ3LTUuNDcsMTQuMzM4LTUuNDY3LDE5LjgwOC0wLjAwM2w1Ni4wNDYsNTYuMDQzYzAuODM1LDAuNTM3LDEuNjM3LDEuMTU0LDIuMzY1LDEuODg2YzIuNzk2LDIuNzk2LDQuMTQ1LDYuNDc5LDQuMDgyLDEwLjE0Ng0KCQkJQzE5OS44NTIsMTUzLjY4LDE5OC41MDYsMTU3LjM2MSwxOTUuNzA4LDE2MC4xNTl6Ii8+DQo8L3N2Zz4NCg==');
+            background-size: 25px 25px;
+            background-repeat: no-repeat;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+    }
+    &__block {
+        border-width: 1px;
+        border-bottom-color: #E6E6E6;
+        color: #000000;
+        font-family: "SF Pro Display", Sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        padding: 25px 45px 15px 45px;
+    }
+    &__text {
+        p {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 700px) {
+    .faq {
+        &__title {
+            font-size: 18px;
+            padding-right: 10px;
+        }
+        &__block {
+            font-size: 15px;
+            padding: 20px 20px 20px 20px;
+        }
+    }
+}
