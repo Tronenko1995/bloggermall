@@ -1,0 +1,19 @@
+.phone {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    width: 70px;
+    height: 70px;
+    &__svg {
+        width: 70px;
+        height: 70px;
+        transform: rotate(-90deg);
+        cursor: pointer;
+        fill: #FF0099;
+        transition: all 300ms ease-in-out;
+        &:hover {
+            fill: #bd3688
+        }
+    }
+}

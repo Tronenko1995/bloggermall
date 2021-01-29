@@ -28,7 +28,10 @@ const cssFiles = [
   './src/scss/header.scss',
   './src/scss/main/*.scss',
   './src/scss/faq.scss',
-  './src/scss/footer.scss'
+  './src/scss/footer.scss',
+  './src/scss/up.scss',
+  './src/scss/phone.scss',
+  './src/scss/modal.scss'
 ]
 // //Порядок подключения js файлов
 // const jsFiles = [

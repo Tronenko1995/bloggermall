@@ -140,5 +140,48 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+
+    /* модалка */
+const shadow = document.querySelector('.modal'),
+    modal = document.querySelector('.modal__body'),
+    button = document.querySelector('.jsCall'),
+    form = document.querySelector('.modal__form');
+
+const openModal = function() {
+  modal.classList.remove('hide');
+  shadow.classList.remove('hide');
+  document.documentElement.style.cssText = 'overflow: hidden';
+};
+
+const closeModal = function() {
+  modal.classList.add('hide');
+  shadow.classList.add('hide');
+  document.documentElement.style.cssText = 'overflow: unset';
+  form.reset();
+};
+
+modal.addEventListener('click', (e) => {
+    if ( e.target.classList.contains('modal__close') ) {
+        closeModal();
+    }
+});
+
+shadow.addEventListener('click', (e) => {
+    if ( e.target === shadow ) {
+        closeModal();
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.code === 'Escape' && !modal.classList.contains('hide')) {
+        closeModal();
+    }
+});
+
+button.addEventListener('click', (e) => {
+    e.preventDefault();
+    openModal();
+});
+
     window.addEventListener('resize', resize);
 });

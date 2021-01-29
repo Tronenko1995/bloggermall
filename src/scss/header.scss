@@ -34,6 +34,7 @@
 	}
 	&__menu {
 		display: flex;
+		z-index: 3;
 
 		&-item {
 			margin-right: 30px;
