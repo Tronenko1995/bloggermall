@@ -1,0 +1,19 @@
+.rek-3 {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__wrap {
+        width: 1024px;
+    }
+    &__title {
+        margin: 0 0 80px 0;
+        color: #363636;
+        font-family: "SF Pro Display", Sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: none;
+        line-height: 1.4em;
+        text-align: center;
+    }
+}

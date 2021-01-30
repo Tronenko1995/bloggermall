@@ -235,6 +235,7 @@
 			width: 100%;
 			transition: all 300ms ease-in-out;
 			margin-bottom: 10px;
+			font-weight: 400;
 			&:focus {
 				border-color: #f04a76;
 			}
@@ -283,6 +284,7 @@
 				font-family: 'SF Pro Display', 'Arial', 'sans-serif';
 				font-size: 14px;
 				color: #6788FC;
+				font-weight: 400;
 			}
 			&--login {
 				width: 100%;
@@ -335,6 +337,7 @@
 				padding-bottom: 5px;
 				font-family: 'SF Pro Display', 'Arial', 'sans-serif';
 				font-size: 16px;
+				font-weight: 400;
 			}
 		}
 	}

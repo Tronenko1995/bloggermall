@@ -27,6 +27,7 @@ const cssFiles = [
   './src/scss/sticky.scss',
   './src/scss/header.scss',
   './src/scss/main/*.scss',
+  './src/scss/rek/*.scss',
   './src/scss/faq.scss',
   './src/scss/footer.scss',
   './src/scss/up.scss',
