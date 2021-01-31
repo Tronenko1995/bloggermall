@@ -63,6 +63,12 @@
 					opacity: 1;
 				}
 			}
+			&.active {
+				&::after {
+					width: 20px;
+					opacity: 1;
+				}
+			}
 			&--submenu {
 				position: relative;
 				&::before {

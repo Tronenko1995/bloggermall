@@ -1,0 +1,62 @@
+.rek-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ffe600;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 120px solid #fff;
+        border-right: 100vw solid transparent;
+        background: 0 0;
+        z-index: 2;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 120px solid #fff;
+        border-left: 100vw solid transparent;
+        background: 0 0;
+        z-index: 2;
+    }
+    &__wrap {
+        width: 1024px;
+        margin: 180px 0 200px 0;
+    }
+    &__title {
+        color: #363636;
+        font-family: "SF Pro Display",Sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: none;
+        line-height: 42px;
+        margin: 0 0 80px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        top: 15%;
+        width: 220px;
+        height: 517px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .rek-4 {
+        &__wrap {
+            width: 96%;
+        }
+    }
+}
