@@ -375,6 +375,11 @@
 				width: 100%;
 				padding: 0;
 				margin: 0;
+				&.active {
+					&::after {
+						display: none;
+					}
+				}
 				&--submenu {
 					&::before {
 						right: 15px;
