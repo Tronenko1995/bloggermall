@@ -29,6 +29,7 @@ const cssFiles = [
   './src/scss/main/*.scss',
   './src/scss/reklamodatelyam/*.scss',
   './src/scss/blogeram/*.scss',
+  './src/scss/good-choice/*.scss',
   './src/scss/faq.scss',
   './src/scss/footer.scss',
   './src/scss/up.scss',
