@@ -1,8 +1,10 @@
-.main-3 {
+.good-2 {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 40px 0px 130px 0px;
+    padding: 80px 0px 130px 0px;
+    position: relative;
+    overflow: hidden;
     &__wrap {
         width: 1024px;
         padding: 0 2%;
@@ -11,10 +13,17 @@
         font-family: "SF Pro Display", Sans-serif;
         font-size: 30px;
         font-weight: 600;
-        text-transform: none;
+        text-transform: uppercase;
         line-height: 1.4em;
         color: #363636;
         text-align: center;
+    }
+    &__description {
+        color: #363636;
+        font-family: "SF Pro Display", Sans-serif;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 35px;
     }
     &__items {
         display: flex;
@@ -37,7 +46,7 @@
             &::before {
                 border: 2px solid transparent;
             }
-            .main-3__text {
+            .good-2__text {
                 color: transparent;
             }
         }
@@ -84,13 +93,72 @@
         z-index: -1;
         display: flex;
     }
+    &__circle {
+        &-left {
+            position: absolute;
+            left: 0;
+            top: 335px;
+            width: 120px;
+            height: 381px;
+
+            img {
+                width: 120px;
+                height: 381px;
+            }
+        }
+        &-right {
+            position: absolute;
+            right: 0;
+            top: 30px;
+            width: 170px;
+            height: 475px;
+
+            img {
+                width: 170px;
+                height: 475px;
+            }
+        }
+    }
 }
 
 
+@media (max-width: 1270px) {
+    .good-2 {
+        &__circle {
+            &-left {
+                left: -20px;
+                transform: scale(0.7);
+                img {
+                    
+                }
+            }
+            &-right {
+                right: -36px;
+                transform: scale(0.6);
+                img {
+
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1140px) {
+    .good-2 {
+        &__circle {
+            &-left {
+                display: none;
+            }
+            &-right {
+                display: none;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
-    .main-3 {
+    .good-2 {
         &__wrap {
-            width: 96%;
+            width: 92%;
             padding: 0;
         }
         &__items {
@@ -113,7 +181,7 @@
 }
 
 @media (max-width: 500px) {
-    .main-3 {
+    .good-2 {
         &__title {
             font-size: 24px;
         }

@@ -7,23 +7,22 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 120px solid #ffffff;
+        border-left: 100vw solid transparent;
+        background: transparent;
+        z-index: 2;
+    }
     &__wrap {
         width: 1024px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 53px;
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 0;
-            border-bottom: 120px solid #ffffff;
-            border-left: 100vw solid transparent;
-            background: transparent;
-            z-index: 2;
-        }
     }
     &__left {
         margin-top: 75px;
@@ -43,7 +42,9 @@
         }
     }
     &__right {
-
+        padding-top: 30px;
+        width: 580px;
+        height: 578px;
     }
     &__img {
         width: 580px;
@@ -97,18 +98,25 @@
     .good-1 {
         &__wrap {
             width: 90%;
+            flex-direction: column;
+            align-items: center;
         }
         &__left {
-            width: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             &:before {
                 display: none;
             }
         }
         &__title {
             text-align: center;
+            width: auto;
         }
         &__text {
             text-align: center;
+            width: auto;
         }
         &__links {
             justify-content: center;
@@ -116,21 +124,21 @@
     }
 }
 
-@media (max-width: 900px) {
-    .good-1 {
-        &__wrap {
-            flex-direction: column;
-            margin-bottom: 18px;
-        }
-        &__right {
-            margin-top: 60px;
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
+// @media (max-width: 900px) {
+//     .good-1 {
+//         &__wrap {
+//             flex-direction: column;
+//             margin-bottom: 18px;
+//         }
+//         &__right {
+//             margin-top: 60px;
+//             display: flex;
+//             justify-content: center;
+//         }
+//     }
+// }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .good-1 {   
         &__title {
             font-size: 30px;
@@ -148,6 +156,12 @@
         }
         &__right {
             margin-left: 36px;
+            width: 440px;
+            height: 439px;
+        }
+        &__img {
+            width: 440px;
+            height: 439px;
         }
     }
 }

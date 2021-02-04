@@ -1,0 +1,191 @@
+.good-3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #69DDCA;
+    overflow: hidden;
+    position: relative;
+    padding: 195px 0px 180px 0px;
+    z-index: 0;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 120px solid #ffffff;
+        border-right: 100vw solid transparent;
+        background: transparent;
+        z-index: 2;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 120px solid #ffffff;
+        border-left: 100vw solid transparent;
+        background: transparent;
+        z-index: 2;
+    }
+    &__wrap {
+        width: 1024px;
+    }
+    &__title {
+        color: #363636;
+        font-family: "SF Pro Display", Sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: none;
+        line-height: 1.4em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__text {
+        margin-top: 50px;
+        color: #363636;
+        font-family: "SF Pro Display", Sans-serif;
+        font-weight: 500;
+        line-height: 1.7em;
+        text-align: center;
+    }
+    &__description {
+        margin-top: 35px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__item {
+        display: flex;
+        width: 472px;
+        // margin-top: 30px;
+        padding: 30px;
+
+        &-left {
+
+        }
+        &-num {
+            color: #363636;
+            font-family: "SF Pro Display", Sans-serif;
+            font-size: 82px;
+            font-weight: 700;
+            line-height: 1em;
+            position: relative;
+            &:before {
+                left: -4px;
+                top: 4px;
+                position: absolute;
+                content: '';
+                width: 34px;
+                height: 34px;
+                background-color: #f5e50d;
+                z-index: -1;
+                border-radius: 50%;
+                transform: rotateX(22deg);
+            }
+            &:after {
+                left: -2px;
+                top: 6px;
+                position: absolute;
+                content: '';
+                width: 30px;
+                height: 30px;
+                background-color: #69ddca;
+                z-index: -1;
+                border-radius: 50%;
+                transform: rotateX(22deg);
+            }
+        }
+
+        &-right {
+            margin-left: 30px;
+        }
+        &-text {
+            color: #363636;
+            font-family: "SF Pro Display", Sans-serif;
+            font-size: 19px;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1.5em;
+        }
+    }
+    &__img {
+        position: absolute;
+        right: 0;
+        bottom: -15px;
+        width: 270px;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 1370px) {
+    .good-3 {
+        &__img {
+            right: -50px;
+            & img {
+                transform: scale(0.7);
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .good-3 {
+        &__img {
+            right: -100px;
+            bottom: -32px;
+            & img {
+                transform: scale(0.5);
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .good-3 {
+        &__wrap {
+            width: 90%;
+        }
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1048px) {
+    .good-3 {
+        &__items {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            width: auto;
+            &-right {
+                margin-top: 30px;
+            }
+            &-text {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .good-3 {
+        &__title {
+            font-size: 25px;
+            line-height: 1.3em;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+}

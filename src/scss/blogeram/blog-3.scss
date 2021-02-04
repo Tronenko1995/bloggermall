@@ -7,18 +7,6 @@
     position: relative;
     padding: 70px 0px 120px 0px;
     z-index: 0;
-    // &::before {
-    //     content: '';
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 0;
-    //     height: 0;
-    //     border-top: 120px solid #ffffff;
-    //     border-right: 100vw solid transparent;
-    //     background: transparent;
-    //     z-index: 2;
-    // }
     &::after {
         content: '';
         position: absolute;
