@@ -1,0 +1,262 @@
+.good-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+
+    &__wrap {
+        width: 1024px;
+    }
+    &__title {
+        text-align: center;
+        color: #363636;
+        font-family: "SF Pro Display", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__row {
+        margin-top: 75px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+
+        &-items {
+
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            width: 532px;
+            margin-bottom: 65px;
+            &-block {
+
+            }
+            &-svg {
+                width: 114px;
+                height: 114px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 4px solid #ff009e;
+            }
+            &-info {
+                margin-left: 20px;
+            }
+            &-title {
+                text-transform: uppercase;
+                color: #FF009E;
+                font-family: "SF Pro Display", Sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 1.5em;
+            }
+            &-text {
+                margin-top: 8px;
+                color: #363636;
+                font-family: "SF Pro Display", Sans-serif;
+                font-size: 17px;
+                font-weight: 400;
+                line-height: 1.4em;
+            }
+        }
+    }
+    &__right {
+
+        &-items {
+
+        }
+        &-item {
+            width: 425px;
+            margin-bottom: 30px;
+            padding: 28px 17px 17px 17px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &--yellow {
+                background-color: #FFE600;
+            }
+            &--gray {
+                background-color: #F2F2F2;
+                .good-4__right-item-title {
+                    color: #BDBDBD;
+                }
+                .good-4__right-item-svg {
+                    border: 5px solid #BDBDBD;
+                }
+            }
+
+            &-head {
+                display: flex;
+                align-items: center;
+            }
+            &-svg {
+                width: 48px;
+                height: 48px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 5px solid #ff009e;
+            }
+            &-title {
+                margin-left: 25px;
+                text-transform: uppercase;
+                font-family: "SF Pro Display", Sans-serif;
+                font-size: 21px;
+                font-weight: 700;
+            }
+            &-body {
+                margin-top: 15px;
+            }
+            &-text {
+                color: #363636;
+                font-family: "SF Pro Display", Sans-serif;
+                font-weight: 400;
+                line-height: 26px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .good-4 {
+        &__wrap {
+            width: 96%;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .good-4 {
+        // width: 100%;
+        // display: flex;
+        // justify-content: center;
+        // margin: 80px 0;
+    
+        &__wrap {
+            // width: 96%;
+        }
+        &__title {
+            // text-align: center;
+            // color: #363636;
+            // font-family: "SF Pro Display", Sans-serif;
+            // font-size: 30px;
+            // font-weight: 700;
+            // text-transform: uppercase;
+        }
+        &__row {
+            // margin-top: 75px;
+            // display: flex;
+            // justify-content: space-between;
+        }
+        &__left {
+    
+            &-items {
+    
+            }
+            &-item {
+                // display: flex;
+                // align-items: center;
+                width: auto;
+                // margin-bottom: 65px;
+                &-block {
+    
+                }
+                &-svg {
+                    width: 67px;
+                    height: 67px;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // border-radius: 50%;
+                    border: 3px solid #ff009e;
+                }
+                &-info {
+                    // margin-left: 20px;
+                }
+                &-title {
+                    // text-transform: uppercase;
+                    // color: #FF009E;
+                    // font-family: "SF Pro Display", Sans-serif;
+                    font-size: 18px;
+                    // font-weight: 700;
+                    // line-height: 1.5em;
+                }
+                &-text {
+                    // margin-top: 8px;
+                    // color: #363636;
+                    // font-family: "SF Pro Display", Sans-serif;
+                    font-size: 14px;
+                    // font-weight: 400;
+                    // line-height: 1.4em;
+                }
+            }
+        }
+        &__right {
+            margin-left: 30px;
+            &-items {
+    
+            }
+            &-item {
+                // width: 425px;
+                // margin-bottom: 30px;
+                // padding: 28px 17px 17px 17px;
+    
+                &:last-child {
+                    // margin-bottom: 0;
+                }
+                &--yellow {
+                    // background-color: #FFE600;
+                }
+                &--gray {
+                    // background-color: #F2F2F2;
+                    .good-4__right-item-title {
+                        // color: #BDBDBD;
+                    }
+                    .good-4__right-item-svg {
+                        // border: 5px solid #BDBDBD;
+                    }
+                }
+    
+                &-head {
+                    // display: flex;
+                    // align-items: center;
+                }
+                &-svg {
+                    // width: 48px;
+                    // height: 48px;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    // border-radius: 50%;
+                    // border: 5px solid #ff009e;
+                }
+                &-title {
+                    // margin-left: 25px;
+                    // text-transform: uppercase;
+                    // font-family: "SF Pro Display", Sans-serif;
+                    // font-size: 21px;
+                    // font-weight: 700;
+                }
+                &-body {
+                    // margin-top: 15px;
+                }
+                &-text {
+                    // color: #363636;
+                    // font-family: "SF Pro Display", Sans-serif;
+                    // font-weight: 400;
+                    // line-height: 26px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}

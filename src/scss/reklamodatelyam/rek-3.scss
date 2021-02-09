@@ -13,7 +13,7 @@
         color: #363636;
         font-family: "SF Pro Display", Sans-serif;
         font-size: 30px;
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;
         line-height: 1.4em;
         text-align: center;
@@ -36,16 +36,17 @@
             color: #FF009E;
             font-family: "SFProDisplay", Sans-serif;
             font-size: 22px;
-            font-weight: 600;
+            font-weight: 700;
             text-transform: uppercase;
             line-height: 1.5em;
         }
         &-text {
             color: #363636;
             font-family: "SFProDisplay", Sans-serif;
-            font-weight: 500;
+            font-weight: 400;
             line-height: 1.7em;
             letter-spacing: normal;
+            margin-top: 8px;
         }
         &-block {
             width: 148px;
