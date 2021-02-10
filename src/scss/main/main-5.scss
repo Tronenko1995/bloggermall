@@ -75,6 +75,12 @@
         width: 70px;
         height: 70px;
         margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 4px solid #ff009e;
+        box-shadow: 0 0 21px 3px rgba(255,0,153,0.20);
     }
     &__ua-logo {
         display: flex;
