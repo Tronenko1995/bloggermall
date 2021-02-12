@@ -1,0 +1,38 @@
+.good-10 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__wrap {
+        width: 1024px;
+        margin: 50px 0px 100px 0px;
+    }
+
+    &__title {
+        margin: 0 0 80px 0;
+        color: #363636;
+        font-family: "SF Pro Display", Sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: none;
+        line-height: 1.4em;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .good-10 {
+        &__wrap {
+            width: 96%;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .good-10 {
+        &__title {
+            font-size: 25px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.good-9 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    background-color: #FFE600;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 0 0;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 120px solid #ffffff;
+        border-right: 100vw solid transparent;
+        background: transparent;
+        z-index: 200;
+    }
+    
+    &__wrap {
+        width: 1024px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__block {
+        width: 496px;
+        height: 461px;
+        &-img {
+            width: 496px;
+            height: 461px;
+        }
+    }
+    &__info {
+        width: 482px;
+        &-title {
+            color: #363636;
+            font-family: "SF Pro Display", Sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.5em;
+        }
+        &-text {
+            margin-top: 35px;
+            color: #363636;
+            font-family: "SF Pro Display", Sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+        &-button {
+            margin-top: 50px;
+            font-family: "SF Pro Display", Sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            transition: 0.5s;
+            border-radius: 22px;
+            padding: 14px 45px 14px 45px;
+            line-height: 1;
+            background-color: #FF0099;
+            border: 1px solid #FF0099;
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+            &:hover,
+            &:focus {
+                color: #FF0099;
+                background-color: #FFFFFF;
+                transform: scale(0.9);
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .good-9 {
+        padding: 170px 0 80px;
+        &__wrap {
+            width: 90%;
+        }
+        &__block {
+            display: none;
+        }
+        &__info {
+            width: auto;
+            &-title {
+                font-size: 25px;
+                line-height: 1.3em;
+            }
+        }
+    }
+}

@@ -45,9 +45,13 @@
     &__right {
 
     }
+    /* &__img {
+         width: 480px;
+         height: 490px;
+     } */
     &__img {
         width: 480px;
-        height: 490px;
+        height: 442px;
     }
     &__title {
         color: #363636;
@@ -113,12 +117,18 @@
         }
     }
 }
-
+@media (max-width: 1000px) {
+    .blog-1 {
+        &__right {
+            margin-top: 20px;
+        }
+    }
+}
 @media (max-width: 900px) {
     .blog-1 {
         &__wrap {
             flex-direction: column;
-            margin-bottom: 18px;
+            margin-bottom: 0px;
         }
         &__right {
             margin-top: 60px;
