@@ -515,8 +515,9 @@
         </svg>
     </div>
     
-    <!-- modal--start / modal--blog / modal--phone -->
-    <div class="modal hide modal--blog">
+    <!-- modal--start / modal--blog / modal--blog-2 / modal--phone -->
+    <div class="modal hide modal--blog-2">
+        
         <div class="modal__body hide">
 
             <div class="modal__body-start">
@@ -541,6 +542,130 @@
                     <div class="modal__body-blog-content-progress">
                         <div class="modal__body-blog-content-progress-bar" style="width: 25%;"></div>
                     </div>
+                    <form class="modal__body-blog-content-form">
+                        <div class="modal__body-blog-content-form-row">
+                            <label class="modal__body-blog-content-form-label">
+                                <p class="modal__body-blog-content-form-text required">Имя</p>
+                                <input class="modal__body-blog-content-form-input" type="text">
+                            </label>
+                            <label class="modal__body-blog-content-form-label">
+                                <p class="modal__body-blog-content-form-text required">E-mail</p>
+                                <input class="modal__body-blog-content-form-input" type="text">
+                            </label>
+                            <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                                <p class="modal__body-blog-content-form-text required">Пароль</p>
+                                <div class="modal__body-blog-content-form-for_svg">
+                                    <input class="modal__body-blog-content-form-input" type="password">
+                                    <div class="modal__body-blog-content-form-svg svg-modal-eye"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <button class="modal__body-blog-content-form-button">Далее</button>
+                    </form>
+                    <form class="modal__body-blog-content-form-2">
+                        <div class="modal__body-blog-content-form-row">
+                            <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                                <p class="modal__body-blog-content-form-text required">Телефон</p>
+                                <input class="modal__body-blog-content-form-input" type="text" placeholder="Номер телефона">
+                            </label>
+                            <label class="modal__body-blog-content-form-label">
+                                <p class="modal__body-blog-content-form-text required">Город</p>
+                                    <!-- open -->
+                                <div class="modal__body-blog-content-form-select select">
+                                    <input class="select__input" type="hidden" name="">
+                                    <div class="select__head"><span>Выберите местоположение</span></div>
+                                    <div class="select__container">
+                                        <div class="select__search">
+                                            <input type="text" class="select__search-input">
+                                        </div>
+
+                                        <ul class="select__list">
+                                            <li class="select__item active">Выберите местоположение</li>
+                                            <li class="select__item">Город 1</li>
+                                            <li class="select__item">Город 2</li>
+                                            <li class="select__item">Город 3</li>
+                                            <li class="select__item">Город 4</li>
+                                            <li class="select__item">Город 5</li>
+                                            <li class="select__item">Город 6</li>
+                                            <li class="select__item">Город 7</li>
+                                            <li class="select__item">Город 8</li>
+                                            <li class="select__item">Город 9</li>
+                                            <li class="select__item">Город 10</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </label>
+                            <label class="modal__body-blog-content-form-label">
+                                <p class="modal__body-blog-content-form-text required">Пол</p>
+                                <div class="modal__body-blog-content-row">
+                                    <label class="modal__body-blog-content-form-radio-label radio__label">
+                                        <input type="radio" name="gender" value="male" class="radio__input">
+                                        <span class="radio__span"></span> Муж
+                                    </label>
+                                    <label class="modal__body-blog-content-form-radio-label radio__label">
+                                        <input type="radio" name="gender" value="female" class="radio__input">
+                                        <span class="radio__span"></span> Жен
+                                    </label>
+                                </div>
+                            </label>
+                            <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                                <p class="modal__body-blog-content-form-text required">Тематики блога (не более 3х)</p>
+                                <ul class="modal__body-blog-content-list">
+                                    <li class="modal__body-blog-content-item">
+                                        <label class="modal__body-blog-content-form-radio-label radio__label">
+                                            <input type="checkbox" name="skills" value="female" class="radio__input">
+                                            <span class="radio__span"></span> Beatuy-блог
+                                        </label>
+                                    </li>
+                                    <li class="modal__body-blog-content-item">
+                                        <label class="modal__body-blog-content-form-radio-label radio__label">
+                                            <input type="checkbox" name="skills" value="female" class="radio__input">
+                                            <span class="radio__span"></span> Видеоигры
+                                        </label>
+                                    </li>
+                                    <li class="modal__body-blog-content-item">
+                                        <label class="modal__body-blog-content-form-radio-label radio__label">
+                                            <input type="checkbox" name="skills" value="female" class="radio__input">
+                                            <span class="radio__span"></span> Образование
+                                        </label>
+                                    </li>
+                                    <li class="modal__body-blog-content-item">
+                                        <label class="modal__body-blog-content-form-radio-label radio__label">
+                                            <input type="checkbox" name="skills" value="female" class="radio__input">
+                                            <span class="radio__span"></span> Fashion-блог
+                                        </label>
+                                    </li>
+                                    <li class="modal__body-blog-content-item">
+                                        <label class="modal__body-blog-content-form-radio-label radio__label">
+                                            <input type="checkbox" name="skills" value="female" class="radio__input">
+                                            <span class="radio__span"></span> Дети
+                                        </label>
+                                    </li>
+                                    <li class="modal__body-blog-content-item">
+                                        <label class="modal__body-blog-content-form-radio-label radio__label">
+                                            <input type="checkbox" name="skills" value="female" class="radio__input">
+                                            <span class="radio__span"></span> Политика
+                                        </label>
+                                    </li>
+                                </ul>
+                            </label>
+                            <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                                <p class="modal__body-blog-content-form-text required">Описание блога</p>
+                                <textarea class="modal__body-blog-content-form-textarea"></textarea>
+                            </label>
+                            <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                                <p class="modal__body-blog-content-form-text required">Что не рекламируете</p>
+                                <textarea class="modal__body-blog-content-form-textarea"></textarea>
+                            </label>
+                            <div class="modal__body-blog-content-form-final">
+                                <label class="modal__body-blog-content-form-radio-label radio__label">
+                                    <input type="checkbox" name="skills" value="female" class="radio__input">
+                                    <span class="radio__span"></span> Я соглашаюсь с&nbsp;</span><a href="https://www.bloggermall.com.ua/privacy-policy/" target="_blank">Пользовательским соглашением.</a>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="modal__body-blog-content-form-button">Далее</button>
+                    </form>
                 </div>
             </div>
 

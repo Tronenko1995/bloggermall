@@ -21,20 +21,15 @@ const cache = require('gulp-cache');
 const cssFiles = [
   './src/scss/fonts.scss',
   './src/scss/config.scss',
+  './src/scss/UI/*.scss',
   './src/scss/svg.scss',
   './src/scss/animation.scss',
-  './src/scss/preloader.scss',
-  './src/scss/sticky.scss',
   './src/scss/header.scss',
   './src/scss/main/*.scss',
   './src/scss/reklamodatelyam/*.scss',
   './src/scss/blogeram/*.scss',
   './src/scss/good-choice/*.scss',
-  './src/scss/faq.scss',
   './src/scss/footer.scss',
-  './src/scss/up.scss',
-  './src/scss/phone.scss',
-  './src/scss/modal.scss'
 ]
 // //Порядок подключения js файлов
 // const jsFiles = [

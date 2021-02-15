@@ -28,18 +28,18 @@
         margin-top: 75px;
         width: 492px;
         position: relative;
-        &:before {
-            background: #FF009E;
-            box-shadow: 5px 5px 25px #FF009E;
-            content: '';
-            position: absolute;
-            left: 7px;
-            top: 2px;
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            z-index: -1;
-        }
+        // &:before {
+        //     background: #FF009E;
+        //     box-shadow: 5px 5px 25px #FF009E;
+        //     content: '';
+        //     position: absolute;
+        //     left: 7px;
+        //     top: 2px;
+        //     height: 40px;
+        //     width: 40px;
+        //     border-radius: 50%;
+        //     z-index: -1;
+        // }
     }
     &__right {
 
