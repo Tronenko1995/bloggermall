@@ -107,6 +107,7 @@
         </div>
     </header>
 
+    <!-- in console -> sticky.alert('text') / sticky.alert('text','ok') -->
     <div class="sticky"></div>
 
     <div class="main-1">
@@ -515,13 +516,13 @@
         </svg>
     </div>
     
-    <!-- modal--start / modal--blog / modal--blog-2 / modal--phone -->
-    <div class="modal hide modal--blog-2">
+    <!-- modal--start / modal--blog / modal--blog-2 / modal--blog-3 / modal--rek / modal--rek-2 / modal--phone -->
+    <div class="modal hide modal--start">
+    
+    <div class="modal__body hide">
         
-        <div class="modal__body hide">
-
-            <div class="modal__body-start">
-                <h3 class="modal__body-start-title">Зарегистрироваться как</h3>
+        <div class="modal__body-start">
+            <h3 class="modal__body-start-title">Зарегистрироваться как</h3>
                 <div class="modal__body-start-buttons">
                     <div class="modal__body-start-button modal__body-start-button--blog">
                         <p class="modal__body-start-text">Блогер</p>
@@ -660,11 +661,100 @@
                             <div class="modal__body-blog-content-form-final">
                                 <label class="modal__body-blog-content-form-radio-label radio__label">
                                     <input type="checkbox" name="skills" value="female" class="radio__input">
-                                    <span class="radio__span"></span> Я соглашаюсь с&nbsp;</span><a href="https://www.bloggermall.com.ua/privacy-policy/" target="_blank">Пользовательским соглашением.</a>
+                                    <span class="radio__span"></span> Я соглашаюсь с </span><a href="https://www.bloggermall.com.ua/privacy-policy/" target="_blank">Пользовательским соглашением.</a>
                                 </label>
                             </div>
                         </div>
                         <button class="modal__body-blog-content-form-button">Далее</button>
+                    </form>
+                    <form class="modal__body-blog-content-form-3">
+                        <h4 class="modal__body-blog-content-title">Укажите номер карты для выплат</h4>
+                        <div class="modal__body-blog-content-card">
+                            <div class="modal__body-blog-content-card-row">
+                                <!-- modal__body-blog-content-card-label--error -->
+                                <label class="modal__body-blog-content-card-label">
+                                    <input class="modal__body-blog-content-card-input" type="text" maxlength="19" placeholder="Введіть номер картки">
+                                    <div class="modal__body-blog-content-card-cross svg-card-cross"></div>
+                                    <p class="modal__body-blog-content-card-text modal__body-blog-content-card-text--error">Неправильний номер картки</p>
+                                </label>
+                                <!-- svg-card-visa / svg-card-mastercard -->
+                                <div class="modal__body-blog-content-card-svg svg-card-visa"></div>
+                            </div>
+                            <div class="modal__body-blog-content-card-description">
+                                <p class="modal__body-blog-content-card-description-text">За підтримки</p>
+                                <div class="modal__body-blog-content-card-description-img"></div>
+                            </div>
+                        </div>
+                        <button class="modal__body-blog-content-form-button">Сохранить карту</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal__body-rek">
+                <div class="modal__body-rek-head">
+                    <h3 class="modal__body-rek-title">Регистрация рекламодателя</h3>
+                </div>
+                <div class="modal__body-rek-content">
+                    <p class="modal__body-rek-content-text">Шаг 1 из 2</p>
+                    <div class="modal__body-rek-content-progress">
+                        <div class="modal__body-rek-content-progress-bar" style="width: 50%;"></div>
+                    </div>
+                    <form class="modal__body-rek-content-form">
+                        <div class="modal__body-rek-content-form-row">
+                            <label class="modal__body-rek-content-form-label">
+                                <p class="modal__body-rek-content-form-text required">Имя</p>
+                                <input class="modal__body-rek-content-form-input" type="text">
+                            </label>
+                            <label class="modal__body-rek-content-form-label">
+                                <p class="modal__body-rek-content-form-text required">E-mail</p>
+                                <input class="modal__body-rek-content-form-input" type="text">
+                            </label>
+                            <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                                <p class="modal__body-rek-content-form-text required">Пароль</p>
+                                <div class="modal__body-rek-content-form-for_svg">
+                                    <input class="modal__body-rek-content-form-input" type="password">
+                                    <div class="modal__body-rek-content-form-svg svg-modal-eye"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <button class="modal__body-rek-content-form-button">Далее</button>
+                    </form>
+                    <form class="modal__body-rek-content-form-2">
+                        <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                            <p class="modal__body-rek-content-form-text required">Кто вы?</p>
+                            <div class="modal__body-rek-content-row">
+                                <label class="modal__body-rek-content-form-radio-label radio__label">
+                                    <input type="radio" name="employer_type" value="brand" class="radio__input" checked="checked">
+                                    <span class="radio__span"></span> Бренд
+                                </label>
+                                <label class="modal__body-rek-content-form-radio-label radio__label">
+                                    <input type="radio" name="employer_type" value="agency" class="radio__input">
+                                    <span class="radio__span"></span> Агенство
+                                </label>
+                            </div>
+                        </label>
+
+                        <div class="modal__body-rek-content-form-row">
+                            <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                                <p class="modal__body-rek-content-form-text required">Название бренда/агентства</p>
+                                <input class="modal__body-rek-content-form-input" type="text">
+                            </label>
+                            <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                                <p class="modal__body-rek-content-form-text required">Ваш сайт/инстаграм</p>
+                                <input class="modal__body-rek-content-form-input" type="text">
+                            </label>
+                            <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                                <p class="modal__body-rek-content-form-text required">Телефон</p>
+                                <input class="modal__body-rek-content-form-input" type="text" placeholder="Номер телефона">
+                            </label>
+                            <div class="modal__body-rek-content-form-final">
+                                <label class="modal__body-rek-content-form-radio-label radio__label">
+                                    <input type="checkbox" name="skills" value="female" class="radio__input">
+                                    <span class="radio__span"></span> Условия <a href="https://www.bloggermall.com.ua/privacy-policy/" target="_blank">оферты</a> мною прочитаны, поняты и приняты.</span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="modal__body-rek-content-form-button">Зарегистрироваться</button>
                     </form>
                 </div>
             </div>
@@ -679,6 +769,8 @@
             <div class="modal__close jsCloseLoginBlock">×</div>
         </div>
     </div>
+
+
 
     <script src="js/scripts.js"></script>
     <script src="js/sticky.js"></script>
