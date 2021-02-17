@@ -28,6 +28,7 @@ const cssFiles = [
   './src/scss/blogeram/*.scss',
   './src/scss/good-choice/*.scss',
   './src/scss/kak-effektivno-rabotat-s-blogerami/*.scss',
+  './src/scss/baza_znaniy/*.scss',
   './src/scss/footer.scss',
 ]
 // //Порядок подключения js файлов
