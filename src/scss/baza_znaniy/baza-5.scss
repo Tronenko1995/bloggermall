@@ -1,10 +1,10 @@
-.baza-3 {
+.baza-5 {
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    background: #FFE600;
-    padding: 275px 0 240px;
+    background: #69DDCA;
+    padding: 275px 0 205px;
     overflow: hidden;
     &::before {
         content: '';
@@ -37,12 +37,11 @@
     &__img {
         position: absolute;
         left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 314px;
+        top: 56%;
+        width: 376px;
         height: 911px;
         &-img {
-            width: 314px;
+            width: 376px;
             height: 911px;
         }
     }
@@ -68,7 +67,15 @@
     }
     &__right {
         width: 650px;
+        &-text {
+            color: #363636;
+            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.7em;
+        }
         &-block {
+            margin-top: 55px;
             &-title {
                 color: #FF009E;
                 font-family: 'SF Pro Display', 'Arial', 'sans-serif';
@@ -78,14 +85,15 @@
                 line-height: 1.3em;
             }
             &-list {
-                margin-top: 30px;
+                width: 50%;
+                margin-top: 0px;
                 margin-left: 12px;
                 &-item {
                     color: #363636;
                     padding-left: 22px;
                     font-family: 'SF Pro Display', 'Arial', 'sans-serif';
-                    font-size: 15px;
-                    font-weight: 700;
+                    font-size: 13px;
+                    font-weight: 400;
                     line-height: 1.5em;
                     margin-bottom: 12px;
                     &:last-child {
@@ -94,50 +102,41 @@
                 }
             }
             &-text {
+                width: 50%;
+                font-weight: 700;
+                font-size: 13px;
                 color: #363636;
                 font-family: 'SF Pro Display', 'Arial', 'sans-serif';
-                font-size: 15px;
-                font-weight: 400;
                 line-height: 1.7em;
-                margin-top: 40px;
-                margin-bottom: 25px;
+                // margin-bottom: 25px;
             }
             &-items {
-
+                margin-top: 45px;
             }
             &-item {
-                margin-top: 45px;
+                margin-bottom: 35px;
+                &-title {
+                    color: #363636;
+                    font-family: "SF ProD isplay", Sans-serif;
+                    font-size: 17px;
+                    font-weight: 700;
+                    line-height: 1;
+                    margin-bottom: 45px;
+                }
+                &-text {
+                    margin-top: 18px;
+                    color: #363636;
+                    font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+            }
+            &-row {
                 display: flex;
-                &-svg {
-                    width: 85px;
-                    min-width: 85px;
-                    height: 85px;
-                    min-height: 85px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 50%;
-                    border: 4px solid #ff009e;
-                }
-                &-info {
-                    margin-left: 15px;
-                    &-title {
-                        color: #363636;
-                        font-family: "SF ProD isplay", Sans-serif;
-                        font-size: 19px;
-                        font-weight: 700;
-                        line-height: 1.5em;
-                        text-transform: uppercase;
-                    }
-                    &-text {
-                        margin-top: 8px;
-                        color: #363636;
-                        font-family: 'SF Pro Display', 'Arial', 'sans-serif';
-                        font-size: 14px;
-                        font-weight: 400;
-                        line-height: 1.7em;
-                    }
-                }
+                margin-top: 55px;
+                padding-bottom: 40px;
+                border-bottom: 1px solid rgba(54, 54, 54, 0.2);
             }
         }
     }
@@ -145,7 +144,7 @@
 
 
 @media (max-width: 1100px) {
-    .baza-3 {
+    .baza-5 {
         &__img {
             display: none;
         }
@@ -154,7 +153,7 @@
 
 
 @media (max-width: 1000px) {
-    .baza-3 {
+    .baza-5 {
         &__wrap {
             width: 90%;
             flex-direction: column;
@@ -173,7 +172,7 @@
 
 
 @media (max-width: 767px) {
-    .baza-3 {
+    .baza-5 {
         &__left {
             &-step,
             &-title {
@@ -182,22 +181,37 @@
         }
         &__right {
             &-block {
+                &-title {
+                    margin-bottom: 55px;
+                }
+                &-row {
+                    margin-top: 30px;
+                }
                 &-item {
                     flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-                    &-info {
-                        margin: 15px 0 0 0;
-                        &-title {
-                            font-size: 18px;
-                        }
+                    &-title {
+                        margin-bottom: 18px;
                     }
-                    &-svg {
-                        width: 75px;
-                        min-width: 75px;
-                        height: 75px;
-                        min-height: 75px;
-                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .baza-5 {
+        &__right {
+            &-block {
+                &-list {
+                    width: 100%;
+                }
+                &-row {
+                    flex-direction: column;
+                }
+                &-text {
+                    margin-top: 50px;
+                    width: 100%;
+                    margin-left: 5px;
                 }
             }
         }

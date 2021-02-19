@@ -1,4 +1,4 @@
-.blog-5 {
+.baza-10 {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@
 
 
 @media (max-width: 1100px) {
-    .blog-5 {
+    .baza-10 {
         &__wrap {
             width: 96%;
         }
@@ -30,7 +30,7 @@
 }
 
 @media (max-width: 760px) {
-    .blog-5 {
+    .baza-10 {
         &__title {
             font-size: 25px;
         }

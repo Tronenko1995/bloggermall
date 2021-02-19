@@ -1,0 +1,130 @@
+.baza-8 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &__wrap {
+        width: 1024px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        color: #363636;
+        font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+        font-size: 26px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.5em;
+        text-align: center;
+    }
+    &__text {
+        margin-top: 45px;
+        text-align: center;
+        color: #363636;
+        font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+        font-weight: 400;
+        line-height: 1.7em;
+        font-size: 16px;
+    }
+    &__items {
+        margin-top: 100px;
+    }
+    &__item {
+        margin-bottom: 75px;
+        display: flex;
+        &-num {
+            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            font-size: 92px;
+            line-height: 0.8;
+            font-weight: 700;
+            color: #FF009E
+        }
+        &-text {
+            margin-left: 20px;
+            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.7em;
+            color: #363636;
+            width: 580px;
+        }
+    }
+    &__block {
+        padding: 20px 30px;
+        background: #FFE600;
+        width: 700px;
+        display: flex;
+        &-left {
+            width: 50%;
+            &-title {
+                color: #363636;
+                font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 1.5em;
+            }
+        }
+        &-right {
+            width: 50%;
+            &-title {
+                color: #363636;
+                font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                font-size: 30px;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 1.5em;
+                text-align: center;
+            }
+            &-text {
+                color: #363636;
+                font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5em;
+            }
+            &-description {
+                color: #828282;
+                font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .baza-8 {
+        &__wrap {
+            width: 90%;
+        }
+        &__item {
+            flex-direction: column;
+            align-items: center;
+            &-num {
+                font-size: 75px;
+            }
+            &-text {
+                margin-left: 0;
+                margin-top: 20px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        &__block {
+            width: 100%;
+            flex-direction: column;
+            &-left {
+                width: 100%;
+            }
+            &-right {
+                margin-top: 40px;
+                width: 100%;
+                &-text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

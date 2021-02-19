@@ -1,50 +1,14 @@
-.baza-3 {
+.baza-4 {
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    background: #FFE600;
-    padding: 275px 0 240px;
+    background: #fff;
+    padding: 100px 0 20px 0;
     overflow: hidden;
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-top: 120px solid #fff;
-        border-right: 100vw solid transparent;
-        background: 0 0;
-        z-index: 2;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-bottom: 120px solid #fff;
-        border-left: 100vw solid transparent;
-        background: 0 0;
-        z-index: 2;
-    }
     &__wrap {
         width: 1024px;
         display: flex;
-    }
-    &__img {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 314px;
-        height: 911px;
-        &-img {
-            width: 314px;
-            height: 911px;
-        }
     }
     &__left {
         width: 335px;
@@ -78,6 +42,7 @@
                 line-height: 1.3em;
             }
             &-list {
+                width: 50%;
                 margin-top: 30px;
                 margin-left: 12px;
                 &-item {
@@ -139,13 +104,16 @@
                     }
                 }
             }
+            &-row {
+                display: flex;
+            }
         }
     }
 }
 
 
 @media (max-width: 1100px) {
-    .baza-3 {
+    .baza-4 {
         &__img {
             display: none;
         }
@@ -154,7 +122,7 @@
 
 
 @media (max-width: 1000px) {
-    .baza-3 {
+    .baza-4 {
         &__wrap {
             width: 90%;
             flex-direction: column;
@@ -173,7 +141,7 @@
 
 
 @media (max-width: 767px) {
-    .baza-3 {
+    .baza-4 {
         &__left {
             &-step,
             &-title {
@@ -198,6 +166,21 @@
                         height: 75px;
                         min-height: 75px;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .baza-4 {
+        &__right {
+            &-block {
+                &-list {
+                    width: 100%;
+                }
+                &-row {
+                    flex-direction: column;
                 }
             }
         }

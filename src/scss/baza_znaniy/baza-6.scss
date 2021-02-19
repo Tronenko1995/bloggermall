@@ -1,0 +1,178 @@
+.baza-6 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background: #fff;
+    padding: 80px 0 80px 0;
+    overflow: hidden;
+    &__wrap {
+        width: 1024px;
+        display: flex;
+    }
+    &__img {
+        position: absolute;
+        left: 0;
+        top: 46%;
+        width: 376px;
+        height: 911px;
+        &-img {
+            width: 376px;
+            height: 911px;
+        }
+    }
+    &__left {
+        width: 335px;
+        padding: 10px 35px 10px 10px;
+        &-step {
+            color: #FF009E;
+            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1;
+        }
+        &-title {
+            color: #363636;
+            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            font-size: 26px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.6em;
+            margin-top: 20px;
+        }
+    }
+    &__right {
+        width: 650px;
+        &-text {
+            color: #363636;
+            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.7em;
+        }
+        &-block {
+            margin-top: 55px;
+            &-title {
+                color: #FF009E;
+                font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                font-size: 22px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 1.3em;
+                margin-bottom: 45px;
+            }
+            &-list {
+                margin-top: 0px;
+                margin-left: 20px;
+                &--normal {
+                    margin-top: 30px;
+                }
+                &-item {
+                    color: #363636;
+                    padding-left: 12px;
+                    font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 1.5em;
+                    margin-bottom: 12px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &--normal {
+                        font-size: 16px;
+                        font-weight: 700;
+                        &:before {
+                            top: 2px;
+                        }
+                    }
+                }
+            }
+            &-text {
+                font-weight: 400;
+                font-size: 13px;
+                color: #363636;
+                font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                line-height: 1.7em;
+                margin-top: 25px;
+            }
+            &-items {
+                margin-top: 45px;
+            }
+            &-item {
+                margin-bottom: 35px;
+                &-title {
+                    color: #363636;
+                    font-family: "SF ProD isplay", Sans-serif;
+                    font-size: 17px;
+                    font-weight: 700;
+                    line-height: 1;
+                    margin-bottom: 45px;
+                }
+                &-text {
+                    margin-top: 18px;
+                    color: #363636;
+                    font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                    font-size: 13px;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+            }
+            &-column {
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .baza-6 {
+        &__img {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .baza-6 {
+        &__wrap {
+            width: 90%;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__left {
+            width: 100%;
+            padding: 0;
+        }
+        &__right {
+            margin-top: 30px;
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .baza-6 {
+        &__left {
+            &-step,
+            &-title {
+                font-size: 25px;
+            }
+        }
+        &__right {
+            &-block {
+                &-column {
+                    margin-top: 30px;
+                }
+                &-item {
+                    flex-direction: column;
+                    &-title {
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
