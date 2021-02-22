@@ -68,6 +68,9 @@
         overflow-y: auto;
         z-index: 100;
         max-height: 240px;
+        border-left: 1px solid #dfdfdf;
+        border-bottom: 1px solid #dfdfdf;
+        border-right: 1px solid #dfdfdf;
     }
     &__item {
         font-family: 'SF Pro Display', 'Arial', 'sans-serif';
