@@ -113,7 +113,7 @@
     <div class="account__wrap">
         <asside class="account__aside">
             <ul class="account__menu">
-                <li class="account__menu-item">
+                <li class="account__menu-item active">
                     <a href="#" class="account__menu-link">Мои услуги</a>
                 </li>
                 <li class="account__menu-item">
@@ -129,7 +129,7 @@
                 <li class="account__menu-item">
                     <a href="#" class="account__menu-link">Instagram-аккаунт</a>
                 </li>
-                <li class="account__menu-item active">
+                <li class="account__menu-item">
                     <a href="#" class="account__menu-link">Настройки профиля</a>
                 </li>
                 <li class="account__menu-item">
@@ -169,152 +169,24 @@
                     </div>
                 </div>
             </div>
-            <div class="account__settings account__block">
-                <p class="account__settings-title account__block-title">Общая информация</p>
-                <form class="account__settings-form">
-                    <div class="account__settings-avatar">
-                        <!-- upload -->
-                        <label class="account__settings-avatar-label">
-                            <div class="account__settings-avatar-img svg-upload"></div>
-                            <div class="account__settings-avatar-info">
-                                <p class="account__settings-avatar-info-title">Загрузите фото</p>
-                                <p class="account__settings-avatar-info-text">До 2 мб</p>
-                            </div>
-                            <input class="account__settings-avatar-input" type="file" accept="image/jpeg,image/png,image/gif">
-                        </label>
-                    </div>
-                    <div class="account__settings-form-block">
-                        <label class="account__settings-form-label">
-                            <p class="account__settings-form-text required">Имя</p>
-                            <input class="account__settings-form-input" type="text" placeholder="Имя">
-                        </label>
-                        <label class="account__settings-form-label">
-                            <p class="account__settings-form-text">Instagram-аккаунт</p>
-                            <div class="account__settings-form-input-wrap svg-lock">
-                                <input class="account__settings-form-input" type="text" placeholder="Instagram-аккаунт не привязан" disabled>
-                            </div>
-                        </label>
-                        <label class="account__settings-form-label">
-                            <p class="account__settings-form-text required">Телефон</p>
-                            <input class="account__settings-form-input" type="text" placeholder="Номер телефона">
-                        </label>
-                        <label class="account__settings-form-label">
-                            <p class="account__settings-form-text required">E-mail</p>
-                            <input class="account__settings-form-input" type="text" placeholder="E-mail">
-                        </label>
-                        <label class="account__settings-form-label">
-                            <p class="account__settings-form-text required">Пол</p>
-                            <!-- open -->
-                            <div class="account__settings-form-select select">
-                                <input class="select__input" type="hidden" name="">
-                                <div class="select__head">
-                                    <span>Выберите пол</span>
-                                </div>
-                                <div class="select__container">    
-                                    <ul class="select__list">
-                                        <li class="select__item active">Выберите пол</li>
-                                        <li class="select__item">Мужской</li>
-                                        <li class="select__item">Женский</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </label>
-                        <label class="account__settings-form-label">
-                            <p class="account__settings-form-text required">Местоположение</p>
-                            <!-- open -->
-                            <div class="account__settings-form-select select">
-                                <input class="select__input" type="hidden" name="">
-                                <div class="select__head">
-                                    <span>Авдеевка</span>
-                                </div>
-                                <div class="select__container">
-                                    <div class="select__search">
-                                        <input type="text" class="select__search-input">
-                                    </div>
-
-                                    <ul class="select__list">
-                                        <li class="select__item active">Авдеевка</li>
-                                        <li class="select__item">Город 1</li>
-                                        <li class="select__item">Город 2</li>
-                                        <li class="select__item">Город 3</li>
-                                        <li class="select__item">Город 4</li>
-                                        <li class="select__item">Город 5</li>
-                                        <li class="select__item">Город 6</li>
-                                        <li class="select__item">Город 7</li>
-                                        <li class="select__item">Город 8</li>
-                                        <li class="select__item">Город 9</li>
-                                        <li class="select__item">Город 10</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </label>
-                        <label class="account__settings-form-label account__settings-form-label--full">
-                            <p class="account__settings-form-text required">Описание блога</p>
-                            <textarea class="account__settings-form-textarea"></textarea>
-                        </label>
-                        <label class="account__settings-form-label account__settings-form-label--full">
-                            <p class="account__settings-form-text required">Что не рекламируете</p>
-                            <textarea class="account__settings-form-textarea"></textarea>
-                        </label>
-                        <label class="account__settings-form-label account__settings-form-label--full">
-                            <p class="account__settings-form-text required">Тематики блога (не более 3х)</p>
-                            <ul class="account__settings-form-list">
-                                <li class="account__settings-form-item">
-                                    <label class="account__settings-form-radio-label radio__label">
-                                        <input type="checkbox" name="skills" value="female" class="radio__input">
-                                        <span class="radio__span"></span> Beatuy-блог
-                                    </label>
-                                </li>
-                                <li class="account__settings-form-item">
-                                    <label class="account__settings-form-radio-label radio__label">
-                                        <input type="checkbox" name="skills" value="female" class="radio__input">
-                                        <span class="radio__span"></span> Видеоигры
-                                    </label>
-                                </li>
-                                <li class="account__settings-form-item">
-                                    <label class="account__settings-form-radio-label radio__label">
-                                        <input type="checkbox" name="skills" value="female" class="radio__input">
-                                        <span class="radio__span"></span> Образование
-                                    </label>
-                                </li>
-                                <li class="account__settings-form-item">
-                                    <label class="account__settings-form-radio-label radio__label">
-                                        <input type="checkbox" name="skills" value="female" class="radio__input">
-                                        <span class="radio__span"></span> Fashion-блог
-                                    </label>
-                                </li>
-                                <li class="account__settings-form-item">
-                                    <label class="account__settings-form-radio-label radio__label">
-                                        <input type="checkbox" name="skills" value="female" class="radio__input">
-                                        <span class="radio__span"></span> Дети
-                                    </label>
-                                </li>
-                                <li class="account__settings-form-item">
-                                    <label class="account__settings-form-radio-label radio__label">
-                                        <input type="checkbox" name="skills" value="female" class="radio__input">
-                                        <span class="radio__span"></span> Политика
-                                    </label>
-                                </li>
-                            </ul>
-                        </label>
-                    </div>
-                    <button class="account__settings-form-button">Сохранить и обновить</button>
-                </form>
-            </div>
-            <div class="account__settings account__block">
-                <p class="account__settings-title account__block-title">Изменить пароль</p>
-                <form class="account__settings-form">
-
-                    <div class="account__settings-form-block">
-                        <label class="account__settings-form-label">
-                            <input class="account__settings-form-input" type="text" placeholder="Ваш текущий пароль">
-                        </label>
-                        <label class="account__settings-form-label">
-                            <input class="account__settings-form-input" type="text" placeholder="Новый пароль">
-                        </label>
-                    </div>
-                    <button class="account__settings-form-button">Изменить пароль</button>
-                </form>
+            <div class="account__services account__block">
+                <p class="account__services-title account__block-title">Услуги</p>
+                <ul class="account__services-list">
+                    <li class="account__services-item account__services-item--head">
+                        <span class="account__services-item-text">Название услуги</span>
+                        <span class="account__services-item-text">Стоимость</span>
+                    </li>
+                </ul>
+                <ul class="account__services-list">
+                    <li class="account__services-item account__services-item--star">
+                        <span class="account__services-item-text">1 Story</span>
+                        <span class="account__services-item-text account__services-item-text--price">5 грн.</span>
+                        <span class="account__services-item-action">
+                            <span class="account__services-item-action-change">Изменить</span>
+                            <span class="account__services-item-action-remove svg-remove">Удалить</span>
+                        </span>
+                    </li>
+                </ul>
             </div>
         </section>
     </div>

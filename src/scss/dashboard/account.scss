@@ -49,7 +49,7 @@
         }
     }
     &__content {
-        // width: 1013px;
+        width: 100%;
         max-width: 1013px;
         margin-left: 29px;
     }
@@ -199,14 +199,11 @@
             }
         }
     }
-    &__settings {
+    &__block {
         margin-top: 32px;
         background-color: #ffffff;
         padding: 20px 32px;
         border-radius: 15px;
-        &-block {
-
-        }
         &-title {
             font-family: "SF Pro Display", "Arial", sans-serif;
             margin-bottom: 5px;
@@ -217,6 +214,8 @@
             color: #323232;
             margin-top: 16px;
         }
+    }
+    &__settings {
         &-form {
             &-block {
                 display: flex;
@@ -403,6 +402,71 @@
             }
         }
     }
+    &__services {
+        &-list {
+            margin-top: 20px;
+        }
+        &-item {
+            display: flex;
+            width: 100%;
+            padding: 15px 10px;
+            position: relative;
+            &:before {
+                top: 0;
+                left: 0;
+                height: 0;
+                content: '';
+                width: 2px;
+                position: absolute;
+                background-color: #ff5851;
+                transition: height .5s;
+            }
+            &:hover {
+                &:before {
+                    height: 100%;
+                }
+            }
+            &-text {
+                padding: 0 15px;
+                width: 40%;
+                color: #9a9a9a;
+                &--price {
+                    color: #414141;
+                    font-weight: 700;
+                }
+            }
+            &--head {
+                &:before {
+                    display: none;
+                }
+            }
+            &--star {
+                &:after {
+                    top: 5px;
+                    left: 5px;
+                    content: '*';
+                    height: 2px;
+                    width: 2px;
+                    position: absolute;
+                    color: #ff5851;
+                }
+            }
+            &:nth-child(odd) {
+                background-color: #f9f9f9;
+            }
+            &-action {
+                color: #9a9a9a;
+                &-change {
+                    display: block;
+                    cursor: pointer;
+                }
+                &-remove {
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 }
 
 
@@ -434,6 +498,13 @@
                 }
                 &-item {
                     width: 50%;
+                }
+            }
+        }
+        &__services {
+            &-item {
+                &--head {
+                    display: none;
                 }
             }
         }
