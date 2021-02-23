@@ -58,11 +58,18 @@
         background-color: #ffffff;
         padding: 20px 10px 20px 35px;
         border-radius: 15px;
+        &.rating {
+            .account__main-rating {
+                display: block;
+            }
+        }
         &-avatar {
             width: 175px;
             min-width: 175px;
             position: relative;
             &-img {
+                width: 170px;
+                height: 170px;
                 border-radius: 50%;
                 border: 2px solid #74dfce;
                 box-shadow: 0 0 25px 0px rgba(116, 223, 206, 0.5);
@@ -137,6 +144,7 @@
             }
         }
         &-rating {
+            display: none;
             min-width: 100px;
             max-width: 100px;
             &-head {
@@ -490,9 +498,18 @@
                 &--price {
                     display: none;
                 }
+                // &--min {
+                //     width: 20%;
+                // }
             }
             &--head {
-                width: 80%;
+                // width: 80%;
+                .account__services-item-text {
+                    width: 40%;
+                }
+                .account__services-item-text--min {
+                    width: 20%;
+                }
                 &:before {
                     display: none;
                 }

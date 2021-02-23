@@ -4,6 +4,55 @@
 	justify-content: center;
 	align-items: center;
 	background-color: #FFE600;
+	&.entry {
+		.header {
+			&__wrap {
+				justify-content: unset;
+			}
+			&__center {
+				order: 1;
+				display: flex;
+				&-letter {
+					display: block;
+				}
+				&-user {
+					display: flex;
+				}
+			}
+			&__right {
+				margin-left: auto;
+			}
+			&__menu {
+				&-item {
+					&--no_entry {
+						display: none;
+					}
+					&--order {
+						order: -1;
+					}
+					&--entry {
+						display: block;
+					}
+				}
+			}
+			&__login-area {
+				&__button {
+					&--login {
+						display: none;
+					}
+					&--reg {
+						display: none;
+					}
+				}
+				&__burger {
+					margin-right: 32px;
+				}
+			}
+			&__button {
+				display: none;
+			}
+		}
+	}
 
 	&__wrap {
 		display: flex;
@@ -25,6 +74,106 @@
 		display: none;
 		justify-content: center;
 		align-items: center;
+		&-letter {
+			display: none;
+			position: relative;
+			&-counter {
+				right: -8px;
+				top: -7px;
+				font-style: normal;
+				line-height: 20px;
+				background: #ff29ab;
+				min-width: 20px;
+				min-height: 20px;
+				border-radius: 50px;
+				color: #FFF;
+				text-align: center;
+				font-size: 10px;
+				max-width: 20px;
+				max-height: 20px;
+				position: absolute;
+			}
+		}
+		&-user {
+			display: none;
+			align-items: center;
+			margin-left: 20px;
+			position: relative;
+			width: 230px;
+			padding: 14px 40px 14px 12px;
+			cursor: pointer;
+
+			.header__submenu {
+				width: 230px;
+				margin-top: 0;
+				position: absolute;
+				box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.25);
+				&-item {
+					position: relative;
+				}
+				&-link {
+					padding: 11px 20px;
+					line-height: 16px;
+				}
+				&-count {
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 20px;
+					width: 20px;
+					color: #000;
+					font-weight: 700;
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+			&:hover {
+				.header__submenu {
+					display: block;
+				}
+			}
+			&-avatar {
+				width: 60px;
+				height: 60px;
+				&-img {
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+					border: 2px solid #74dfce;
+					box-shadow: 0 0 25px 0 rgba(116, 223, 206, 0.50);
+				}
+			}
+			&-info {
+				margin-left: 10px;
+				width: 105px;
+				overflow: hidden;
+				&-title {
+					color: #323232;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					max-width: 200px;
+					font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 20px;
+    				letter-spacing: 0.5px;
+					white-space: normal;
+					max-height: 40px;
+				}
+				&-text {
+					margin-top: 3px;
+					color: #767676;
+					font-weight: 300;
+					font-size: 13px;
+					font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+    				line-height: 16px;
+					max-width: 200px;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+				}
+			}
+		}
 	}
 	&__logo {
 		display: flex;
@@ -92,6 +241,9 @@
 						display: block;
 					}
 				}
+			}
+			&--entry {
+				display: none;
 			}
 		}
 		&-link {
@@ -439,10 +591,20 @@
 				display: block;
 			}
 		}
+		&__center {
+			&-user {
+				padding-left: 0;
+			}
+		}
+		&.entry {
+			.header__login-area__burger {
+				margin-right: 20px;
+			}
+		}
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 640px) {
 	.header {
 		&__center {
 			display: flex;
@@ -472,6 +634,72 @@
 				border: 2px solid #000;
 			}
 			display: block;
+		}
+		&__menu {
+			width: 104%;
+			left: -2%;
+			padding: 20px;
+			&-link {
+				color: #363636;
+				border: 0;
+				padding: 10px 0;
+				line-height: 30px;
+				font-size: 15px;
+			}
+			&-item {
+				&--submenu::before {
+					background-color: unset;
+					width: 16px;
+					height: 16px;
+					background-size: 16px 16px;
+				}
+			}
+		}
+		&__submenu {
+			border: 0;
+			&-item {
+				border: 0;
+			}
+			&-link {
+				color: #363636;
+				padding: 10px;
+			}
+		}
+		&.entry {
+			.header {
+				&__wrap {
+					justify-content: space-between;
+				}
+				&__center {
+					&-letter {
+						display: none;
+					}
+					&-user {
+						position: unset;
+						width: fit-content;
+						padding: 0;
+						&-info {
+							display: none;
+						}
+						.header__submenu {
+							width: 104%;
+							left: -2%;
+							padding: 20px;
+						}
+						.header__submenu-link {
+							color: #363636;
+							border: 0;
+							padding: 10px 0;
+							line-height: 30px;
+							font-size: 15px;
+						}
+					}
+				}
+				&__right {
+					margin-left: 0;
+				}
+			}
+
 		}
 	}
 }
