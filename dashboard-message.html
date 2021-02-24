@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя рекламная кампания - Личный кабинет BloggerMall</title>
+    <meta name="description" content="Заказывай рекламу у блогеров быстро, эффективно и безопасно ♡ Первая площадка для блогеров и лидеров мнений в Украине!">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Моя рекламная кампания - Личный кабинет BloggerMall">
+    <meta property="og:description" content="Заказывай рекламу у блогеров быстро, эффективно и безопасно ♡ Первая площадка для блогеров и лидеров мнений в Украине!">
+    <meta property="og:url" content="https://www.bloggermall.com.ua/dashboard/">
+    <meta property="og:site_name" content="BloggerMall">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg" href="favicon.svg" sizes="32x32">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="preloader__holder">
+            <div class="preloader__holder-loader"></div>
+        </div>
+    </div>
+
+    <!-- entry -->
+    <header class="header entry">
+        <div class="header__wrap">          
+            <div class="header__left">
+                <a class="header__logo" href="/bloggermall/">
+                    <svg class="header__logo-img" width="180" height="25" viewBox="0 0 550 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.64 30.8C46.84 31.92 49.3467 33.68 51.16 36.08C52.9733 38.4267 53.88 41.28 53.88 44.64C53.88 49.5467 51.9067 53.3333 47.96 56C44.0133 58.6667 38.3067 60 30.84 60H0.6V4H29.24C36.3867 4 41.8267 5.33333 45.56 8C49.2933 10.6133 51.16 14.16 51.16 18.64C51.16 21.3067 50.4933 23.7067 49.16 25.84C47.88 27.92 46.04 29.5733 43.64 30.8ZM16.28 15.44V26.24H27.16C32.4933 26.24 35.16 24.4267 35.16 20.8C35.16 17.2267 32.4933 15.44 27.16 15.44H16.28ZM29.56 48.56C35.1067 48.56 37.88 46.6667 37.88 42.88C37.88 39.0933 35.1067 37.2 29.56 37.2H16.28V48.56H29.56ZM78.2444 60.72C72.911 60.72 68.751 59.36 65.7644 56.64C62.831 53.8667 61.3644 49.92 61.3644 44.8V0.639997H76.5644V44C76.5644 45.6 76.9644 46.8267 77.7644 47.68C78.6177 48.5333 79.791 48.96 81.2844 48.96C82.511 48.96 83.6577 48.6933 84.7244 48.16L85.3644 59.6C83.071 60.3467 80.6977 60.72 78.2444 60.72ZM111.796 60.72C107.156 60.72 102.97 59.76 99.2363 57.84C95.5029 55.92 92.5696 53.2533 90.4362 49.84C88.3563 46.4267 87.3163 42.56 87.3163 38.24C87.3163 33.9733 88.3563 30.1333 90.4362 26.72C92.5696 23.3067 95.4763 20.6667 99.1563 18.8C102.89 16.88 107.103 15.92 111.796 15.92C116.49 15.92 120.703 16.88 124.436 18.8C128.17 20.6667 131.076 23.3067 133.156 26.72C135.236 30.08 136.276 33.92 136.276 38.24C136.276 42.56 135.236 46.4267 133.156 49.84C131.076 53.2533 128.17 55.92 124.436 57.84C120.703 59.76 116.49 60.72 111.796 60.72ZM111.796 48.64C114.463 48.64 116.65 47.7333 118.356 45.92C120.063 44.0533 120.916 41.4933 120.916 38.24C120.916 35.04 120.063 32.5333 118.356 30.72C116.65 28.9067 114.463 28 111.796 28C109.13 28 106.943 28.9067 105.236 30.72C103.53 32.5333 102.676 35.04 102.676 38.24C102.676 41.4933 103.53 44.0533 105.236 45.92C106.943 47.7333 109.13 48.64 111.796 48.64ZM189.958 16.64V52.08C189.958 60.1333 187.771 66.16 183.398 70.16C179.024 74.2133 172.731 76.24 164.518 76.24C160.251 76.24 156.251 75.76 152.518 74.8C148.784 73.84 145.611 72.4267 142.998 70.56L148.518 59.92C150.278 61.36 152.491 62.48 155.158 63.28C157.878 64.1333 160.544 64.56 163.158 64.56C167.158 64.56 170.091 63.68 171.958 61.92C173.824 60.16 174.758 57.5467 174.758 54.08V52.64C171.824 56.0533 167.531 57.76 161.878 57.76C158.038 57.76 154.491 56.9067 151.238 55.2C147.984 53.44 145.398 50.9867 143.478 47.84C141.558 44.64 140.598 40.96 140.598 36.8C140.598 32.6933 141.558 29.0667 143.478 25.92C145.398 22.72 147.984 20.2667 151.238 18.56C154.491 16.8 158.038 15.92 161.878 15.92C168.064 15.92 172.598 17.92 175.478 21.92V16.64H189.958ZM165.478 45.68C168.198 45.68 170.438 44.8533 172.198 43.2C174.011 41.5467 174.918 39.4133 174.918 36.8C174.918 34.1867 174.038 32.08 172.278 30.48C170.518 28.8267 168.251 28 165.478 28C162.704 28 160.411 28.8267 158.598 30.48C156.838 32.08 155.958 34.1867 155.958 36.8C155.958 39.4133 156.864 41.5467 158.678 43.2C160.491 44.8533 162.758 45.68 165.478 45.68ZM246.364 16.64V52.08C246.364 60.1333 244.177 66.16 239.804 70.16C235.43 74.2133 229.137 76.24 220.924 76.24C216.657 76.24 212.657 75.76 208.924 74.8C205.19 73.84 202.017 72.4267 199.404 70.56L204.924 59.92C206.684 61.36 208.897 62.48 211.564 63.28C214.284 64.1333 216.95 64.56 219.564 64.56C223.564 64.56 226.497 63.68 228.364 61.92C230.23 60.16 231.164 57.5467 231.164 54.08V52.64C228.23 56.0533 223.937 57.76 218.284 57.76C214.444 57.76 210.897 56.9067 207.644 55.2C204.39 53.44 201.804 50.9867 199.884 47.84C197.964 44.64 197.004 40.96 197.004 36.8C197.004 32.6933 197.964 29.0667 199.884 25.92C201.804 22.72 204.39 20.2667 207.644 18.56C210.897 16.8 214.444 15.92 218.284 15.92C224.47 15.92 229.004 17.92 231.884 21.92V16.64H246.364ZM221.884 45.68C224.604 45.68 226.844 44.8533 228.604 43.2C230.417 41.5467 231.324 39.4133 231.324 36.8C231.324 34.1867 230.444 32.08 228.684 30.48C226.924 28.8267 224.657 28 221.884 28C219.11 28 216.817 28.8267 215.004 30.48C213.244 32.08 212.364 34.1867 212.364 36.8C212.364 39.4133 213.27 41.5467 215.084 43.2C216.897 44.8533 219.164 45.68 221.884 45.68ZM279.33 49.12C281.41 49.12 283.197 48.8267 284.69 48.24C286.237 47.6533 287.783 46.6933 289.33 45.36L297.25 53.68C293.143 58.3733 287.01 60.72 278.85 60.72C273.783 60.72 269.33 59.76 265.49 57.84C261.65 55.92 258.663 53.2533 256.53 49.84C254.45 46.4267 253.41 42.56 253.41 38.24C253.41 33.9733 254.45 30.16 256.53 26.8C258.61 23.3867 261.463 20.72 265.09 18.8C268.77 16.88 272.877 15.92 277.41 15.92C281.623 15.92 285.463 16.8 288.93 18.56C292.45 20.2667 295.25 22.8 297.33 26.16C299.41 29.4667 300.45 33.4133 300.45 38L269.49 43.92C271.143 47.3867 274.423 49.12 279.33 49.12ZM277.49 26.72C274.877 26.72 272.743 27.5467 271.09 29.2C269.437 30.8 268.503 33.12 268.29 36.16L285.89 32.72C285.357 30.9067 284.343 29.4667 282.85 28.4C281.357 27.28 279.57 26.72 277.49 26.72ZM321.938 21.84C323.485 19.8667 325.485 18.4 327.938 17.44C330.445 16.4267 333.298 15.92 336.498 15.92V29.6C335.111 29.44 333.965 29.36 333.058 29.36C329.805 29.36 327.245 30.24 325.378 32C323.565 33.76 322.658 36.4533 322.658 40.08V60H307.458V16.64H321.938V21.84ZM408.933 2.88C415.546 2.88 420.693 4.85333 424.373 8.8C428.106 12.6933 429.973 18.3467 429.973 25.76V60H414.133V26.24C414.133 22.88 413.253 20.3467 411.493 18.64C409.733 16.88 407.386 16 404.453 16C401.306 16 398.799 16.9333 396.933 18.8C395.119 20.6133 394.213 23.36 394.213 27.04V60H378.373V26.24C378.373 22.88 377.546 20.3467 375.893 18.64C374.293 16.88 372.079 16 369.253 16C366.213 16 363.786 16.9333 361.973 18.8C360.159 20.6133 359.253 23.36 359.253 27.04V60H343.413V4H358.773V10.24C360.479 7.84 362.666 6.02666 365.333 4.8C368.053 3.52 371.199 2.88 374.773 2.88C378.453 2.88 381.653 3.54666 384.373 4.88C387.146 6.21333 389.386 8.16 391.093 10.72C393.013 8.16 395.519 6.21333 398.613 4.88C401.706 3.54666 405.146 2.88 408.933 2.88ZM485.876 16.64V60H471.396V55.68C468.57 59.04 464.303 60.72 458.596 60.72C454.65 60.72 451.05 59.8133 447.796 58C444.596 56.1333 442.036 53.4933 440.116 50.08C438.25 46.6667 437.316 42.72 437.316 38.24C437.316 33.76 438.25 29.84 440.116 26.48C442.036 23.0667 444.596 20.4533 447.796 18.64C451.05 16.8267 454.65 15.92 458.596 15.92C463.716 15.92 467.743 17.4133 470.676 20.4V16.64H485.876ZM461.796 48.64C464.463 48.64 466.65 47.7333 468.356 45.92C470.063 44.0533 470.916 41.4933 470.916 38.24C470.916 35.04 470.063 32.5333 468.356 30.72C466.65 28.9067 464.463 28 461.796 28C459.13 28 456.943 28.9067 455.236 30.72C453.53 32.5333 452.676 35.04 452.676 38.24C452.676 41.4933 453.53 44.0533 455.236 45.92C456.943 47.7333 459.13 48.64 461.796 48.64ZM512.541 60.72C507.208 60.72 503.048 59.36 500.061 56.64C497.128 53.8667 495.661 49.92 495.661 44.8V0.639997H510.861V44C510.861 45.6 511.261 46.8267 512.061 47.68C512.915 48.5333 514.088 48.96 515.581 48.96C516.808 48.96 517.955 48.6933 519.021 48.16L519.661 59.6C517.368 60.3467 514.995 60.72 512.541 60.72ZM541.994 60.72C536.661 60.72 532.501 59.36 529.514 56.64C526.581 53.8667 525.114 49.92 525.114 44.8V0.639997H540.314V44C540.314 45.6 540.714 46.8267 541.514 47.68C542.368 48.5333 543.541 48.96 545.034 48.96C546.261 48.96 547.408 48.6933 548.474 48.16L549.114 59.6C546.821 60.3467 544.448 60.72 541.994 60.72Z" fill="#000000"/>
+                    </svg>                        
+                </a>
+            </div>
+            <div class="header__center">
+                <button class="header__button svg-door jsLoginBlock"></button>
+                <div class="svg-letter header__center-letter">
+                    <span class="svg-letter header__center-letter-counter">99</span>
+                </div>
+                <div class="header__center-user">
+                    <div class="header__center-user-avatar">
+                        <img class="header__center-user-avatar-img" src="img/private-office/avatar_default-min.png" alt="" width="60" height="60">
+                    </div>
+                    <div class="header__center-user-info">
+                        <p class="header__center-user-info-title">Name</p>
+                        <p class="header__center-user-info-text">Блогер</p>
+                    </div>
+                    <ul class="header__submenu">
+                        <li class="header__submenu-item">
+                            <a href="#" class="header__submenu-link">Мои услуги</a>
+                        </li>
+                        <li class="header__submenu-item">
+                            <a href="#" class="header__submenu-link">Сообщения</a>
+                            <span class="header__submenu-count">0</span>
+                        </li>
+                        <li class="header__submenu-item">
+                            <a href="#" class="header__submenu-link">Рекламные кампании</a>
+                        </li>
+                        <li class="header__submenu-item">
+                            <a href="#" class="header__submenu-link">Платежная информация</a>
+                        </li>
+                        <li class="header__submenu-item">
+                            <a href="#" class="header__submenu-link">Instagram-аккаунт</a>
+                        </li>
+                        <li class="header__submenu-item">
+                            <a href="#" class="header__submenu-link">Настройка профиля</a>
+                        </li>
+                        <li class="header__submenu-item">
+                            <a href="#" class="header__submenu-link">Выход</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__right">
+                <ul class="header__menu">
+                    <li class="header__menu-item header__menu-item--no_entry">
+                        <a href="reklamodatelyam.html" class="header__menu-link">Для рекламодателей</a>
+                    </li>
+                    <li class="header__menu-item header__menu-item--no_entry">
+                        <a href="blogeram.html" class="header__menu-link">Для блогеров</a>
+                    </li>
+                    <li class="header__menu-item header__menu-item--submenu jsSubmenuButton">
+                        <a href="#" class="header__menu-link">Полезное</a>
+                        <ul class="header__submenu jsSubmenu">
+                            <li class="header__submenu-item">
+                                <a href="reklamodatelyam.html" class="header__submenu-link">Для рекламодателей</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="blogeram.html" class="header__submenu-link">Для блогеров</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="good-choice.html" class="header__submenu-link">Почему реклама у блогеров?</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="kak-effektivno-rabotat-s-blogerami.html" class="header__submenu-link">Как эффективно работать с блогерами</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="baza_znaniy.html" class="header__submenu-link">Как подготовиться к рекламной кампании?</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item header__menu-item--order">
+                        <a href="search-bloggers.html" class="header__menu-link">Поиск блогеров</a>
+                    </li>
+                    <li class="header__menu-item header__menu-item--entry">
+                        <a href="search-bloggers.html" class="header__menu-link">Мои рекламные кампании</a>
+                    </li>
+                </ul>
+                <div class="header__login-area">
+                    <button class="header__login-area__burger svg-menu jsBurger"></button>
+                    <button class="header__login-area__button header__login-area__button--login jsLoginBlock">Войти</button>
+                    <button class="header__login-area__button header__login-area__button--reg jsRegBlock">Регистрация</button>
+                </div>
+                <div class="header__login hide">
+                    <form class="header__login-form jsLoginForm">
+                        <div class="header__login-header">Вход в личный кабинет</div>
+                        <input id="login-email" type="text" name="username" class="header__login-input" placeholder="Электронная почта">
+                        <input id="login-pass" type="password" name="password" class="header__login-input" placeholder="Пароль">
+                        <div class="header__login-form-row">
+                            <div class="header__login-form-row-left">
+                                <input type="checkbox" class="header__login-checkbox" name="rememberme" id="rememberme">
+                                <label for="rememberme" class="header__login-checkbox-label">Запомнить меня</label>
+                            </div>
+                            <div class="header__login-form-row-right">
+                                <button type="button" class="header__login-button header__login-button--forgot-pass jsForgotPass">Сбросить пароль</button>
+                            </div>
+                        </div>
+                        <button type="submit" class="header__login-button header__login-button--login jsLogin">Войти</button>
+                        <button type="button" class="header__login-button header__login-button--reg jsRegBlock">Регистрация</button>
+                    </form>
+                    <form class="header__login-form jsForgotPassForm hide">
+                        <div class="header__login-header">Сбросить пароль</div>
+                        <input id="forgot-email" type="text" name="username" class="header__login-input" placeholder="Электронная почта">
+                        <button type="submit" class="header__login-button header__login-button--login jsForgotPass">Сбросить пароль</button>
+                        <div class="header__login-form-row">
+                            <button type="button" class="header__login-button header__login-button--forgot-login jsLoginBlock">Войти</button>
+                            <button type="button" class="header__login-button header__login-button--forgot-reg jsRegBlock">Регистрация</button>
+                        </div>
+                    </form>
+                    <div class="header__login-close jsCloseLoginBlock">×</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- in console -> sticky.alert('text') / sticky.alert('text','ok') -->
+    <div class="sticky"></div>
+
+<div class="account">
+    <div class="account__wrap">
+        <asside class="account__aside">
+            <ul class="account__menu">
+                <li class="account__menu-item">
+                    <a href="#" class="account__menu-link">Мои услуги</a>
+                </li>
+                <li class="account__menu-item active">
+                    <a href="#" class="account__menu-link">Сообщения</a>
+                    <span class="account__menu-count">0</span>
+                </li>
+                <li class="account__menu-item">
+                    <a href="#" class="account__menu-link">Рекламные кампании</a>
+                </li>
+                <li class="account__menu-item">
+                    <a href="#" class="account__menu-link">Платежная информация</a>
+                </li>
+                <li class="account__menu-item">
+                    <a href="#" class="account__menu-link">Instagram-аккаунт</a>
+                </li>
+                <li class="account__menu-item">
+                    <a href="#" class="account__menu-link">Настройки профиля</a>
+                </li>
+                <li class="account__menu-item">
+                    <a href="#" class="account__menu-link">Выход</a>
+                </li>
+            </ul>
+        </asside>
+        <section class="account__content">
+            <!-- rating -->
+            <div class="account__main rating">
+                <div class="account__main-avatar online">
+                    <img class="account__main-avatar-img" src="img/private-office/avatar_default.png" alt="" width="170" height="170">
+                    <div class="account__main-avatar-online">
+                        <span>Online</span>
+                    </div>
+                </div>
+                <div class="account__main-info">
+                    <p class="account__main-info-name">Name</p>
+                    <div class="account__status">
+                        <div class="account__status-alert">
+                            <p class="account__status-alert-title">Вы не отображаетесь в списке блогеров!</p>
+                            <p class="account__status-alert-text">Для отображения в списке выполните следующие шаги:</p>
+                        </div>
+                        <ul class="account__status-list">
+                            <li class="account__status-list-item">
+                                <span class="account__status-list-item-text">Поделитесь статистикой Instagram аккаунта</span>
+                                <a class="account__status-list-item-link" href="#">Поделиться</a>
+                            </li>
+                            <li class="account__status-list-item">
+                                <span class="account__status-list-item-text">Укажите цены для 3х основных услуг.</span>
+                                <a class="account__status-list-item-link" href="#">Указать</a>
+                            </li>
+                            <li class="account__status-list-item">
+                                <span class="account__status-list-item-text">Укажите номер карты для выплат</span>
+                                <a class="account__status-list-item-link" href="#">Указать</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="account__main-rating">
+                    <div class="account__main-rating-head">
+                        <p class="account__main-rating-head-text svg-star">Отзыв/ов: 30</p>
+                    </div>
+                    <div class="account__main-rating-image">
+                        <div class="account__main-rating-chart">
+                            <svg class="account__main-rating-chart-svg" width="100px" height="100px" viewBox="0 0 120 120">
+                                <circle cx="60" cy="60" r="50" fill="#fff"></circle>
+                                <circle data-percent="72" cx="60" cy="60" r="50" fill="transparent" stroke="#ffe500" style="stroke-width: 20px; stroke-dasharray: 226.195, 87.9646; stroke-dashoffset: 78.5398px;"></circle>
+                                <circle data-percent="28" cx="60" cy="60" r="50" fill="transparent" stroke="#b3b0af" style="stroke-width: 20px; stroke-dasharray: 87.9646, 226.195; stroke-dashoffset: -147.655px;"></circle>
+                            </svg>
+                            <div class="account__main-rating-info">
+                                <p class="account__main-rating-info-title">72%</p>
+                                <p class="account__main-rating-info-text">Рейтинг</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- active -->
+            <div class="account__message account__block active">
+                <div class="account__message-head">
+                    <p class="account__message-title account__block-title">Сообщения</p>
+                    <p class="account__message-text">Всего переписок: <span>3</span></p>
+                    <input type="text" class="account__message-find" placeholder="Начните вводить имя...">
+                </div>
+                <div class="account__message-wrap">
+                    <div class="account__message-content">
+                        <div class="account__message-content-empty">
+                            <img class="account__message-content-empty-img" src="img/private-office/message.png" alt="" width="216" height="204">
+                            <p class="account__message-content-empty-text">Нет сообщении</p>
+                        </div>
+                        <div class="account__message-content-list">
+                            <div class="account__message-content-item account__message-content-item--head">
+                                <div class="account__message-content-item-sender">Отправитель</div>
+                                <div class="account__message-content-item-service">Название услуги</div>
+                                <div class="account__message-content-item-new">Новые сообщения</div>
+                                <div class="account__message-content-item-date">Дата начала РК</div>
+                            </div>
+                            <!-- active-message -->
+                            <div class="account__message-content-item">
+                                <div class="account__message-content-item-sender">
+                                    <!-- online active -->
+                                    <div class="account__message-content-item-sender-avatar online">
+                                        <img class="account__message-content-item-sender-img" src="img/private-office/avatar_default-min.png" alt="" width="60" height="60">
+                                        <div class="account__message-content-item-sender-indicator"></div>
+                                        <span class="account__message-content-item-sender-status">Онлайн</span>
+                                    </div>
+                                    <div class="account__message-content-item-sender-info">
+                                        <p class="account__message-content-item-sender-text">Name</p>
+                                    </div>
+                                </div>
+                                <div class="account__message-content-item-service">Screen профиля</div>
+                                <div class="account__message-content-item-new">
+                                    <span class="account__message-content-item-new-counter">0</span>
+                                </div>
+                                <div class="account__message-content-item-date">27.01.2021</div>
+                            </div>
+                            <!-- active-message -->
+                            <div class="account__message-content-item active-message">
+                                <div class="account__message-content-item-sender">
+                                    <!-- online -->
+                                    <div class="account__message-content-item-sender-avatar online">
+                                        <img class="account__message-content-item-sender-img" src="img/private-office/avatar_default-min.png" alt="" width="60" height="60">
+                                        <div class="account__message-content-item-sender-indicator"></div>
+                                        <span class="account__message-content-item-sender-status">Онлайн</span>
+                                    </div>
+                                    <div class="account__message-content-item-sender-info">
+                                        <p class="account__message-content-item-sender-text">Name</p>
+                                    </div>
+                                </div>
+                                <div class="account__message-content-item-service">Giveaway</div>
+                                <div class="account__message-content-item-new">
+                                    <span class="account__message-content-item-new-counter">1</span>
+                                </div>
+                                <div class="account__message-content-item-date">07.01.2021</div>
+                            </div>
+                            <!-- active-message -->
+                            <div class="account__message-content-item active-message">
+                                <div class="account__message-content-item-sender">
+                                    <!-- online -->
+                                    <div class="account__message-content-item-sender-avatar">
+                                        <img class="account__message-content-item-sender-img" src="img/private-office/avatar_default-min.png" alt="" width="60" height="60">
+                                        <div class="account__message-content-item-sender-indicator"></div>
+                                        <span class="account__message-content-item-sender-status">Офлайн</span>
+                                    </div>
+                                    <div class="account__message-content-item-sender-info">
+                                        <p class="account__message-content-item-sender-text">Name</p>
+                                    </div>
+                                </div>
+                                <div class="account__message-content-item-service">1 Story</div>
+                                <div class="account__message-content-item-new">
+                                    <span class="account__message-content-item-new-counter">2</span>
+                                </div>
+                                <div class="account__message-content-item-date">12.01.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer__wrap">
+        <div class="footer__row">
+            <div class="footer__left">
+                <a class="footer__logo" href="/bloggermall/">
+                    <svg class="footer__logo-img" width="180" height="25" viewBox="0 0 550 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M43.64 30.8C46.84 31.92 49.3467 33.68 51.16 36.08C52.9733 38.4267 53.88 41.28 53.88 44.64C53.88 49.5467 51.9067 53.3333 47.96 56C44.0133 58.6667 38.3067 60 30.84 60H0.6V4H29.24C36.3867 4 41.8267 5.33333 45.56 8C49.2933 10.6133 51.16 14.16 51.16 18.64C51.16 21.3067 50.4933 23.7067 49.16 25.84C47.88 27.92 46.04 29.5733 43.64 30.8ZM16.28 15.44V26.24H27.16C32.4933 26.24 35.16 24.4267 35.16 20.8C35.16 17.2267 32.4933 15.44 27.16 15.44H16.28ZM29.56 48.56C35.1067 48.56 37.88 46.6667 37.88 42.88C37.88 39.0933 35.1067 37.2 29.56 37.2H16.28V48.56H29.56ZM78.2444 60.72C72.911 60.72 68.751 59.36 65.7644 56.64C62.831 53.8667 61.3644 49.92 61.3644 44.8V0.639997H76.5644V44C76.5644 45.6 76.9644 46.8267 77.7644 47.68C78.6177 48.5333 79.791 48.96 81.2844 48.96C82.511 48.96 83.6577 48.6933 84.7244 48.16L85.3644 59.6C83.071 60.3467 80.6977 60.72 78.2444 60.72ZM111.796 60.72C107.156 60.72 102.97 59.76 99.2363 57.84C95.5029 55.92 92.5696 53.2533 90.4362 49.84C88.3563 46.4267 87.3163 42.56 87.3163 38.24C87.3163 33.9733 88.3563 30.1333 90.4362 26.72C92.5696 23.3067 95.4763 20.6667 99.1563 18.8C102.89 16.88 107.103 15.92 111.796 15.92C116.49 15.92 120.703 16.88 124.436 18.8C128.17 20.6667 131.076 23.3067 133.156 26.72C135.236 30.08 136.276 33.92 136.276 38.24C136.276 42.56 135.236 46.4267 133.156 49.84C131.076 53.2533 128.17 55.92 124.436 57.84C120.703 59.76 116.49 60.72 111.796 60.72ZM111.796 48.64C114.463 48.64 116.65 47.7333 118.356 45.92C120.063 44.0533 120.916 41.4933 120.916 38.24C120.916 35.04 120.063 32.5333 118.356 30.72C116.65 28.9067 114.463 28 111.796 28C109.13 28 106.943 28.9067 105.236 30.72C103.53 32.5333 102.676 35.04 102.676 38.24C102.676 41.4933 103.53 44.0533 105.236 45.92C106.943 47.7333 109.13 48.64 111.796 48.64ZM189.958 16.64V52.08C189.958 60.1333 187.771 66.16 183.398 70.16C179.024 74.2133 172.731 76.24 164.518 76.24C160.251 76.24 156.251 75.76 152.518 74.8C148.784 73.84 145.611 72.4267 142.998 70.56L148.518 59.92C150.278 61.36 152.491 62.48 155.158 63.28C157.878 64.1333 160.544 64.56 163.158 64.56C167.158 64.56 170.091 63.68 171.958 61.92C173.824 60.16 174.758 57.5467 174.758 54.08V52.64C171.824 56.0533 167.531 57.76 161.878 57.76C158.038 57.76 154.491 56.9067 151.238 55.2C147.984 53.44 145.398 50.9867 143.478 47.84C141.558 44.64 140.598 40.96 140.598 36.8C140.598 32.6933 141.558 29.0667 143.478 25.92C145.398 22.72 147.984 20.2667 151.238 18.56C154.491 16.8 158.038 15.92 161.878 15.92C168.064 15.92 172.598 17.92 175.478 21.92V16.64H189.958ZM165.478 45.68C168.198 45.68 170.438 44.8533 172.198 43.2C174.011 41.5467 174.918 39.4133 174.918 36.8C174.918 34.1867 174.038 32.08 172.278 30.48C170.518 28.8267 168.251 28 165.478 28C162.704 28 160.411 28.8267 158.598 30.48C156.838 32.08 155.958 34.1867 155.958 36.8C155.958 39.4133 156.864 41.5467 158.678 43.2C160.491 44.8533 162.758 45.68 165.478 45.68ZM246.364 16.64V52.08C246.364 60.1333 244.177 66.16 239.804 70.16C235.43 74.2133 229.137 76.24 220.924 76.24C216.657 76.24 212.657 75.76 208.924 74.8C205.19 73.84 202.017 72.4267 199.404 70.56L204.924 59.92C206.684 61.36 208.897 62.48 211.564 63.28C214.284 64.1333 216.95 64.56 219.564 64.56C223.564 64.56 226.497 63.68 228.364 61.92C230.23 60.16 231.164 57.5467 231.164 54.08V52.64C228.23 56.0533 223.937 57.76 218.284 57.76C214.444 57.76 210.897 56.9067 207.644 55.2C204.39 53.44 201.804 50.9867 199.884 47.84C197.964 44.64 197.004 40.96 197.004 36.8C197.004 32.6933 197.964 29.0667 199.884 25.92C201.804 22.72 204.39 20.2667 207.644 18.56C210.897 16.8 214.444 15.92 218.284 15.92C224.47 15.92 229.004 17.92 231.884 21.92V16.64H246.364ZM221.884 45.68C224.604 45.68 226.844 44.8533 228.604 43.2C230.417 41.5467 231.324 39.4133 231.324 36.8C231.324 34.1867 230.444 32.08 228.684 30.48C226.924 28.8267 224.657 28 221.884 28C219.11 28 216.817 28.8267 215.004 30.48C213.244 32.08 212.364 34.1867 212.364 36.8C212.364 39.4133 213.27 41.5467 215.084 43.2C216.897 44.8533 219.164 45.68 221.884 45.68ZM279.33 49.12C281.41 49.12 283.197 48.8267 284.69 48.24C286.237 47.6533 287.783 46.6933 289.33 45.36L297.25 53.68C293.143 58.3733 287.01 60.72 278.85 60.72C273.783 60.72 269.33 59.76 265.49 57.84C261.65 55.92 258.663 53.2533 256.53 49.84C254.45 46.4267 253.41 42.56 253.41 38.24C253.41 33.9733 254.45 30.16 256.53 26.8C258.61 23.3867 261.463 20.72 265.09 18.8C268.77 16.88 272.877 15.92 277.41 15.92C281.623 15.92 285.463 16.8 288.93 18.56C292.45 20.2667 295.25 22.8 297.33 26.16C299.41 29.4667 300.45 33.4133 300.45 38L269.49 43.92C271.143 47.3867 274.423 49.12 279.33 49.12ZM277.49 26.72C274.877 26.72 272.743 27.5467 271.09 29.2C269.437 30.8 268.503 33.12 268.29 36.16L285.89 32.72C285.357 30.9067 284.343 29.4667 282.85 28.4C281.357 27.28 279.57 26.72 277.49 26.72ZM321.938 21.84C323.485 19.8667 325.485 18.4 327.938 17.44C330.445 16.4267 333.298 15.92 336.498 15.92V29.6C335.111 29.44 333.965 29.36 333.058 29.36C329.805 29.36 327.245 30.24 325.378 32C323.565 33.76 322.658 36.4533 322.658 40.08V60H307.458V16.64H321.938V21.84ZM408.933 2.88C415.546 2.88 420.693 4.85333 424.373 8.8C428.106 12.6933 429.973 18.3467 429.973 25.76V60H414.133V26.24C414.133 22.88 413.253 20.3467 411.493 18.64C409.733 16.88 407.386 16 404.453 16C401.306 16 398.799 16.9333 396.933 18.8C395.119 20.6133 394.213 23.36 394.213 27.04V60H378.373V26.24C378.373 22.88 377.546 20.3467 375.893 18.64C374.293 16.88 372.079 16 369.253 16C366.213 16 363.786 16.9333 361.973 18.8C360.159 20.6133 359.253 23.36 359.253 27.04V60H343.413V4H358.773V10.24C360.479 7.84 362.666 6.02666 365.333 4.8C368.053 3.52 371.199 2.88 374.773 2.88C378.453 2.88 381.653 3.54666 384.373 4.88C387.146 6.21333 389.386 8.16 391.093 10.72C393.013 8.16 395.519 6.21333 398.613 4.88C401.706 3.54666 405.146 2.88 408.933 2.88ZM485.876 16.64V60H471.396V55.68C468.57 59.04 464.303 60.72 458.596 60.72C454.65 60.72 451.05 59.8133 447.796 58C444.596 56.1333 442.036 53.4933 440.116 50.08C438.25 46.6667 437.316 42.72 437.316 38.24C437.316 33.76 438.25 29.84 440.116 26.48C442.036 23.0667 444.596 20.4533 447.796 18.64C451.05 16.8267 454.65 15.92 458.596 15.92C463.716 15.92 467.743 17.4133 470.676 20.4V16.64H485.876ZM461.796 48.64C464.463 48.64 466.65 47.7333 468.356 45.92C470.063 44.0533 470.916 41.4933 470.916 38.24C470.916 35.04 470.063 32.5333 468.356 30.72C466.65 28.9067 464.463 28 461.796 28C459.13 28 456.943 28.9067 455.236 30.72C453.53 32.5333 452.676 35.04 452.676 38.24C452.676 41.4933 453.53 44.0533 455.236 45.92C456.943 47.7333 459.13 48.64 461.796 48.64ZM512.541 60.72C507.208 60.72 503.048 59.36 500.061 56.64C497.128 53.8667 495.661 49.92 495.661 44.8V0.639997H510.861V44C510.861 45.6 511.261 46.8267 512.061 47.68C512.915 48.5333 514.088 48.96 515.581 48.96C516.808 48.96 517.955 48.6933 519.021 48.16L519.661 59.6C517.368 60.3467 514.995 60.72 512.541 60.72ZM541.994 60.72C536.661 60.72 532.501 59.36 529.514 56.64C526.581 53.8667 525.114 49.92 525.114 44.8V0.639997H540.314V44C540.314 45.6 540.714 46.8267 541.514 47.68C542.368 48.5333 543.541 48.96 545.034 48.96C546.261 48.96 547.408 48.6933 548.474 48.16L549.114 59.6C546.821 60.3467 544.448 60.72 541.994 60.72Z" fill="#ffffff"/>
+                    </svg>                        
+                </a>
+                <p class="footer__description footer__text">BloggerMall — платформа для работы с блогерами</p>
+                <div class="footer__pay">
+                    <img class="footer__pay-img" src="img/main/pay.png" width="192" height="38" alt="">
+                </div>
+            </div>
+            <div class="footer__items">
+                <div class="footer__item">
+                    <h3 class="footer__item-title">Навигация</h3>
+                    <ul class="footer__item-list">
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="baza_znaniy.html">Как подготовиться к рекламной кампании?</a>
+                        </li>
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="blogeram.html">Для блогеров</a>
+                        </li>
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="reklamodatelyam.html">Для рекламодателей</a>
+                        </li>
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="good-choice.html">Почему реклама у блогеров?</a>
+                        </li>
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="kak-effektivno-rabotat-s-blogerami.html">Как работать с блогерами</a>
+                        </li>
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="search-bloggers.html">Поиск блогеров</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__item--center">
+                    <h3 class="footer__item-title">Предложения</h3>
+                    <ul class="footer__item-list">
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="#">Для блогеров</a>
+                        </li>
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="#">Для рекламодателей</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item footer__item--work">
+                    <h3 class="footer__item-title">Работа с нами</h3>
+                    <ul class="footer__item-list">
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="#">Регистрация</a>
+                        </li>
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="search-bloggers.html">Блогеры</a>
+                        </li>
+                        <li class="footer__item-li">
+                            <a class="footer__item-link" href="oferta.html">Публичная оферта</a>
+                        </li>
+                    </ul>
+                    <div class="footer__social">
+                        <a href="https://www.facebook.com/bloggermall/" class="footer__social svg-facebook footer__social-facebook"></a>
+                        <a href="https://www.instagram.com/bloggermall.com.ua/" class="footer__social svg-instagram footer__social-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright-text footer__copyright-copy">Copyright &copy; 2020-2021 The Bloggermall</p>
+            <p class="footer__copyright-text footer__copyright-right">All Right Reserved</p>
+        </div>
+    </div>
+</footer>
+
+<div class="up">
+    <svg class="up__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+        <path d="M150,0C67.157,0,0,67.157,0,150c0,82.841,67.157,150,150,150s150-67.159,150-150C300,67.157,232.843,0,150,0z M195.708,160.159c-0.731,0.731-1.533,1.349-2.368,1.886l-56.295,56.295c-2.734,2.736-6.318,4.103-9.902,4.103 s-7.166-1.367-9.902-4.103c-5.47-5.47-5.47-14.34,0-19.808l48.509-48.516l-48.265-48.265c-5.47-5.473-5.47-14.34,0-19.808 c5.47-5.47,14.338-5.467,19.808-0.003l56.046,56.043c0.835,0.537,1.637,1.154,2.365,1.886c2.796,2.796,4.145,6.479,4.082,10.146 C199.852,153.68,198.506,157.361,195.708,160.159z"/>
+    </svg>
+</div>
+
+<div class="phone">
+    <svg class="phone__svg jsCall" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <path d="M436.992,74.953c-99.989-99.959-262.08-99.935-362.039,0.055s-99.935,262.08,0.055,362.039s262.08,99.935,362.039-0.055 c48.006-48.021,74.968-113.146,74.953-181.047C511.986,188.055,485.005,122.951,436.992,74.953z M387.703,356.605 c-0.011,0.011-0.022,0.023-0.034,0.034v-0.085l-12.971,12.885c-16.775,16.987-41.206,23.976-64.427,18.432 c-23.395-6.262-45.635-16.23-65.877-29.525c-18.806-12.019-36.234-26.069-51.968-41.899 c-14.477-14.371-27.483-30.151-38.827-47.104c-12.408-18.242-22.229-38.114-29.184-59.051 c-7.973-24.596-1.366-51.585,17.067-69.717l15.189-15.189c4.223-4.242,11.085-4.257,15.326-0.034 c0.011,0.011,0.023,0.022,0.034,0.034l47.957,47.957c4.242,4.223,4.257,11.085,0.034,15.326c-0.011,0.011-0.022,0.022-0.034,0.034 l-28.16,28.16c-8.08,7.992-9.096,20.692-2.389,29.867c10.185,13.978,21.456,27.131,33.707,39.339 c13.659,13.718,28.508,26.197,44.373,37.291c9.167,6.394,21.595,5.316,29.525-2.56l27.221-27.648 c4.223-4.242,11.085-4.257,15.326-0.034c0.011,0.011,0.022,0.022,0.034,0.034l48.043,48.128 C391.911,345.502,391.926,352.363,387.703,356.605z"/>
+    </svg>
+</div>
+
+<!-- modal--start / modal--blog / modal--blog-2 / modal--blog-3 / modal--rek / modal--rek-2 / modal--phone -->
+<div class="modal hide modal--start">
+
+<div class="modal__body hide">
+    
+    <div class="modal__body-start">
+        <h3 class="modal__body-start-title">Зарегистрироваться как</h3>
+            <div class="modal__body-start-buttons">
+                <div class="modal__body-start-button modal__body-start-button--blog">
+                    <p class="modal__body-start-text">Блогер</p>
+                    <p class="modal__body-start-text">* <span class="modal__body-start-text modal__body-start-text--desc">от 3000 подписчиков</p>
+                </div>
+                <div class="modal__body-start-button  modal__body-start-button--rek">
+                    <p class="modal__body-start-text">Рекламодатель</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__body-blog">
+            <div class="modal__body-blog-head">
+                <h3 class="modal__body-blog-title">Регистрация блогера</h3>
+            </div>
+            <div class="modal__body-blog-content">
+                <p class="modal__body-blog-content-text">Шаг 1 из 4</p>
+                <div class="modal__body-blog-content-progress">
+                    <div class="modal__body-blog-content-progress-bar" style="width: 25%;"></div>
+                </div>
+                <form class="modal__body-blog-content-form">
+                    <div class="modal__body-blog-content-form-row">
+                        <label class="modal__body-blog-content-form-label">
+                            <p class="modal__body-blog-content-form-text required">Имя</p>
+                            <input class="modal__body-blog-content-form-input" type="text">
+                        </label>
+                        <label class="modal__body-blog-content-form-label">
+                            <p class="modal__body-blog-content-form-text required">E-mail</p>
+                            <input class="modal__body-blog-content-form-input" type="text">
+                        </label>
+                        <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                            <p class="modal__body-blog-content-form-text required">Пароль</p>
+                            <div class="modal__body-blog-content-form-for_svg">
+                                <input class="modal__body-blog-content-form-input" type="password">
+                                <div class="modal__body-blog-content-form-svg svg-modal-eye"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <button class="modal__body-blog-content-form-button">Далее</button>
+                </form>
+                <form class="modal__body-blog-content-form-2">
+                    <div class="modal__body-blog-content-form-row">
+                        <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                            <p class="modal__body-blog-content-form-text required">Телефон</p>
+                            <input class="modal__body-blog-content-form-input" type="text" placeholder="Номер телефона">
+                        </label>
+                        <label class="modal__body-blog-content-form-label">
+                            <p class="modal__body-blog-content-form-text required">Город</p>
+                                <!-- open -->
+                            <div class="modal__body-blog-content-form-select select">
+                                <input class="select__input" type="hidden" name="">
+                                <div class="select__head"><span>Выберите местоположение</span></div>
+                                <div class="select__container">
+                                    <div class="select__search">
+                                        <input type="text" class="select__search-input">
+                                    </div>
+
+                                    <ul class="select__list">
+                                        <li class="select__item active">Выберите местоположение</li>
+                                        <li class="select__item">Город 1</li>
+                                        <li class="select__item">Город 2</li>
+                                        <li class="select__item">Город 3</li>
+                                        <li class="select__item">Город 4</li>
+                                        <li class="select__item">Город 5</li>
+                                        <li class="select__item">Город 6</li>
+                                        <li class="select__item">Город 7</li>
+                                        <li class="select__item">Город 8</li>
+                                        <li class="select__item">Город 9</li>
+                                        <li class="select__item">Город 10</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="modal__body-blog-content-form-label">
+                            <p class="modal__body-blog-content-form-text required">Пол</p>
+                            <div class="modal__body-blog-content-row">
+                                <label class="modal__body-blog-content-form-radio-label radio__label">
+                                    <input type="radio" name="gender" value="male" class="radio__input">
+                                    <span class="radio__span"></span> Муж
+                                </label>
+                                <label class="modal__body-blog-content-form-radio-label radio__label">
+                                    <input type="radio" name="gender" value="female" class="radio__input">
+                                    <span class="radio__span"></span> Жен
+                                </label>
+                            </div>
+                        </label>
+                        <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                            <p class="modal__body-blog-content-form-text required">Тематики блога (не более 3х)</p>
+                            <ul class="modal__body-blog-content-list">
+                                <li class="modal__body-blog-content-item">
+                                    <label class="modal__body-blog-content-form-radio-label radio__label">
+                                        <input type="checkbox" name="skills" value="female" class="radio__input">
+                                        <span class="radio__span"></span> Beatuy-блог
+                                    </label>
+                                </li>
+                                <li class="modal__body-blog-content-item">
+                                    <label class="modal__body-blog-content-form-radio-label radio__label">
+                                        <input type="checkbox" name="skills" value="female" class="radio__input">
+                                        <span class="radio__span"></span> Видеоигры
+                                    </label>
+                                </li>
+                                <li class="modal__body-blog-content-item">
+                                    <label class="modal__body-blog-content-form-radio-label radio__label">
+                                        <input type="checkbox" name="skills" value="female" class="radio__input">
+                                        <span class="radio__span"></span> Образование
+                                    </label>
+                                </li>
+                                <li class="modal__body-blog-content-item">
+                                    <label class="modal__body-blog-content-form-radio-label radio__label">
+                                        <input type="checkbox" name="skills" value="female" class="radio__input">
+                                        <span class="radio__span"></span> Fashion-блог
+                                    </label>
+                                </li>
+                                <li class="modal__body-blog-content-item">
+                                    <label class="modal__body-blog-content-form-radio-label radio__label">
+                                        <input type="checkbox" name="skills" value="female" class="radio__input">
+                                        <span class="radio__span"></span> Дети
+                                    </label>
+                                </li>
+                                <li class="modal__body-blog-content-item">
+                                    <label class="modal__body-blog-content-form-radio-label radio__label">
+                                        <input type="checkbox" name="skills" value="female" class="radio__input">
+                                        <span class="radio__span"></span> Политика
+                                    </label>
+                                </li>
+                            </ul>
+                        </label>
+                        <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                            <p class="modal__body-blog-content-form-text required">Описание блога</p>
+                            <textarea class="modal__body-blog-content-form-textarea"></textarea>
+                        </label>
+                        <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
+                            <p class="modal__body-blog-content-form-text required">Что не рекламируете</p>
+                            <textarea class="modal__body-blog-content-form-textarea"></textarea>
+                        </label>
+                        <div class="modal__body-blog-content-form-final">
+                            <label class="modal__body-blog-content-form-radio-label radio__label">
+                                <input type="checkbox" name="skills" value="female" class="radio__input">
+                                <span class="radio__span"></span> Я соглашаюсь с </span><a href="https://www.bloggermall.com.ua/privacy-policy/" target="_blank">Пользовательским соглашением.</a>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="modal__body-blog-content-form-button">Далее</button>
+                </form>
+                <form class="modal__body-blog-content-form-3">
+                    <h4 class="modal__body-blog-content-title">Укажите номер карты для выплат</h4>
+                    <div class="modal__body-blog-content-card">
+                        <div class="modal__body-blog-content-card-row">
+                            <!-- modal__body-blog-content-card-label--error -->
+                            <label class="modal__body-blog-content-card-label">
+                                <input class="modal__body-blog-content-card-input" type="text" maxlength="19" placeholder="Введіть номер картки">
+                                <div class="modal__body-blog-content-card-cross svg-card-cross"></div>
+                                <p class="modal__body-blog-content-card-text modal__body-blog-content-card-text--error">Неправильний номер картки</p>
+                            </label>
+                            <!-- svg-card-visa / svg-card-mastercard -->
+                            <div class="modal__body-blog-content-card-svg svg-card-visa"></div>
+                        </div>
+                        <div class="modal__body-blog-content-card-description">
+                            <p class="modal__body-blog-content-card-description-text">За підтримки</p>
+                            <div class="modal__body-blog-content-card-description-img"></div>
+                        </div>
+                    </div>
+                    <button class="modal__body-blog-content-form-button">Сохранить карту</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal__body-rek">
+            <div class="modal__body-rek-head">
+                <h3 class="modal__body-rek-title">Регистрация рекламодателя</h3>
+            </div>
+            <div class="modal__body-rek-content">
+                <p class="modal__body-rek-content-text">Шаг 1 из 2</p>
+                <div class="modal__body-rek-content-progress">
+                    <div class="modal__body-rek-content-progress-bar" style="width: 50%;"></div>
+                </div>
+                <form class="modal__body-rek-content-form">
+                    <div class="modal__body-rek-content-form-row">
+                        <label class="modal__body-rek-content-form-label">
+                            <p class="modal__body-rek-content-form-text required">Имя</p>
+                            <input class="modal__body-rek-content-form-input" type="text">
+                        </label>
+                        <label class="modal__body-rek-content-form-label">
+                            <p class="modal__body-rek-content-form-text required">E-mail</p>
+                            <input class="modal__body-rek-content-form-input" type="text">
+                        </label>
+                        <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                            <p class="modal__body-rek-content-form-text required">Пароль</p>
+                            <div class="modal__body-rek-content-form-for_svg">
+                                <input class="modal__body-rek-content-form-input" type="password">
+                                <div class="modal__body-rek-content-form-svg svg-modal-eye"></div>
+                            </div>
+                        </label>
+                    </div>
+                    <button class="modal__body-rek-content-form-button">Далее</button>
+                </form>
+                <form class="modal__body-rek-content-form-2">
+                    <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                        <p class="modal__body-rek-content-form-text required">Кто вы?</p>
+                        <div class="modal__body-rek-content-row">
+                            <label class="modal__body-rek-content-form-radio-label radio__label">
+                                <input type="radio" name="employer_type" value="brand" class="radio__input" checked="checked">
+                                <span class="radio__span"></span> Бренд
+                            </label>
+                            <label class="modal__body-rek-content-form-radio-label radio__label">
+                                <input type="radio" name="employer_type" value="agency" class="radio__input">
+                                <span class="radio__span"></span> Агенство
+                            </label>
+                        </div>
+                    </label>
+
+                    <div class="modal__body-rek-content-form-row">
+                        <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                            <p class="modal__body-rek-content-form-text required">Название бренда/агентства</p>
+                            <input class="modal__body-rek-content-form-input" type="text">
+                        </label>
+                        <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                            <p class="modal__body-rek-content-form-text required">Ваш сайт/инстаграм</p>
+                            <input class="modal__body-rek-content-form-input" type="text">
+                        </label>
+                        <label class="modal__body-rek-content-form-label modal__body-rek-content-form-label--full">
+                            <p class="modal__body-rek-content-form-text required">Телефон</p>
+                            <input class="modal__body-rek-content-form-input" type="text" placeholder="Номер телефона">
+                        </label>
+                        <div class="modal__body-rek-content-form-final">
+                            <label class="modal__body-rek-content-form-radio-label radio__label">
+                                <input type="checkbox" name="skills" value="female" class="radio__input">
+                                <span class="radio__span"></span> Условия <a href="https://www.bloggermall.com.ua/privacy-policy/" target="_blank">оферты</a> мною прочитаны, поняты и приняты.</span>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="modal__body-rek-content-form-button">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+
+        <form class="modal__body-phone">
+            <div class="modal__header">Заказать звонок</div>
+            <input id="call-name" type="text" name="username" class="modal__input" placeholder="Ваше имя">
+            <input id="call-phone" type="text" name="password" class="modal__input" placeholder="Ваш телефон">
+            <button type="submit" class="modal__button">Отправить</button>
+        </form>
+
+        <div class="modal__close jsCloseLoginBlock">×</div>
+    </div>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="js/sticky.js"></script>
+</body>
+</html>
