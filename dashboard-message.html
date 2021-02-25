@@ -228,12 +228,32 @@
                     </div>
                 </div>
             </div>
-            <!-- active -->
-            <div class="account__message account__block active">
+            <!-- active / open -->
+            <div class="account__message account__block active open">
                 <div class="account__message-head">
                     <p class="account__message-title account__block-title">Сообщения</p>
                     <p class="account__message-text">Всего переписок: <span>3</span></p>
                     <input type="text" class="account__message-find" placeholder="Начните вводить имя...">
+                    <div class="account__message-open">
+                        <div class="account__message-open-back">
+                            <p class="account__message-open-back-text svg-arrow">Назад</p>
+                        </div>
+                        <div class="account__message-open-service">
+                            <p class="account__message-open-service-title">Screen профиля</p>
+                            <p class="account__message-open-service-text">1 грн.</p>
+                        </div>
+                            <!-- online -->
+                        <div class="account__message-open-user">
+                            <div class="account__message-open-user-info">
+                                <p class="account__message-open-user-text">Name</p>
+                            </div>
+                            <div class="account__message-open-user-avatar online">
+                                <img class="account__message-open-user-img" src="img/private-office/avatar_default-min.png" alt="" width="60" height="60">
+                                <div class="account__message-open-user-indicator"></div>
+                                <span class="account__message-open-user-status">Онлайн</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="account__message-wrap">
                     <div class="account__message-content">
@@ -251,7 +271,7 @@
                             <!-- active-message -->
                             <div class="account__message-content-item">
                                 <div class="account__message-content-item-sender">
-                                    <!-- online active -->
+                                    <!-- online -->
                                     <div class="account__message-content-item-sender-avatar online">
                                         <img class="account__message-content-item-sender-img" src="img/private-office/avatar_default-min.png" alt="" width="60" height="60">
                                         <div class="account__message-content-item-sender-indicator"></div>
@@ -259,6 +279,10 @@
                                     </div>
                                     <div class="account__message-content-item-sender-info">
                                         <p class="account__message-content-item-sender-text">Name</p>
+                                        <div class="account__message-content-item-sender-mobile">
+                                            <p class="account__message-content-item-sender-mobile-text">Услуга: <span>Screen профиля</span></p>
+                                            <p class="account__message-content-item-sender-mobile-text">Дата начала РК: <span>27.01.2021</span></p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="account__message-content-item-service">Screen профиля</div>
@@ -306,6 +330,56 @@
                                 <div class="account__message-content-item-date">12.01.2021</div>
                             </div>
                         </div>
+                        <div class="account__message-content-dialog">
+                            <!-- from-system / for-me -->
+                            <div class="account__message-content-dialog-item from-system">
+                                <div class="account__message-content-dialog-item-text">
+                                    Детали заказа.
+                                    <br>
+                                    Рекламируемый продукт: Новые носки
+                                    <br>
+                                    Техническое задание: Выложить новый брендовый носок на странице
+                                </div>
+                                <p class="account__message-content-dialog-item-data">27.01.2021 в 17:55</p>
+                            </div>
+                            <!-- from-system / for-me -->
+                            <div class="account__message-content-dialog-item for-me">
+                                <div class="account__message-content-dialog-item-text">Носок здесь: 
+                                    <a href="https://www.bloggermall.com.ua/sock/" target="_blank">https://www.bloggermall.com.ua/sock/</a>
+                                </div>
+                                <p class="account__message-content-dialog-item-data">27.01.2021 в 17:55</p>
+                            </div>
+                            <!-- from-system / for-me -->
+                            <div class="account__message-content-dialog-item for-me">
+                                <div class="account__message-content-dialog-item-text">Добрый вечер, Вам все ясно?!</div>
+                                <p class="account__message-content-dialog-item-data">27.01.2021 в 17:55</p>
+                            </div>
+                            <!-- from-system / for-me -->
+                            <div class="account__message-content-dialog-item">
+                                <div class="account__message-content-dialog-item-text">Все ясно!!!</div>
+                                <p class="account__message-content-dialog-item-data">27.01.2021 в 17:55</p>
+                            </div>
+                            <!-- from-system / for-me -->
+                            <div class="account__message-content-dialog-item">
+                                <div class="account__message-content-dialog-item-text">
+                                    <div class="account__message-content-dialog-item-download svg-download">
+                                        <div class="account__message-content-dialog-item-download-name">52c8e8114c11cfa9e6e668ee652dbf2b.pdf</div>
+                                        <div class="account__message-content-dialog-item-download-size">14.73 KB</div>
+                                    </div>
+                                </div>
+                                <p class="account__message-content-dialog-item-data">27.01.2021 в 17:55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="account__message-footer">
+                    <div class="account__message-footer-wrap">
+                        <textarea class="account__message-footer-textarea" placeholder="Введите сообщение здесь"></textarea>
+                        <button class="account__message-footer-button account__message-footer-button--send">Отправить</button>
+                    </div>
+                    <div class="account__message-footer-buttons">
+                        <button class="account__message-footer-button account__message-footer-button--red">Подтвердить выполнение</button>
+                        <button class="account__message-footer-button account__message-footer-button--green">Онлайн-поддержка</button>
                     </div>
                 </div>
             </div>
