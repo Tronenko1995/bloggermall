@@ -562,6 +562,9 @@
             .account__message-open {
                 display: flex;
             }
+            .account__message-footer {
+                display: flex;
+            }
             .account__message-title {
                 display: none;
             }
@@ -981,7 +984,7 @@
             }
         }
         &-footer {
-            display: flex;
+            display: none;
             flex-direction: column;
             align-items: flex-start;
             margin-bottom: 16px;
@@ -1374,6 +1377,82 @@
                 &:last-child {
                     margin-bottom: 0;
                 }
+            }
+        }
+    }
+    &__pay {
+        padding: 32px;
+        &.active {
+            .account__pay-empty {
+                display: none;
+            }
+            .account__pay-header {
+                display: flex;
+            }
+            .account__pay-list {
+                display: block;
+            }
+        }
+        &-header {
+            display: none;
+            justify-content: space-between;
+        }
+        &-button {
+            padding: 6px 26px 5px;
+            border: 1px solid #ff0099;
+            border-radius: 20px;
+            color: #ff0099;
+            font-size: 12px;
+            font-weight: 600;
+            min-width: 128px;
+            text-align: center;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover,
+            &:focus {
+                box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.25);
+            }
+        }
+        &-list {
+            margin-top: 30px;
+            display: none;
+        }
+        &-item {
+            width: 100%;
+            background-color: #f6f6f6;
+            vertical-align: top;
+            line-height: 50px;
+            padding: 0 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            &-text {
+                color: #767676;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+        &-empty {
+            &-text {
+                color: #767676;
+                line-height: 1.7em;
+                font-size: 16px;
+            }
+            &-card {
+                margin: 20px auto 0 auto;
+            }
+            &-action {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 20px;
+            }
+            &-button {
+                border-radius: 50px;
+                color: #000;
+                padding: 19px 50px;
+                text-transform: uppercase;
             }
         }
     }
