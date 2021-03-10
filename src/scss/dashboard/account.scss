@@ -1456,6 +1456,119 @@
             }
         }
     }
+    &__insta {
+        &.active {
+            .account__insta-empty {
+                display: none;
+            }
+            .account__insta-info {
+                display: block;
+            }
+        }
+        &-title {
+
+        }
+        &-info {
+            display: none;
+            &-text {
+                margin-top: 40px;
+                color: #414141;
+                font-size: 16px;
+                &--account  {
+                    font-weight: bolder;
+                }
+            }
+            &-button {
+                margin-top: 20px;
+                padding: 6px 26px 5px;
+                border: 2px solid #ff0099;
+                font-size: 13px;
+                font-weight: 600;
+                min-width: 128px;
+                text-align: center;
+                background-color: transparent;
+                outline: none;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                border-radius: 50px;
+                color: #000;
+                padding: 19px 50px;
+                text-transform: uppercase;
+                &:hover,
+                &:focus {
+                    box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+        &-empty {
+            margin-top: 50px;
+            &-title {
+                color: #414141;
+                font-weight: bold;
+            }
+            &-list {
+                margin-left: 20px;
+                margin-top: 8px;
+            }
+            &-item {
+                margin-bottom: 30px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.7em;
+                color: #767676;
+            }
+            &-text {
+                margin-bottom: 40px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.7em;
+                color: #767676;
+                &--bold {
+                    font-weight: bold;
+                }
+                &--margin {
+                    margin: 20px 0;
+                }
+            }
+            &-button {
+                margin: 20px 10px;
+                padding: 6px 26px 5px;
+                border: 2px solid #ff0099;
+                font-size: 12px;
+                font-weight: 600;
+                min-width: 128px;
+                text-align: center;
+                background-color: transparent;
+                outline: none;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                border-radius: 50px;
+                color: #000;
+                padding: 12px 50px;
+                text-transform: uppercase;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover,
+                &:focus {
+                    box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.25);
+                }
+            }
+            &-row {
+                display: flex;
+                justify-content: center;
+            }
+            &-link {
+                color: #F04A76;
+                font-size: 16px;
+                text-decoration: underline;
+            }
+            &-iframe {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    }
 }
 
 
@@ -1508,6 +1621,24 @@
     }
 }
 
+
+@media (max-width: 1200px) {
+    .account {
+        &__insta {
+            &-empty {
+                &-row {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                &-button {
+                    margin: 10px 5px;
+                    border-radius: 10px;
+                    min-width: 350px;
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 1050px) {
     .account {
@@ -1733,6 +1864,17 @@
                     width: calc(50% - 15px);
                     font-size: 14px;
                     margin-bottom: 10px;
+                }
+            }
+        }
+        &__insta {
+            &-empty {
+                &-button {
+                    margin: 0 0 10px 0;
+                    border-radius: 10px;
+                    width: 100%;
+                    min-width: unset;
+                    padding: 12px 0px;
                 }
             }
         }
