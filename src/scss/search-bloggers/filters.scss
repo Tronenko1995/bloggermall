@@ -36,4 +36,10 @@
     &__content {
 
     }
+    &__list {
+        margin-bottom: 10px;
+        &-item {
+            padding: 4px 0;
+        }
+    }
 }
