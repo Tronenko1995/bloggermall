@@ -19,9 +19,6 @@
             padding: 40px;
             background: #FFE600;
             border-radius: 5px;
-            .modal__body-start {
-                display: flex;
-            }
         }
     }
     &--phone {
@@ -30,9 +27,6 @@
             padding: 30px 20px 10px 20px;
             background-color: #fff;
             border-radius: 5px;
-            .modal__body-phone {
-                display: flex;
-            }
         }
     }
     &--blog {
@@ -40,24 +34,12 @@
             width: 630px;
             box-shadow: 10px 0 30px 0 rgba(0, 0, 0, 0.3);
             background-color: #fff;
-            .modal__body-blog {
-                display: flex;
-            }
-            .modal__body-blog-content-form {
-                display: flex;
-            }
         }
         &-2 {
             .modal__body {
                 width: 630px;
                 box-shadow: 10px 0 30px 0 rgba(0, 0, 0, 0.3);
                 background-color: #fff;
-                .modal__body-blog {
-                    display: flex;
-                }
-                .modal__body-blog-content-form-2 {
-                    display: flex;
-                }
             }
         }
         &-3 {
@@ -66,10 +48,8 @@
                 box-shadow: 10px 0 30px 0 rgba(0, 0, 0, 0.3);
                 background-color: #fff;
                 .modal__body-blog {
-                    display: flex;
                 }
                 .modal__body-blog-content-form-3 {
-                    display: flex;
 
                     .modal__body-blog-content-form-button {
                         margin-top: 50px;
@@ -113,7 +93,7 @@
         z-index: 4;
     }
     &__body-start {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
         &-title {
@@ -182,7 +162,7 @@
         }
     }
     &__body-blog {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
         &-head {
@@ -338,20 +318,20 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                display: none;
+                display: flex;
                 &-2 {
                     margin-top: 40px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    display: none;
+                    display: flex;
                 }
                 &-3 {
                     margin-top: 40px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    display: none;
+                    display: flex;
                 }
                 &-row {
                     display: flex;
@@ -497,7 +477,7 @@
         }
     }
     &__body-rek {
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
         &-head {
@@ -567,13 +547,13 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                display: none;
+                display: flex;
                 &-2 {
                     margin-top: 40px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    display: none;
+                    display: flex;
                 }
                 &-row {
                     display: flex;
@@ -736,7 +716,7 @@
             }
     }
     &__body-phone {
-        display: none;
+        display: flex;
         flex-direction: column;
         &-row {
             display: flex;
