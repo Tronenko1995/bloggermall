@@ -1,0 +1,45 @@
+.filters {
+    &__item {
+        margin-top: 30px;
+        &[open] > .filters__title {
+            &::before {
+                transform: rotate(315deg);
+            }
+        }
+    }
+    &__title {
+        list-style: none;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 20px;
+
+        font-family: "SF Pro Display", "Arial", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000000;
+        &::before {
+            right: 7.5px;
+            border-bottom: 1px solid transparent;
+            border-left: 1px solid transparent;
+            border-top: 1px solid #dadada;
+            border-right: 1px solid #dadada;
+            transform: rotate(133deg);
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 8px;
+            height: 8px;
+            transition: all 0.5s;
+            margin-top: -4px;
+        }
+    }
+    &__content {
+
+    }
+    &__list {
+        margin-bottom: 10px;
+        &-item {
+            padding: 4px 0;
+        }
+    }
+}

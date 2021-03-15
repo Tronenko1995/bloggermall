@@ -30,6 +30,7 @@ const cssFiles = [
   './src/scss/kak-effektivno-rabotat-s-blogerami/*.scss',
   './src/scss/baza_znaniy/*.scss',
   './src/scss/dashboard/*.scss',
+  './src/scss/search-bloggers/*.scss',
   './src/scss/footer.scss',
 ]
 // //Порядок подключения js файлов
