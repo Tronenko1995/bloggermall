@@ -1,0 +1,86 @@
+.card {
+    width: 320px;
+    padding: 25px 16px;
+    border: 1px solid #c8ebf7;
+    border-radius: 14px;
+    margin-top: 8px;
+    &__input {
+        padding-right: 25px;
+        letter-spacing: .5px;
+        padding-left: 7px;
+        padding: 5px 25px 5px 7px;
+        border-bottom: 1px solid #f0f0f3;
+        outline: none;
+        max-height: 30px;
+        min-width: 180px;
+        color: #000;
+        &::placeholder {
+            color: #000;
+        }
+    }
+    &__svg {
+        width: 46px;
+        height: 38px;
+    }
+    &__row {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 26px;
+        &--error {
+            color: #e61919;
+            font-size: 12px;
+            display: none;
+        }
+    }
+    &__label {
+        position: relative;
+        &--error {
+            .card__input {
+                border-bottom: 1px solid #e61919;
+            }
+            .card__text--error {
+                display: block;
+            }
+            .card__cross {
+                display: block;
+            }
+        }
+    }
+    &__cross {
+        top: -2px;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        cursor: pointer;
+        display: none;
+    }
+    &__description {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 50px;
+        &-text {
+            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            font-size: 10px;
+            margin-right: 7px;
+            line-height: 16px;
+            color: #000;
+            font-weight: 400;
+        }
+        &-img {
+            height: 23px;
+            width: 23px;
+            background: url('../img/logo_uapay-2.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+        } 
+    }
+}

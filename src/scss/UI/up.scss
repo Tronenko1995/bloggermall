@@ -5,6 +5,8 @@
     z-index: 5;
     width: 70px;
     height: 70px;
+    opacity: 0;
+    transition: opacity 1s ease;
     &__svg {
         width: 70px;
         height: 70px;

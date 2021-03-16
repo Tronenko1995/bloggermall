@@ -605,7 +605,7 @@
                         </div>
                         <button class="modal__body-blog-content-form-button">Далее</button>
                     </form>
-                    <form class="modal__body-blog-content-form-2">
+                    <form class="modal__body-blog-content-form modal__body-blog-content-form-2">
                         <div class="modal__body-blog-content-form-row">
                             <label class="modal__body-blog-content-form-label modal__body-blog-content-form-label--full">
                                 <p class="modal__body-blog-content-form-text required">Телефон</p>
@@ -709,25 +709,60 @@
                         </div>
                         <button class="modal__body-blog-content-form-button">Далее</button>
                     </form>
-                    <form class="modal__body-blog-content-form-3">
+                    <form class="modal__body-blog-content-form modal__body-blog-content-form-3">
                         <h4 class="modal__body-blog-content-title">Укажите номер карты для выплат</h4>
-                        <div class="modal__body-blog-content-card">
-                            <div class="modal__body-blog-content-card-row">
-                                <!-- modal__body-blog-content-card-label--error -->
-                                <label class="modal__body-blog-content-card-label">
-                                    <input class="modal__body-blog-content-card-input" type="text" maxlength="19" placeholder="Введіть номер картки">
-                                    <div class="modal__body-blog-content-card-cross svg-card-cross"></div>
-                                    <p class="modal__body-blog-content-card-text modal__body-blog-content-card-text--error">Неправильний номер картки</p>
+                        <div class="modal__body-blog-content-card card">
+                            <div class="card__row">
+                                <!-- card__label--error -->
+                                <label class="card__label">
+                                    <input class="card__input" type="text" maxlength="19" placeholder="Введіть номер картки">
+                                    <div class="card__cross svg-card-cross"></div>
+                                    <p class="card__text card__text--error">Неправильний номер картки</p>
                                 </label>
                                 <!-- svg-card-visa / svg-card-mastercard -->
-                                <div class="modal__body-blog-content-card-svg svg-card-visa"></div>
+                                <div class="card__svg svg-card-visa"></div>
                             </div>
-                            <div class="modal__body-blog-content-card-description">
-                                <p class="modal__body-blog-content-card-description-text">За підтримки</p>
-                                <div class="modal__body-blog-content-card-description-img"></div>
+                            <div class="card__description">
+                                <p class="card__description-text">За підтримки</p>
+                                <div class="card__description-img"></div>
                             </div>
                         </div>
                         <button class="modal__body-blog-content-form-button">Сохранить карту</button>
+                    </form>
+                    <form class="modal__body-blog-content-form modal__body-blog-content-form-4">
+                        <h4 class="modal__body-blog-content-title">Добавьте цены за услуги</h4>
+                        <ul class="modal__body-blog-content-form-list">
+                            <li class="modal__body-blog-content-form-list-item">
+                                <label class="modal__body-blog-content-form-list-label">
+                                    <span class="modal__body-blog-content-form-list-text required">Story</span>    
+                                    <input type="text" class="modal__body-blog-content-form-list-input modal__body-blog-content-form-input">
+                                    <span class="modal__body-blog-content-form-list-descr">грн.</span>
+                                </label>
+                            </li>
+                            <li class="modal__body-blog-content-form-list-item">
+                                <label class="modal__body-blog-content-form-list-label">
+                                    <span class="modal__body-blog-content-form-list-text required">Пост</span>    
+                                    <input type="text" class="modal__body-blog-content-form-list-input modal__body-blog-content-form-input">
+                                    <span class="modal__body-blog-content-form-list-descr">грн.</span>
+                                </label>
+                            </li>
+                            <li class="modal__body-blog-content-form-list-item">
+                                <label class="modal__body-blog-content-form-list-label">
+                                    <span class="modal__body-blog-content-form-list-text required">Публикация + Story</span>    
+                                    <input type="text" class="modal__body-blog-content-form-list-input modal__body-blog-content-form-input">
+                                    <span class="modal__body-blog-content-form-list-descr">грн.</span>
+                                </label>
+                            </li>
+                            <li class="modal__body-blog-content-form-list-item">
+                                <label class="modal__body-blog-content-form-list-label">
+                                    <span class="modal__body-blog-content-form-list-text">Видеопубликация</span>    
+                                    <input type="text" class="modal__body-blog-content-form-list-input modal__body-blog-content-form-input">
+                                    <span class="modal__body-blog-content-form-list-descr">грн.</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <p class="modal__body-blog-content-form-list-text modal__body-blog-content-form-list-text--info">* Вы будете получать выплаты за вычетом 10% комиссии сервиса</p>
+                        <button class="modal__body-blog-content-form-button">Принять</button>
                     </form>
                 </div>
             </div>
