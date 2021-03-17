@@ -1,0 +1,44 @@
+.city {
+    position: relative;
+    &__input {
+
+    }
+    &__list {
+        position: absolute;
+        border: 1px solid #74dfce;
+        border-radius: 5px;
+        overflow-y: scroll;
+        max-height: 292px;
+        width: 100%;
+        top: 45px;
+        background-color: #fff;
+        
+        scrollbar-color: #74dfce #e5e5ec;
+        scrollbar-width: thin;
+        z-index: 1;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        background-color: #e5e5ec;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #74dfce;
+    }
+    }
+    &__item {
+        cursor: pointer;
+
+        font-family: "SF Pro Display", "Arial", sans-serif;
+        font-weight: 100;
+        font-size: 14px;
+        line-height: 18px;
+        color: #999;
+        &:hover {
+            background-color: #edfbf9;
+        }
+    }
+    &__label {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
