@@ -710,6 +710,12 @@
             box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.25%);
             background: #f04a76;
         }
+        &[disabled] {
+            cursor: wait;
+            color: #363636;
+            box-shadow: 0 4px 23px rgba(119, 105, 114, 0.41);
+            background-color: #dbdbdb;
+        }
     }
 }
 
@@ -719,6 +725,26 @@
         &--blog {
             .modal__body {
                 width: 100%;
+            }
+        }
+        &--start {
+            .modal__body {
+                width: 100%;
+                &-start {
+                    &-title {
+                        font-size: 21px;
+                    }
+                    &-button {
+                        width: 150px;
+                        height: 150px;
+                    }
+                    &-text {
+                        font-size: 16px;
+                        &--desc {
+                            font-size: 12px;
+                        }
+                    }
+                }
             }
         }
     }
