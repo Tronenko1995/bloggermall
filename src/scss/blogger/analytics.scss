@@ -1,0 +1,67 @@
+.analytics {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-top: 45px;
+    &__wrap {
+        width: 1120px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    &__title {
+        font-family: "SF Pro Display", Arial, sans-serif;
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 600;
+        color: #000000;
+    }
+    &__list {
+
+    }
+    &__item {
+        width: 100%;
+        margin-top: 25px;
+        border-top: 1px solid #ededed;
+        padding-top: 25px;
+        .blogger__stats {
+            &-title {
+                text-align: center;
+                margin-top: 15px;
+            }
+            &-text {
+                justify-content: center;
+                text-align: center;
+            }
+            &-description {
+                margin-top: 10px;
+                text-align: center;
+            }
+        }
+        .tooltip__content {
+            left: 50%;
+            margin-left: -92px;
+        }
+        &-title {
+            font-family: "SF Pro Display", Arial, sans-serif;
+            font-size: 16px;
+            color: #323232;
+            font-weight: 600;
+            line-height: 1.5em;
+        }
+        &-text {
+            font-family: "SF Pro Display", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #666666;
+            margin-top: 8px;
+        }
+    }
+    &__chart {
+        margin-top: 8px;
+        width: 1060px;
+        height: 239px;
+    }
+}

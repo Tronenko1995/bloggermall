@@ -1,0 +1,10 @@
+.charts__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    &-item {
+        width: 32%;
+        margin-top: 25px;
+    }
+}

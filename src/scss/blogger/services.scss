@@ -1,0 +1,85 @@
+.services {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-top: 45px;
+    &__wrap {
+        width: 1120px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    &__title {
+        font-family: "SF Pro Display", Arial, sans-serif;
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 600;
+        color: #000000;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 35px;
+    }
+    &__item {
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 30px 15px 20px;
+        margin: 0 7.5px 25px;
+        width: calc(33.3% - 15px);
+        border: 1px solid #69ddca;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        &:nth-child(-n+3) {
+            border: 3px solid #69ddca;
+        }
+        &:nth-child(-n+3)::before {
+            top: -13px;
+            left: -13px;
+            width: 26px;
+            height: 26px;
+            border: 1px solid #69ddca;
+            box-shadow: 0 0 10px rgba(105, 221, 202, .70);
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+        }
+        &:nth-child(-n+3)::after {
+            top: -6px;
+            left: -6px;
+            width: 12px;
+            height: 12px;
+            background-color: #69ddca;
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+        }
+    }
+    &__info {
+        &-title {
+            font-family: "SF Pro Display", Arial, sans-serif;
+            font-size: 18px;
+            line-height: 21px;
+            font-weight: 500;
+            color: #000000;
+        }
+        &-link {
+            font-family: "SF Pro Display", Arial, sans-serif;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            color: #ff0099;
+            margin-top: 5px;
+        }
+    }
+    &__price {
+        font-family: "SF Pro Display", Arial, sans-serif;
+        font-size: 24px;
+        line-height: 27px;
+        font-weight: 700;
+        text-align: right;
+        color: #ff0099;
+    }
+}

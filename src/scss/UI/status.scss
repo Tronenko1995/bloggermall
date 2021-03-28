@@ -1,0 +1,77 @@
+.status {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0 15px 0 0;
+    line-height: 27px;
+    font-weight: 300;
+    text-align: right;
+    cursor: pointer;
+    color: #666;
+
+    &.tooltip {
+        &__show {
+
+            & + .tooltip__content {
+                top: unset;
+                bottom: 100%;
+                right: 0;
+                width: 100px;
+                text-align: center;
+                padding: 10px;
+                margin-bottom: -15px;
+            }
+        }
+    }
+
+    &.online {
+        &::before {
+            border: 1px solid #74dfce;
+            transition: all 0.5s;
+            content: "";
+            bottom: -25px;
+            right: 7px;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: transparent;
+            position: absolute;
+        }
+        &::after {
+            background-color: #74dfce;
+            transition: all 0.5s;
+            content: "";
+            bottom: -20px;
+            right: 12px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            position: absolute;
+        }
+    }
+    &.offline {
+        &::before {
+            border: 1px solid #ffe500;
+            transition: all 0.5s;
+            content: "";
+            bottom: -25px;
+            right: 7px;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            background-color: transparent;      
+            position: absolute;
+        }
+        &::after {
+            background-color: #ffe500;
+            transition: all 0.5s;
+            content: "";
+            bottom: -20px;
+            right: 12px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            position: absolute;
+        }
+    }
+}
