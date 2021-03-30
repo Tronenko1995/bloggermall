@@ -37,6 +37,14 @@
         }
     }
 
+    &--service {
+        .modal__body {
+            width: 515px;
+            box-shadow: 10px 0 30px 0 rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+        }
+    }
+
     &--rek {
         .modal__body {
             width: 630px;
@@ -289,6 +297,20 @@
                             margin-left: 4px;
                         }
                     }
+                    &.required-left {
+                        &::before {
+                            content: "*";
+                            color: #FF0000;
+                            margin-right: 4px;
+                        }
+                    }
+                    &--normal {
+                        font-weight: 300;
+                    }
+                    &--note {
+                        font-size: 14px;
+                        margin-bottom: 36px;
+                    }
                 }
                 &-input {
                     font-family: 'SF Pro Display', 'Arial', 'sans-serif';
@@ -314,6 +336,11 @@
                     }
                     &:focus {
                         border: 1px solid #69DDCA;
+                    }
+                    &--cp {
+                        &:focus {
+                            border: 1px solid #f04a76;
+                        }
                     }
                 }
                 &-for_svg {
@@ -389,9 +416,9 @@
                         span {
                             vertical-align: middle;
                         }
-                        a {
+                        // a {
 
-                        }
+                        // }
                     }
                 }
             }
@@ -615,9 +642,9 @@
                         span {
                             vertical-align: middle;
                         }
-                        a {
+                        // a {
 
-                        }
+                        // }
                     }
                 }
             }

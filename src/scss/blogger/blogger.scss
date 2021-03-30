@@ -29,6 +29,8 @@
             margin-top: 45px;
         }
         &-bottom {
+            display: flex;
+            justify-content: space-between;
             margin-top: 30px;
         }
     }
@@ -143,6 +145,23 @@
         font-weight: 300;
         font-size: 17px;
         color: #fff;
+        &--favorit {
+            .catalog-blogger__item-user-svg {
+                margin-right: 9px;
+                fill: #fff;
+            }
+            color: #666;
+            cursor: pointer;
+            border: 1px solid #ff0099;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            &:hover {
+                .catalog-blogger__item-user-svg {
+                    fill: rgba(255, 0, 153, 0.6);
+                }
+            }
+        }
         &:hover,
         &:focus {
             box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.25)
