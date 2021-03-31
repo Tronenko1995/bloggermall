@@ -1,0 +1,92 @@
+.reviews {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding-top: 45px;
+    &__wrap {
+        width: 1120px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #ffffff;
+    }
+    &__title {
+        font-family: "SF Pro Display", Arial, sans-serif;
+        font-size: 22px;
+        line-height: 27px;
+        font-weight: 600;
+    }
+    &__content {
+        margin-top: 35px;
+        display: flex;
+        &-left {
+            flex: 1 1 auto;
+        }
+        &-right {
+            flex: 3 1 auto;
+        }
+        &-title {
+            font-family: "SF Pro Display", "Arial", sans-serif;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 700;
+            text-align: left;
+            color: #ff0099;
+        }
+        &-text {
+            font-family: "SF Pro Display", "Arial", sans-serif;
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #000000;
+        }
+        &-descr {
+            margin-top: 50px;
+            font-family: "SF Pro Display", "Arial", sans-serif;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 300;
+            color: #666666;
+        }
+    }
+    &__rating {
+        &-list {
+            width: 50%;
+        }
+        &-item {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-progress {
+            margin-top: 5px;
+            height: 5px;
+            border-radius: 2.5px;
+            background-color: #e2e2e2;
+            &-bar {
+                height: 100%;
+                background-color: #69ddca;
+                transition: all 0.5s;
+                border-radius: 2.5px;
+            }
+        }
+        &-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "SF Pro Display", "Arial", sans-serif;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+            text-align: left;
+            color: #666666;
+        }
+        &-percent {
+            flex-grow: 1;
+            text-align: right;
+        }
+    }
+}
+       
