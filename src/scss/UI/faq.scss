@@ -35,9 +35,11 @@
         &::marker,
         &::-webkit-details-marker {
             display:none;
+            font-size: 0;
         }
         &::-moz-list-bullet {
             list-style-type:none;
+            font-size: 0;
         }
         &:focus,
         &:hover {

@@ -1,0 +1,24 @@
+.safe-deal {
+    .main-5 {
+        margin-top: 30px;
+        &__title {
+            text-align: left;
+            font-size: 21px;
+            line-height: 1.4em;
+            margin-bottom: 25px;
+            margin-left: 22px;
+        }
+        &__wrap {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                background: rgba(196, 196, 196, 0.19);
+                width: calc(100% - 40px);
+                margin-top: 25px;
+                left: 20px;
+            }
+        }
+    }
+}
