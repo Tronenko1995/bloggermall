@@ -151,426 +151,465 @@
 
 <div class="search-bloggers">
     <div class="search-bloggers__wrap">
+        <div class="search-bloggers__nav">
+            <div class="search-bloggers__nav-item">Фильтры</div>
+            <div class="search-bloggers__nav-item">Сортировка</div>
+        </div>
         <asside class="search-bloggers__aside">
+            <div class="search-bloggers__aside-head">
+                <p class="search-bloggers__aside-title">Фильтры</p>
+                <div class="search-bloggers__aside-cross">×</div>
+            </div>
             <form class="search-bloggers__filters filters">
-                <details class="filters__item">
-                    <summary class="filters__title">Коэффициент вовлечености (ER), %</summary>
-                    <div class="filters__content">
-                        <div class="range-slider">
-                            <input class="range-slider__input" type="range" min="0" max="100" step="1" value="0">
-                            <input class="range-slider__input" type="range" min="0" max="100" step="1" value="100">
-                            <span class="range-slider__line" style="width: 100%; left: 0%;"></span>
-                            <label class="range-slider__label" for="min-ER">
-                                От
-                            </label>
-                            <label class="range-slider__label" for="max-ER">
-                                До
-                            </label>
-                            <input class="range-slider__number range-slider__number--min" id="min-ER" type="number" name="er[min]" min="0" max="100" value="0">
-                            <input class="range-slider__number range-slider__number--max" id="max-ER" type="number" name="er[max]" min="0" max="100" value="100">
+                <div class="filters__center">
+                    <details class="filters__item">
+                        <summary class="filters__title">Коэффициент вовлечености (ER), %</summary>
+                        <div class="filters__content">
+                            <div class="range-slider">
+                                <input class="range-slider__input" type="range" min="0" max="100" step="1" value="0">
+                                <input class="range-slider__input" type="range" min="0" max="100" step="1" value="100">
+                                <span class="range-slider__line" style="width: 100%; left: 0%;"></span>
+                                <label class="range-slider__label" for="min-ER">
+                                    От
+                                </label>
+                                <label class="range-slider__label" for="max-ER">
+                                    До
+                                </label>
+                                <input class="range-slider__number range-slider__number--min" id="min-ER" type="number" name="er[min]" min="0" max="100" value="0">
+                                <input class="range-slider__number range-slider__number--max" id="max-ER" type="number" name="er[max]" min="0" max="100" value="100">
+                            </div>
                         </div>
-                    </div>
-                </details>
-                <details class="filters__item">
-                    <summary class="filters__title">Стоимость, ₴</summary>
-                    <div class="filters__content">
-                        <ul class="filters__list">
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="prc[type]" value="story_price" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Цена за 1 stories
+                    </details>
+                    <details class="filters__item">
+                        <summary class="filters__title">Стоимость, ₴</summary>
+                        <div class="filters__content">
+                            <ul class="filters__list">
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="prc[type]" value="story_price" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Цена за 1 stories
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="prc[type]" value="post_price" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Цена за фото-пост
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="prc[type]" value="post_story_price" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Цена за пост + stories
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="prc[type]" value="post_3story_price" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Цена за 3 stories
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="prc[type]" value="post_video_price" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Цена за видео-пост
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="prc[type]" value="post_screenprofile_price" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Цена за скрин профиля
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="prc[type]" value="post_unpackingpost_price" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Цена за распаковку
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="prc[type]" value="post_giveawaypost_price" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Цена за Giveaway
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="prc[type]" value="post_personalads_price" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Цена за рекламу личного аккаунта
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="range-slider">
+                                <input class="range-slider__input" type="range" min="0" max="30000" step="1" value="0">
+                                <input class="range-slider__input" type="range" min="0" max="30000" step="1" value="30000">
+                                <span class="range-slider__line" style="width: 100%; left: 0%;"></span>
+                                <label class="range-slider__label" for="min-price">
+                                    От
                                 </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="prc[type]" value="post_price" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Цена за фото-пост
+                                <label class="range-slider__label" for="max-price">
+                                    До
                                 </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="prc[type]" value="post_story_price" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Цена за пост + stories
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="prc[type]" value="post_3story_price" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Цена за 3 stories
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="prc[type]" value="post_video_price" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Цена за видео-пост
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="prc[type]" value="post_screenprofile_price" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Цена за скрин профиля
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="prc[type]" value="post_unpackingpost_price" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Цена за распаковку
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="prc[type]" value="post_giveawaypost_price" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Цена за Giveaway
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="prc[type]" value="post_personalads_price" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Цена за рекламу личного аккаунта
-                                </label>
-                            </li>
-                        </ul>
-                        <div class="range-slider">
-                            <input class="range-slider__input" type="range" min="0" max="30000" step="1" value="0">
-                            <input class="range-slider__input" type="range" min="0" max="30000" step="1" value="30000">
-                            <span class="range-slider__line" style="width: 100%; left: 0%;"></span>
-                            <label class="range-slider__label" for="min-price">
-                                От
-                            </label>
-                            <label class="range-slider__label" for="max-price">
-                                До
-                            </label>
-                            <input class="range-slider__number range-slider__number--min" id="min-price" type="number" name="prc[min]" min="0" max="100" value="0">
-                            <input class="range-slider__number range-slider__number--max" id="max-price" type="number" name="prc[max]" min="0" max="30000" value="30000">
+                                <input class="range-slider__number range-slider__number--min" id="min-price" type="number" name="prc[min]" min="0" max="100" value="0">
+                                <input class="range-slider__number range-slider__number--max" id="max-price" type="number" name="prc[max]" min="0" max="30000" value="30000">
+                            </div>
                         </div>
-                    </div>
-                </details>
-                <details class="filters__item">
-                    <summary class="filters__title">Количество подписчиков</summary>
-                    <div class="filters__content">
-                        <ul class="filters__list">
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="flwrs" value="1" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> До 5 тыс.
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="flwrs" value="2" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> 5 тыс. - 20 тыс.
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="flwrs" value="3" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> 20 тыс. - 100 тыс.
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="flwrs" value="4" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> 100 тыс. - 500 тыс.
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="flwrs" value="5" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> 500 тыс. - 1 млн.
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="flwrs" value="6" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Более 1 млн.
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </details>
-                <details class="filters__item">
-                    <summary class="filters__title">Город блогера</summary>
-                    <div class="filters__content">
-                        <div class="filters__content-city city">
+                    </details>
+                    <details class="filters__item">
+                        <summary class="filters__title">Количество подписчиков</summary>
+                        <div class="filters__content">
+                            <ul class="filters__list">
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="flwrs" value="1" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> До 5 тыс.
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="flwrs" value="2" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> 5 тыс. - 20 тыс.
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="flwrs" value="3" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> 20 тыс. - 100 тыс.
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="flwrs" value="4" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> 100 тыс. - 500 тыс.
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="flwrs" value="5" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> 500 тыс. - 1 млн.
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="flwrs" value="6" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Более 1 млн.
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="filters__item">
+                        <summary class="filters__title">Город блогера</summary>
+                        <div class="filters__content">
+                            <div class="filters__content-city city">
+                                <input class="filters__input city__input" type="text" placeholder="Начните вводтить название...">
+                                <ul class="city__list">
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
+                                            <span class="radio__span radio__span--checkbox"></span> Город 1
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
+                                            <span class="radio__span radio__span--checkbox"></span> Город 2
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
+                                            <span class="radio__span radio__span--checkbox"></span> Город 3
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 4
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 5
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 6
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 7
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 8
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 9
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 10
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 11
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 12
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 13
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 14
+                                        </label>
+                                    </li>
+                                    <li class="city__item">
+                                        <label class="radio__label filters__list-label city__label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
+                                            <span class="radio__span radio__span--checkbox"></span> Город 15
+                                        </label>
+                                    </li>
+                                </ul>
+                                <ul class="filters__list filters__list--var-2">
+                                    <li class="filters__list-item">
+                                        <label class="radio__label filters__list-label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
+                                            <span class="radio__span radio__span--checkbox"></span> Город 1
+                                        </label>
+                                    </li>
+                                    <li class="filters__list-item">
+                                        <label class="radio__label filters__list-label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
+                                            <span class="radio__span radio__span--checkbox"></span> Город 2
+                                        </label>
+                                    </li>
+                                    <li class="filters__list-item">
+                                        <label class="radio__label filters__list-label">
+                                            <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
+                                            <span class="radio__span radio__span--checkbox"></span> Город 3
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </details>
+                    <details class="filters__item">
+                        <summary class="filters__title">Пол блогера</summary>
+                        <div class="filters__content">
+                            <ul class="filters__list">
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="gender" value="male" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Мужчины
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="gender" value="female" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Женщины
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="filters__item">
+                        <summary class="filters__title">Тематика</summary>
+                        <div class="filters__content">
+                            <ul class="filters__list">
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="1" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 1
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="2" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 2
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="3" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 3
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="4" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 4
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="5" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 5
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="6" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 6
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="7" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 7
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="8" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 8
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="9" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 9
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="10" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 10
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="skills" value="11" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Тематика 11
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="filters__item">
+                        <summary class="filters__title">Целевая аудитория</summary>
+                        <div class="filters__content">
+                            <p class="filters__audience">Возраст</p>
+                            <ul class="filters__list">
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="ca-age" value="1" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> 0-10
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="ca-age" value="2" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> 0-10
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="ca-age" value="3" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> 0-10
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="ca-age" value="4" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> 0-10
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="checkbox" name="ca-age" value="5" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> 0-10
+                                    </label>
+                                </li>
+                            </ul>
+                            <p class="filters__audience">Пол</p>
+                            <ul class="filters__list">
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="ca-gender" value="male" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Мужчины
+                                    </label>
+                                </li>
+                                <li class="filters__list-item">
+                                    <label class="radio__label filters__list-label">
+                                        <input type="radio" name="ca-gender" value="female" class="radio__input radio__input--checkbox">
+                                        <span class="radio__span radio__span--checkbox"></span> Женщины
+                                    </label>
+                                </li>
+                            </ul>
+                            <p class="filters__audience">Город с наибольшим количеством аудитории</p>
                             <input class="filters__input city__input" type="text" placeholder="Начните вводтить название...">
-                            <ul class="city__list">
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
-                                        <span class="radio__span radio__span--checkbox"></span> Город 1
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
-                                        <span class="radio__span radio__span--checkbox"></span> Город 2
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
-                                        <span class="radio__span radio__span--checkbox"></span> Город 3
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 4
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 5
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 6
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 7
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 8
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 9
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 10
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 11
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 12
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 13
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 14
-                                    </label>
-                                </li>
-                                <li class="city__item">
-                                    <label class="radio__label filters__list-label city__label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox">
-                                        <span class="radio__span radio__span--checkbox"></span> Город 15
-                                    </label>
-                                </li>
-                            </ul>
-                            <ul class="filters__list filters__list--var-2">
-                                <li class="filters__list-item">
-                                    <label class="radio__label filters__list-label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
-                                        <span class="radio__span radio__span--checkbox"></span> Город 1
-                                    </label>
-                                </li>
-                                <li class="filters__list-item">
-                                    <label class="radio__label filters__list-label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
-                                        <span class="radio__span radio__span--checkbox"></span> Город 2
-                                    </label>
-                                </li>
-                                <li class="filters__list-item">
-                                    <label class="radio__label filters__list-label">
-                                        <input type="checkbox" name="location" value="5" class="radio__input radio__input--checkbox" checked>
-                                        <span class="radio__span radio__span--checkbox"></span> Город 3
-                                    </label>
-                                </li>
-                            </ul>
                         </div>
-                    </div>
-                </details>
-                <details class="filters__item">
-                    <summary class="filters__title">Пол блогера</summary>
-                    <div class="filters__content">
-                        <ul class="filters__list">
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="gender" value="male" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Мужчины
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="gender" value="female" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Женщины
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </details>
-                <details class="filters__item">
-                    <summary class="filters__title">Тематика</summary>
-                    <div class="filters__content">
-                        <ul class="filters__list">
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="1" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 1
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="2" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 2
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="3" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 3
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="4" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 4
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="5" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 5
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="6" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 6
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="7" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 7
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="8" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 8
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="9" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 9
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="10" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 10
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="skills" value="11" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Тематика 11
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </details>
-                <details class="filters__item">
-                    <summary class="filters__title">Целевая аудитория</summary>
-                    <div class="filters__content">
-                        <p class="filters__audience">Возраст</p>
-                        <ul class="filters__list">
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="ca-age" value="1" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> 0-10
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="ca-age" value="2" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> 0-10
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="ca-age" value="3" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> 0-10
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="ca-age" value="4" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> 0-10
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="checkbox" name="ca-age" value="5" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> 0-10
-                                </label>
-                            </li>
-                        </ul>
-                        <p class="filters__audience">Пол</p>
-                        <ul class="filters__list">
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="ca-gender" value="male" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Мужчины
-                                </label>
-                            </li>
-                            <li class="filters__list-item">
-                                <label class="radio__label filters__list-label">
-                                    <input type="radio" name="ca-gender" value="female" class="radio__input radio__input--checkbox">
-                                    <span class="radio__span radio__span--checkbox"></span> Женщины
-                                </label>
-                            </li>
-                        </ul>
-                        <p class="filters__audience">Город с наибольшим количеством аудитории</p>
-                        <input class="filters__input city__input" type="text" placeholder="Начните вводтить название...">
-                    </div>
-                </details>
+                    </details>
+                </div>
                 <div class="filters__footer">
-                    <p class="filters__footer-text">Нажмите кнопку "Применить фильтр", чтобы применить последние изменения, внесенные вами</p>
-                    <button class="filters__footer-button">Применить фильтры</button>
-                    <a class="filters__footer-link" href="/search-bloggers.html">Очистить фильтры</a>
+                    <!-- <p class="filters__footer-text">Нажмите кнопку "Применить", чтобы применить последние изменения, внесенные вами</p> -->
+                    <button class="filters__footer-button filters__footer-button--apply">Применить</button>
+                    <a class="filters__footer-button filters__footer-button--reset" href="/search-bloggers.html">Сбросить</a>
                 </div>
             </form>
         </asside>
         <section class="search-bloggers__content">
             <div class="catalog-blogger__sort">
-                <p class="catalog-blogger__sort-text">Сортировка:</p>
-                <ul class="catalog-blogger__sort-menu">
-                    <li class="catalog-blogger__sort-menu-item active">По умолчанию</li>
-                    <li class="catalog-blogger__sort-menu-item">По количеству подписчиков</li>
-                    <li class="catalog-blogger__sort-menu-item">По ER</li>
-                    <li class="catalog-blogger__sort-menu-item">По цене</li>
-                </ul>
+                <div class="search-bloggers__aside-head">
+                    <p class="search-bloggers__aside-title">Сортировка</p>
+                    <div class="search-bloggers__aside-cross">×</div>
+                </div>
+                <div class="catalog-blogger__sort-content">
+                    <div class="catalog-blogger__sort-next">
+                        <div class="catalog-blogger__left">
+                            <div class="search-bloggers__find">
+                                <p class="search-bloggers__find-text">Найдено: Х блогеров</p>
+                            </div>
+                         <ul class="catalog-blogger__sort-menu">
+                            <li class="catalog-blogger__sort-menu-item active"><div class="catalog-blogger__sort-cross">×</div>Коэффициент вовлечености (ER): 10% - 70%</li>
+                            <li class="catalog-blogger__sort-menu-item active"><div class="catalog-blogger__sort-cross">×</div>Город: Киев</li>
+                        </ul> 
+                        </div>
+                        <div class="catalog-blogger__right">
+                            <label class="catalog-blogger__sort-text">Сортировать&nbsp;по:
+                                <div class="catalog-blogger__sort-select select open">
+                                    <input type="hidden" name="" class="select__input">
+                                    <div class="select__head">
+                                        <span>по умолчанию</span>
+                                    </div>
+                                    <div class="select__container">
+                                        <ul class="select__list">
+                                            <li class="select__item active">по умолчанию</li>
+                                            <li class="select__item">по количеству подписчиков</li>
+                                            <li class="select__item">по ER</li>
+                                            <li class="select__item">по цене</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <button class="filters__footer-button filters__footer-button--apply">Применить</button>
+                </div>
             </div>
             <!-- active -->
             <div class="search-bloggers__block active">
@@ -578,6 +617,7 @@
                     <img class="search-bloggers__block-empty-img" src="img/private-office/favorit.png" alt="" width="200" height="200">
                     <p class="search-bloggers__block-empty-text">Не найдено исполнителей.</p>
                 </div>
+
                 <div class="search-bloggers__block-list catalog-blogger__list">
 
                     <div class="catalog-blogger__item">
