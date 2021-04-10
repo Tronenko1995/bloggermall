@@ -33,7 +33,7 @@ const cssFiles = [
   './src/scss/search-bloggers/*.scss',
   './src/scss/blogger/*.scss',
   './src/scss/checkout/*.scss',
-  './src/scss/404/*.scss',
+  // './src/scss/404/*.scss',
   './src/scss/footer.scss',
 ]
 // //Порядок подключения js файлов

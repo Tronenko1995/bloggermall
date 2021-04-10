@@ -16,6 +16,10 @@
             justify-content: space-between;
             margin-bottom: 20px;
 
+            &-mobi {
+                display: none;
+            }
+
             &-menu {
                 margin-top: 10px;
                 margin-left: 0;
@@ -226,10 +230,26 @@
                 justify-content: flex-start;
                 padding: 0;
                 border: unset;
+
+                &-mobi {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                &-menu {
+                    display: none;
+                }
+
+                &-text {
+                    display: none;
+                }
+
                 &-content {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                    align-items: center;
                     height: 100%;
                     .filters__footer-button {
                         margin-bottom: 20px;
@@ -238,6 +258,12 @@
                 &-next {
                     display: flex;
                     flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    padding: 0 15px;
+                    .radio__label {
+                        margin-top: 15px;
+                    }
                 }
                 .search-bloggers__aside-head {
                     width: 100%;
@@ -247,9 +273,13 @@
                 display: flex;
                 justify-content: space-between;
             }
-            &__left {
-                order: 1;
-            }
+            // &__left {
+            //     order: 1;
+            // }
+            // &__right {
+            //     width: 100%;
+            //     align-items: flex-start;
+            // }
         }
         &__filters {
             padding: 10px 25px 30px;
@@ -284,6 +314,18 @@
     .search-bloggers {
         .catalog-blogger__item-rating-chart {
             top: 130px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .search-bloggers {
+        &__wrap {
+            padding: 40px 10px;
+        }
+        .catalog-blogger__sort-content .filters__footer-button {
+            width: calc(100% - 30px);
+            max-width: unset;
         }
     }
 }

@@ -29,3 +29,9 @@ body {
 	font-style: normal;
 	line-height: 26px;
 }
+
+@media (max-width: 1050px) {
+	.mobi-hide {
+		display: none !important;
+	}
+}
