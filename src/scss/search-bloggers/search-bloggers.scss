@@ -36,7 +36,7 @@
             }
             &-select {
                 margin-left: 10px;
-                width: 210px;
+                width: 220px;
                 .select__list {
                     z-index: 1;
                     border: 1px solid #dbdbdb;
@@ -46,6 +46,10 @@
                 }
                 .select__container {
                     border: none;
+                }
+                .select__item {
+                    padding: 5px 15px;
+                    line-height: 19px;
                 }
             }
             &-cross {
