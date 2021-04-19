@@ -115,15 +115,6 @@
         border: 2px dashed #ddd;
         &.active {
             border: 2px solid transparent;
-            .search-bloggers__block-empty {
-                display: none;
-            }
-            .search-bloggers__block-list {
-                display: block;
-            }
-        }
-        &-list {
-            display: none;
         }
         &-empty {
             display: flex;
