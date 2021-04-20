@@ -4,11 +4,14 @@
     width: 100%;
     background-color: #f2f2f2;
     padding-top: 45px;
+    padding-bottom: 45px;
     &__wrap {
         width: 1120px;
         padding: 30px;
         border-radius: 10px;
         background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
     }
     &__title {
         font-family: "SF Pro Display", Arial, sans-serif;
@@ -87,6 +90,88 @@
             flex-grow: 1;
             text-align: right;
         }
+    }
+    &__list {
+        margin-top: 50px;
+    }
+    &__item {
+        display: flex;
+        padding: 20px 0;
+        &:first-child {
+            border-top: 2px solid #eaeaea;
+        }
+        &-name {
+            font-family: "SF Pro Display", "Arial", sans-serif;
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 500;
+            color: #000000;
+        }
+        &-status {
+            margin-top: 20px;
+            font-family: "SF Pro Display", "Arial", sans-serif;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 300;
+            color: #666666;
+        }
+        &-left {
+            width: 25%;
+        }
+        &-right {
+            width: 75%;
+        }
+        &-grade {
+            font-family: "SF Pro Display", "Arial", sans-serif;
+            margin-top: 5px;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 300;
+            color: #666666;
+        }
+    }
+    &__stars {
+        margin-top: 15px;
+        display: flex;
+    }
+    &__star {
+        width: 14px;
+        height: 14px;
+    }
+    &__description {
+        display: flex;
+        justify-content: space-between;
+
+        font-family: "SF Pro Display", "Arial", sans-serif;
+        margin-bottom: 10px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #666666;
+        &-left {
+
+        }
+        &-right {
+
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 300;
+        color: #000000;
+        width: 80%;
+    }
+    &__more {
+        font-family: "SF Pro Display", "Arial", sans-serif;
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 21px;
+        font-weight: 500;
+        color: #ff0099;
+        background-color: unset;
+        cursor: pointer;
+        margin-left: auto;
     }
 }
        
