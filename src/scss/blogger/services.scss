@@ -83,3 +83,14 @@
         color: #ff0099;
     }
 }
+
+@media (max-width: 900px) {
+    .services {
+        &__list {
+
+        }
+        &__item {
+            width: 100%;
+        }
+    }
+}

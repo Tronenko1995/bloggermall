@@ -142,6 +142,26 @@
             .posts__info-svg {
                 width: 13px;
                 height: 13px;
+                min-width: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .posts {
+        &__item {
+            margin: 0 5px 15px;
+            width: calc(50% - 10px);
+            &-for-img {
+                height: 150px;
+            }
+            &-text {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            &-button {
+                font-size: 14px;
             }
         }
     }

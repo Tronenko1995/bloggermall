@@ -6,5 +6,15 @@
     &-item {
         width: 32%;
         margin-top: 25px;
+        outline: 1px solid #ff0000;//
+        height: 200px;//
+    }
+}
+
+@media (max-width: 900px) {
+    .charts__list {
+        &-item {
+            width: 100%;
+        }
     }
 }

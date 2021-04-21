@@ -63,5 +63,38 @@
         margin-top: 8px;
         width: 1060px;
         height: 239px;
+        outline: 1px solid #ff0000;//
     }
+}
+
+@media (max-width: 1120px) {
+    .analytics {
+        &__chart {
+            width: 100%;
+        }
+        &__item {
+            > .blogger__stats {
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .analytics {
+        .blogger__stats {
+            &-item {
+                margin-bottom: 50px;
+
+            }
+            &-text {
+                display: block;
+            }
+        }
+        .svg-question {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    
 }
