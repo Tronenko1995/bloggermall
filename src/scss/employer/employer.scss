@@ -1,0 +1,102 @@
+.employer {
+    display: flex;
+    justify-content: center;
+    &__wrap {
+        width: 1120px;
+        padding: 30px 0;
+    }
+    &__container {
+        display: flex;
+        padding: 30px;
+        background-color: #fff;
+        margin-top: 30px;
+        border-radius: 7px;
+        &--first {
+            margin-top: 0;
+        }
+        &-left {
+            width: 33.3%;
+            min-width: 245px;
+        }
+        &-right {
+            width: 66.6%;
+        }
+        &-name {
+            font-family: "SF Pro Display", Arial, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 1.3em;
+            margin-top: 30px;
+            color: #767676;
+        }
+        &-status {
+            font-family: "SF Pro Display", Arial, sans-serif;
+            line-height: 1.7em;
+            font-weight: 400;
+            font-size: 16px;
+            color: #767676;
+        }
+    }
+    &__avatar {
+        display: flex;
+        &-img {
+            border-radius: 50%;
+        }
+    }
+    &__company {
+        display: flex;
+        &-column {
+            &--first {
+                margin-right: 15px;
+            }
+        }
+        &-title {
+            font-family: "SF Pro Display", Arial, sans-serif;
+            font-weight: bold;
+            color: #000;
+            line-height: 1.7em;
+            margin-bottom: 20px;
+            &--blick {
+                position: relative;
+                z-index: 5;
+                &:before {
+                    content: ' ';
+                    position: absolute;
+                    left: -4px;
+                    top: 1px;
+                    height: 25px;
+                    width: 25px;
+                    border-radius: 50%;
+                    z-index: -1;
+                    background: #FFE600;
+                }
+            }
+        }
+        &-text {
+            font-family: "SF Pro Display", Arial, sans-serif;
+            font-weight: 400;
+            color: #767676;
+            line-height: 1.7em;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .employer {
+        &__container {
+            &--first {
+                flex-direction: column;
+                align-items: center;
+            }
+            &-left,
+            &-right {
+                width: fit-content;
+                min-width: fit-content;
+            }
+            &-status {
+                text-align: center;
+            }
+        }
+    }
+}

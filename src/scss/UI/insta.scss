@@ -25,10 +25,16 @@
             height: 35px;
             position: absolute;
             top: 0;
+            left: -35px;
+            transform: rotate(90deg);
         }
         &-next {
             width: 35px;
             height: 35px;
+            position: absolute;
+            top: 0;
+            right: -35px;
+            transform: rotate(-90deg);
         }
     }
     &__left {
@@ -151,4 +157,88 @@
         color: #000;
         font-size: 14px;
     }
+}
+
+@media (max-width: 1020px) {
+    .insta {
+        width: 100%;
+    }
+}
+@media (max-width: 1000px) {
+    .insta {
+        &__comments {
+            max-height: 270px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .insta {
+        &__comments {
+            max-height: 240px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .insta {
+        &__comments {
+            max-height: 210px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .insta {
+        &__comments {
+            max-height: 170px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .insta {
+        &__comments {
+            max-height: 140px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .insta {
+        &__content {
+            flex-direction: column;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+        }
+        &__photo {
+            max-height: 500px;
+            &-img {
+                object-fit: cover;
+            }
+        }
+        &__close {
+            right: unset;
+            left: 10px;
+            top: 10px;
+            background: #6c6c6c;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            font-size: 29px;
+        }
+        &__nav {
+            top: 18%;
+            &-prev {
+                left: 0;
+            }
+            &-next {
+                right: 0;
+            }
+        }
+    }   
 }
