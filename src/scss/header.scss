@@ -464,6 +464,12 @@
 					box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.25%);
 					background: #f04a76;
 				}
+				&[disabled] {
+					cursor: wait;
+					color: #363636;
+					box-shadow: 0 4px 23px rgba(119, 105, 114, 0.41);
+					background-color: #dbdbdb;
+				}
 			}
 			&--forgot-login {
 				height: 50px;
