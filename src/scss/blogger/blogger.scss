@@ -158,16 +158,17 @@
         }
     }
     &__chart {
-        width: 100px;//
-        height: 100px;//
-        outline: 1px solid #ff0000;//
+        width: 100px;
+        height: 100px;
+        position: relative;
+        // outline: 1px solid #ff0000;//
         &-text {
-            color: #ff0000;//
-            display: flex;//
-            justify-content: center;//
-            align-items: center;//
-            font-size: 20px;//
-            height: 100%;//
+            // color: #ff0000;//
+            // display: flex;//
+            // justify-content: center;//
+            // align-items: center;//
+            // font-size: 20px;//
+            // height: 100%;//
         }
     }
 }
