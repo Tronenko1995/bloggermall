@@ -50,13 +50,24 @@
                 background-color: #11b79c;
             }
         }
+        &:nth-of-type(6) {
+            &::before {
+                background-color: #ff64c1;
+            }
+        }
+        &:nth-of-type(7) {
+            &::before {
+                background-color: #FF8000;
+            }
+        }
         &.other{
             &::before {
-                background-color: #11b79c;
+                background-color: #b1b1b1;
             }
         }
     }
     &-percent {
+
         line-height: 23px;
         font-weight: 500;
         font-size: 14px;
