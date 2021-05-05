@@ -1,244 +1,244 @@
-.insta {
-    width: 991px;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: .3rem;
-    position: relative;
-    &__close {
-        position: absolute;
-        top: -10px;
-        right: -40px;
-        font-size: 37px;
-        color: #fff;
-        text-shadow: 0 1px 0 #fff;
-        font-weight: 700;
-        line-height: 1;
-        background-color: unset;
-    }
-    &__nav {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        &-prev {
-            width: 35px;
-            height: 35px;
-            position: absolute;
-            top: 0;
-            left: -35px;
-            transform: rotate(90deg);
-        }
-        &-next {
-            width: 35px;
-            height: 35px;
-            position: absolute;
-            top: 0;
-            right: -35px;
-            transform: rotate(-90deg);
-        }
-    }
-    &__left {
-        width: 60%;
-    }
-    &__right {
-        width: 40%;
-        padding-right: 5px;
-    }
-    &__content {
-        display: flex;
-        align-items: flex-start;
-    }
-    &__photo {
-        display: flex;
-        &-img {
-            height: auto;
-            max-width: 100%;
-        }
-    }
-    &__author {
-            padding: 25px 25px 5px 25px;
-            display: flex;
-        &-img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-        }
-        &-name {
-            font-family: "SF Pro Display", Arial, sans-serif;
-            font-size: 16px;
-            line-height: 27.2px;
-            font-weight: 700;
-            margin-left: 10px;
-        }
-    }
-    &__post,
-    &__comments {
-        padding: 20px 25px 0;
-        font-family: "SF Pro Display", Arial, sans-serif;
-        font-size: 14px;
-        max-height: 233px;
-        line-height: 18px;
-        overflow-y: auto;
-        scrollbar-color: #aaaaaa #fff;
-        scrollbar-width: thin;
-        padding-bottom: 10px;
+// .insta {
+//     width: 991px;
+//     background-color: #fff;
+//     background-clip: padding-box;
+//     border: 1px solid rgba(0,0,0,.2);
+//     border-radius: .3rem;
+//     position: relative;
+//     &__close {
+//         position: absolute;
+//         top: -10px;
+//         right: -40px;
+//         font-size: 37px;
+//         color: #fff;
+//         text-shadow: 0 1px 0 #fff;
+//         font-weight: 700;
+//         line-height: 1;
+//         background-color: unset;
+//     }
+//     &__nav {
+//         position: absolute;
+//         top: 50%;
+//         width: 100%;
+//         &-prev {
+//             width: 35px;
+//             height: 35px;
+//             position: absolute;
+//             top: 0;
+//             left: -35px;
+//             transform: rotate(90deg);
+//         }
+//         &-next {
+//             width: 35px;
+//             height: 35px;
+//             position: absolute;
+//             top: 0;
+//             right: -35px;
+//             transform: rotate(-90deg);
+//         }
+//     }
+//     &__left {
+//         width: 60%;
+//     }
+//     &__right {
+//         width: 40%;
+//         padding-right: 5px;
+//     }
+//     &__content {
+//         display: flex;
+//         align-items: flex-start;
+//     }
+//     &__photo {
+//         display: flex;
+//         &-img {
+//             height: auto;
+//             max-width: 100%;
+//         }
+//     }
+//     &__author {
+//             padding: 25px 25px 5px 25px;
+//             display: flex;
+//         &-img {
+//             width: 50px;
+//             height: 50px;
+//             border-radius: 50%;
+//         }
+//         &-name {
+//             font-family: "SF Pro Display", Arial, sans-serif;
+//             font-size: 16px;
+//             line-height: 27.2px;
+//             font-weight: 700;
+//             margin-left: 10px;
+//         }
+//     }
+//     &__post,
+//     &__comments {
+//         padding: 20px 25px 0;
+//         font-family: "SF Pro Display", Arial, sans-serif;
+//         font-size: 14px;
+//         max-height: 233px;
+//         line-height: 18px;
+//         overflow-y: auto;
+//         scrollbar-color: #aaaaaa #fff;
+//         scrollbar-width: thin;
+//         padding-bottom: 10px;
     
-        &::-webkit-scrollbar {
-            width: 4px;
-            background-color: #fff;
-        }
-        &::-webkit-scrollbar-thumb {
-            background-color: #aaaaaa;
-            border-radius: 27px;
-        }
-    }
-    &__hidetag {
-        position: relative;
-        display: inline-block;
-        width: 65px;
-        line-height: 18px;
-        &::after {
-            content: "YouShallNotPass";
-            position: absolute;
-            width: 50px;
-            top: 0;
-            left: 13px;
-            filter: blur(4px);
-            overflow: hidden;
-        }
-    }
-    &__info {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 2px 25px;
-        margin-top: 10px;
-        &-item {
-            width: 32%;
-            display: flex;
-            align-items: center;
-            position: relative;
-            font-size: 14px;
-            font-weight: 300;
-            margin-bottom: 3px;
-        }
-        &-content {
-            width: 100%;
-            display: flex;
-            align-items: center;
-        }
-        &-svg {
-            width: 20px !important;
-            height: 20px !important;
-            background-size: 20px 20px !important;
-            margin-right: 5px;
-        }
-    }
-    &__comments {
-        max-height: 310px;
-        li {
-            color: #000;
-            font-size: 14px;
-            margin-bottom: 19px;
-            line-height: 14px;
-            time {
-                font-size: 12px;
-                color: #8e8c8c;
-                display: block;
-                line-height: 14px;
-                margin-top: 5px;
-            }
-        }
-    }
-    &__title {
-        margin-top: 10px;
-        padding: 0 25px;
-        font-weight: bold;
-        color: #000;
-        font-size: 14px;
-    }
-}
+//         &::-webkit-scrollbar {
+//             width: 4px;
+//             background-color: #fff;
+//         }
+//         &::-webkit-scrollbar-thumb {
+//             background-color: #aaaaaa;
+//             border-radius: 27px;
+//         }
+//     }
+//     &__hidetag {
+//         position: relative;
+//         display: inline-block;
+//         width: 65px;
+//         line-height: 18px;
+//         &::after {
+//             content: "YouShallNotPass";
+//             position: absolute;
+//             width: 50px;
+//             top: 0;
+//             left: 13px;
+//             filter: blur(4px);
+//             overflow: hidden;
+//         }
+//     }
+//     &__info {
+//         display: flex;
+//         align-items: center;
+//         flex-wrap: wrap;
+//         padding: 2px 25px;
+//         margin-top: 10px;
+//         &-item {
+//             width: 32%;
+//             display: flex;
+//             align-items: center;
+//             position: relative;
+//             font-size: 14px;
+//             font-weight: 300;
+//             margin-bottom: 3px;
+//         }
+//         &-content {
+//             width: 100%;
+//             display: flex;
+//             align-items: center;
+//         }
+//         &-svg {
+//             width: 20px !important;
+//             height: 20px !important;
+//             background-size: 20px 20px !important;
+//             margin-right: 5px;
+//         }
+//     }
+//     &__comments {
+//         max-height: 310px;
+//         li {
+//             color: #000;
+//             font-size: 14px;
+//             margin-bottom: 19px;
+//             line-height: 14px;
+//             time {
+//                 font-size: 12px;
+//                 color: #8e8c8c;
+//                 display: block;
+//                 line-height: 14px;
+//                 margin-top: 5px;
+//             }
+//         }
+//     }
+//     &__title {
+//         margin-top: 10px;
+//         padding: 0 25px;
+//         font-weight: bold;
+//         color: #000;
+//         font-size: 14px;
+//     }
+// }
 
-@media (max-width: 1020px) {
-    .insta {
-        width: 100%;
-    }
-}
-@media (max-width: 1000px) {
-    .insta {
-        &__comments {
-            max-height: 270px;
-        }
-    }
-}
+// @media (max-width: 1020px) {
+//     .insta {
+//         width: 100%;
+//     }
+// }
+// @media (max-width: 1000px) {
+//     .insta {
+//         &__comments {
+//             max-height: 270px;
+//         }
+//     }
+// }
 
-@media (max-width: 950px) {
-    .insta {
-        &__comments {
-            max-height: 240px;
-        }
-    }
-}
+// @media (max-width: 950px) {
+//     .insta {
+//         &__comments {
+//             max-height: 240px;
+//         }
+//     }
+// }
 
-@media (max-width: 900px) {
-    .insta {
-        &__comments {
-            max-height: 210px;
-        }
-    }
-}
+// @media (max-width: 900px) {
+//     .insta {
+//         &__comments {
+//             max-height: 210px;
+//         }
+//     }
+// }
 
-@media (max-width: 850px) {
-    .insta {
-        &__comments {
-            max-height: 170px;
-        }
-    }
-}
+// @media (max-width: 850px) {
+//     .insta {
+//         &__comments {
+//             max-height: 170px;
+//         }
+//     }
+// }
 
-@media (max-width: 800px) {
-    .insta {
-        &__comments {
-            max-height: 140px;
-        }
-    }
-}
+// @media (max-width: 800px) {
+//     .insta {
+//         &__comments {
+//             max-height: 140px;
+//         }
+//     }
+// }
 
-@media (max-width: 768px) {
-    .insta {
-        &__content {
-            flex-direction: column;
-        }
-        &__left {
-            width: 100%;
-        }
-        &__right {
-            width: 100%;
-        }
-        &__photo {
-            max-height: 500px;
-            &-img {
-                object-fit: cover;
-            }
-        }
-        &__close {
-            right: unset;
-            left: 10px;
-            top: 10px;
-            background: #6c6c6c;
-            border-radius: 50%;
-            width: 35px;
-            height: 35px;
-            font-size: 29px;
-        }
-        &__nav {
-            top: 18%;
-            &-prev {
-                left: 0;
-            }
-            &-next {
-                right: 0;
-            }
-        }
-    }   
-}
+// @media (max-width: 768px) {
+//     .insta {
+//         &__content {
+//             flex-direction: column;
+//         }
+//         &__left {
+//             width: 100%;
+//         }
+//         &__right {
+//             width: 100%;
+//         }
+//         &__photo {
+//             max-height: 500px;
+//             &-img {
+//                 object-fit: cover;
+//             }
+//         }
+//         &__close {
+//             right: unset;
+//             left: 10px;
+//             top: 10px;
+//             background: #6c6c6c;
+//             border-radius: 50%;
+//             width: 35px;
+//             height: 35px;
+//             font-size: 29px;
+//         }
+//         &__nav {
+//             top: 18%;
+//             &-prev {
+//                 left: 0;
+//             }
+//             &-next {
+//                 right: 0;
+//             }
+//         }
+//     }   
+// }

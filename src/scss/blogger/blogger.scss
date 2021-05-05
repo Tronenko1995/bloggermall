@@ -62,7 +62,10 @@
             font-size: 16px;
             font-weight: 300;
         }
-        &-button {
+        &-list {
+            display: flex;
+        }
+        &-item {
             margin-right: 15px;
             padding: 0 15px;
             text-align: center;
@@ -70,14 +73,17 @@
             color: #000;
             font-size: 12px;
             font-weight: 400;
-            &--uno {
+            &:nth-child(1) {
                 background-color: #f09;
             }
-            &--dos {
+            &:nth-child(2) {
                 background-color: #74dfce;
             }
-            &--tres {
+            &:nth-child(3) {
                 background-color: #ffe500;
+            }
+            &:last-child {
+                margin-right: 0;
             }
         }
     }
