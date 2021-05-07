@@ -152,6 +152,20 @@
             background-color: #fff;
             display: flex;
             align-items: center;
+            &.active {
+                .catalog-blogger__item-user-svg {
+                    fill: #ff0099;
+                }
+            }
+            &[disabled] {
+                border-color: #dbdbdb;
+                color: #dbdbdb;
+                cursor: wait;
+                .catalog-blogger__item-user-svg {
+                    stroke: #dbdbdb;
+                    fill: #fff !important;
+                }
+            }
             &:hover {
                 .catalog-blogger__item-user-svg {
                     fill: rgba(255, 0, 153, 0.6);
