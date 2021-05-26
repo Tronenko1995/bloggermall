@@ -41,6 +41,9 @@
         display: flex;
         &-img {
             border-radius: 50%;
+            border: 2px solid #74dfce;
+            box-shadow: 0 0 25px 0px rgba(33, 53, 49, 0.5);
+            object-fit: cover;
         }
     }
     &__company {
