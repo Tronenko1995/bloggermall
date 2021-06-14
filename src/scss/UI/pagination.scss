@@ -1,6 +1,6 @@
 .pagination {
     margin-top: 40px;
-    &__list {
+    &__list{
         display: flex;
         justify-content: center;
     }
@@ -12,16 +12,19 @@
         height: 30px;
         margin-left: 10px;
         margin-right: 10px;
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 50%;
         border: 1px solid #d6d6d6;
         color: #d6d6d6;
         font-size: 12px;
         font-weight: 400;
-        transition: all 0.5s;
+        transition: .5s;
         cursor: pointer;
-        &--prev,
         &--next {
+            transform: rotate(180deg);
+        }
+        &--next,
+        &--prev {
             position: relative;
             &::after {
                 content: '';
@@ -39,26 +42,34 @@
                 margin-top: -3px;
             }
         }
-        &--next {
-            transform: rotate(180deg);
+        &:hover {
+            background-color: #f09;
+            border-color: #f09;
+            color: #fff;
         }
-        &.active {
-            cursor: default;
-        }
-        &.more {
-            cursor: default;
+        &--break {
             &:hover {
-                background-color: #fff;
+                background-color: unset;
                 border-color: #d6d6d6;
                 color: #d6d6d6;
+                cursor: default;
+                a {
+                    cursor: default;
+                }
             }
         }
-        &.active,
-        &:hover  {
-            background-color: #ff0099;
-            border-color: #ff0099;
-            color: #ffffff;
+        &.active {
+            background-color: #f09;
+            border-color: #f09;
+            color: #fff;
         }
+    }
+    &__link {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        width: 100%;
     }
 }
 
