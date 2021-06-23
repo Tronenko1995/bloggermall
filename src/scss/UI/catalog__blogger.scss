@@ -157,6 +157,17 @@
                     width: 1px;
                 }
             }
+            &-svg {
+                width: 20px;
+                height: 20px;
+                margin-right: 4px;
+                fill: #fff;
+                stroke: #ff0099;
+                transition: fill 0.3s ease;
+                &.active {
+                    fill: #f09;
+                }
+            }
             &-button {
                 margin-top: 25px;
                 color: #666;
@@ -170,18 +181,10 @@
                 justify-content: center;
                 width: 100%;
                 &:hover {
-                    .catalog-blogger-item-user-svg {
+                    .catalog-blogger__item-user-svg {
                         fill: rgba(255, 0, 153, 0.6);
                     }
                 }
-            }
-            &-svg {
-                width: 20px;
-                height: 20px;
-                margin-right: 4px;
-                fill: #f09;
-                stroke: #ff0099;
-                transition: fill 0.3s ease;
             }
             &-tags {
                 display: flex;

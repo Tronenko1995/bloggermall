@@ -17,6 +17,9 @@
         font-size: 16px;
         font-weight: 500;
         color: #000000;
+        &::-webkit-details-marker {
+            display:none;
+          }
         &::before {
             right: 7.5px;
             border-bottom: 1px solid transparent;
@@ -140,6 +143,17 @@
                 border: 1px solid #74dfce;
             }
         }
+    }
+    &__button {
+        display: block;
+        line-height: 1.2;
+        padding: 12px 0 11px 0;
+        text-align: center;
+        border: 1px solid #74dfce;
+        background: #fff;
+        border-radius: 25px;
+        color: #000;
+        font-size: 17px;
     }
 }
 
