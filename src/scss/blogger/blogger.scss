@@ -98,6 +98,10 @@
         width: 100%;
         &-item {
             flex: 1 1 auto;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         &-title {
             font-family: "SF Pro Display", "Arial", sans-serif;
@@ -112,18 +116,26 @@
             line-height: 15px;
             font-weight: 300;
             color: #666;
-            display: flex;
-            align-items: center;
+            // display: flex;
+            display: inline;
+            &--optic {
+                min-height: 45px;
+            }
+            // align-items: center;
             .svg-question {
                 margin-left: 4px;
-                margin-bottom: 1px;
                 cursor: pointer;
+                min-width: 14px;
+                min-height: 14px;
+                position: relative;
+                display: inline-block;
             }
         }
         &-svg {
             width: 20px;
             height: 20px;
-            margin: 15px auto 0 auto;
+            margin: 10px auto 0 auto;
+            display: block;
         }
         &-description {
             font-family: "SF Pro Display", "Arial", sans-serif;
@@ -255,6 +267,21 @@
             &-item {
                 width: 33%;
                 margin-bottom: 20px;
+                &--order-1 {
+                    order: 1 !important;
+                }
+                &--order-2 {
+                    order: 2 !important;
+                }
+                &--order-3 {
+                    order: 3 !important;
+                }
+                &--order-4 {
+                    order: 4 !important;
+                }
+                &--order-5 {
+                    order: 5 !important;
+                }
             }
         }
 

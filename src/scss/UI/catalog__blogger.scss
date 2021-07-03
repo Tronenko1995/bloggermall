@@ -412,6 +412,18 @@
                     }
                 }
             }
+            &-rating {
+                &-info {
+                    &-title {
+                        font-size: 12px;
+                        line-height: 1.2;
+                    }
+                    &-text {
+                        font-size: 8px;
+                        line-height: 1.2;
+                    }
+                }
+            }
         }
     }
 }
@@ -432,6 +444,9 @@
                    line-height: 18px;
                    font-weight: 700;
                    color: #000;
+                   width: 50%;
+                   text-align: center;
+                   margin-top: 25px;
                 }
                 &-text {
                     margin-top: 8px;
@@ -439,6 +454,9 @@
                     font-weight: 300;
                     line-height: 27px;
                     color: #666;
+                    width: 50%;
+                    text-align: center;
+                    margin-top: 0;
                 }
                 &-tags {
                     flex-direction: row;
@@ -454,6 +472,19 @@
                 &-stats {
                     justify-content: center;
                     margin-top: 40px;
+                }
+                &-item {
+                    &--uno,
+                    &--dos {
+                        width: 50%;
+                        text-align: center;
+                    }
+                    &--tres,
+                    &--cuatro,
+                    &--cinco {
+                        width: 33%;
+                        text-align: center;
+                    }
                 }
                 // &-tags {
                 //     flex-direction: column;
@@ -479,7 +510,12 @@
                 }
             }
             &-link {
-                margin-top: 60px;
+                margin-top: 35px;
+            }
+            &.rating {
+                .catalog-blogger__item-link {
+                    margin-top: 60px;
+                }
             }
         }
         &__sort {

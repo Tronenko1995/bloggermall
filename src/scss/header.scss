@@ -246,6 +246,9 @@
 			&--entry {
 				display: none;
 			}
+			&--buttons {
+				display: none;
+			}
 		}
 		&-link {
 			font-family: 'Poppins', 'Arial' ,'Helvetica','sans-serif';
@@ -619,6 +622,24 @@
 		&__center {
 			display: flex;
 			order: 2;
+			&-user {
+				&-avatar {
+					width: 40px;
+					height: 40px;
+					&-img {
+						width: 40px;
+						height: 40px;
+					}
+				}
+			}
+		}
+		&__wrap {
+			min-height: 50px;
+		}
+		&__logo {
+			&-img {
+				width: 130px;
+			}
 		}
 		&__left {
 			order: 1;
@@ -628,7 +649,7 @@
 			width: 100%;
 		}
 		&__login-area {
-
+			margin-left: 8px;
 			&__button {
 				display: none;
 			}
@@ -636,6 +657,8 @@
 			&__burger {
 				background-color: transparent;
 				border: 2px solid #000;
+				width: 42px;
+				height: 36px;
 			}
 		}
 		&__button {
@@ -644,6 +667,10 @@
 				border: 2px solid #000;
 			}
 			display: block;
+			width: 34px;
+			height: 34px;
+			background-size: 34px 34px;
+			margin-right: 8px;
 		}
 		&__menu {
 			width: 104%;
@@ -662,6 +689,23 @@
 					width: 16px;
 					height: 16px;
 					background-size: 16px 16px;
+				}
+				&--buttons {
+					display: flex;
+				}
+			}
+			&-button {
+				background-color: #FF009E;
+				border-radius: 23px;
+				border: 1px solid #FF009E;
+				height: 42px;
+				line-height: 42px;
+				width: auto;
+				padding: 0 27px;
+				color: #fff;
+				margin: 0 5px;
+				&:last-child {
+					width: 65%;
 				}
 			}
 		}
