@@ -148,12 +148,22 @@
     &__nav {
         display: none;
         background-color: #fff;
-        width: calc(100% - 4px);
-        position: fixed;
-        top: 88px;
-        left: 2px;
+        width: calc(100% + 20px);
+        // position: fixed;
+        // top: 88px;
+        // left: 2px;
         z-index: 1;
-        box-shadow: 1px 1px 3px;
+        box-shadow: 1px 0px 3px;
+        margin-top: -39px;
+        margin-left: -10px;
+        &--scroll {
+            position: fixed;
+            margin-top: 0;
+            margin-left: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
         &-item {
             font-family: "SF Pro Display",Arial,sans-serif;
             font-size: 16px;
@@ -174,6 +184,9 @@
                     top: 15%;
                 }
             }
+            // &--scroll {
+            //     top: 
+            // }
         }
     }
 
@@ -279,6 +292,10 @@
         }
         &__filters {
             padding: 10px 25px 30px;
+            height: calc(100% - 56px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         & .filters {
             &__center {
@@ -322,7 +339,7 @@
 @media (max-width: 640px) {
     .search-bloggers {
         &__nav {
-            top: 51px;
+            // top: 51px;
         }
     }
 }

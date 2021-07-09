@@ -21,6 +21,9 @@ a {
 .show {
 	opacity: 1 !important;
 }
+.visible {
+	display: block !important;
+}
 body {
 	font-family: 'SF Pro Display', 'Arial', 'sans-serif';
 	color: #000;
@@ -36,5 +39,21 @@ body {
 @media (max-width: 1050px) {
 	.mobi-hide {
 		display: none !important;
+	}
+}
+
+.analytics {
+	.only-mobile {
+		display: none;
+	}
+}
+@media (max-width: 900px) {
+	.analytics {
+		.no-mobile {
+			display: none;
+		}
+		.only-mobile {
+			display: inline;
+		}
 	}
 }

@@ -32,3 +32,19 @@
         font-weight: 400;
     }
 }
+
+@media (max-width: 768px) {
+    .sticky {
+        width: calc(100% - 30px);
+        right: 15px;
+        top: 50px;
+        left: 15px;
+        &__item {
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+}
