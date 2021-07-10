@@ -101,7 +101,7 @@
             width: 20%;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
         }
         &-title {
             font-family: "SF Pro Display", "Arial", sans-serif;
@@ -153,6 +153,7 @@
         padding: 2px 30px;
         line-height: 37px;
         border-radius: 21px;
+        cursor: pointer;
 
         font-family: "SF Pro Display", "Arial", sans-serif;
         font-weight: 300;
