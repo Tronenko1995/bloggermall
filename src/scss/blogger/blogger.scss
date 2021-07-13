@@ -102,6 +102,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            &--head {
+                align-items: flex-start;
+            }
         }
         &-title {
             font-family: "SF Pro Display", "Arial", sans-serif;
