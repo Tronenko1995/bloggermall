@@ -821,6 +821,12 @@
 
 }
 
+@media (max-width: 768px) {
+    .modal {
+        align-items: flex-start;
+    }
+}
+
 @media (max-width: 676px) {
     .modal {
         &__body {
@@ -852,7 +858,13 @@
 
 }
 
-@media(max-width: 500px) {
+// @media(max-width: 500px) {
+//     .modal {
+//         align-items: flex-start;
+//     }
+// }
+
+@media (max-height: 800px) {
     .modal {
         align-items: flex-start;
     }
