@@ -4,6 +4,21 @@
     justify-content: center;
     background: #f7f7f7;
 
+    &__row {
+        display: flex;
+        width: 100%;
+    }
+    &__title {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto 40px auto;
+        font-family: "SF Pro Display",Arial,sans-serif;
+        font-size: 40px;
+        line-height: 1.2;
+        font-weight: 700;
+        color: #000;
+    }
+
     .catalog-blogger {
         &__left {
             display: flex;
@@ -78,9 +93,11 @@
 
     &__wrap {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 1400px;
         padding: 40px 20px;
-        align-items: flex-start;
+        // align-items: flex-start;
     }
     &__aside {
         width: 350px;
@@ -197,6 +214,12 @@
     .search-bloggers {
         &__find-text {
             display: none;
+        }
+        &__title {
+            padding-bottom: 20px;
+        }
+        &__row {
+            flex-direction: column;
         }
         &__wrap {
             display: flex;

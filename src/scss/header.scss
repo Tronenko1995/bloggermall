@@ -108,6 +108,7 @@
 				margin-top: 0;
 				position: absolute;
 				box-shadow: 5px 10px 20px 0 rgba(0, 0, 0, 0.25);
+				display: block;
 				&-item {
 					position: relative;
 				}
@@ -136,11 +137,6 @@
 						max-height: 20px;
 						line-height: 20px;
 					}
-				}
-			}
-			&:hover {
-				.header__submenu {
-					display: block;
 				}
 			}
 			&-avatar {
@@ -249,9 +245,9 @@
 					.header__menu-link {
 						padding-bottom: 37px;
 					}
-					.header__submenu {
-						display: block;
-					}
+					// .header__submenu {
+					// 	display: block;
+					// }
 				}
 			}
 			&--entry {
@@ -640,14 +636,6 @@
 					&-img {
 						width: 40px;
 						height: 40px;
-					}
-				}
-				.header__submenu {
-					display: block !important;
-				}
-				&:hover {
-					.header__submenu {
-						display: none;
 					}
 				}
 			}

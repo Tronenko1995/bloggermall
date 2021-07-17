@@ -16,7 +16,7 @@
         border-top: 120px solid #fff;
         border-right: 100vw solid transparent;
         background: 0 0;
-        z-index: 0;
+        z-index: 1;
     }
     &::after {
         content: '';
