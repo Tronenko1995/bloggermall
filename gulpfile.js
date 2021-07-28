@@ -35,6 +35,7 @@ const cssFiles = [
   './src/scss/checkout/*.scss',
   './src/scss/employer/*.scss',
   './src/scss/htci/*.scss',
+  './src/scss/blog/*.scss',
   // './src/scss/404/*.scss',
   './src/scss/footer.scss',
 ]
