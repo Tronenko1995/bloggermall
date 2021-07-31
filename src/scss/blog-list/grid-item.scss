@@ -17,21 +17,6 @@
             }
         }
     }
-    &--small {
-        &:hover {
-            .grid-item {
-                &__shadow {
-                    opacity: 0;
-                }
-                &__block {
-                    transform: unset;
-                }
-                &__button {
-                    transform: unset;
-                }
-            }
-        }
-    }
     &__shadow {
         opacity: 0.4;
         background-color: #606060;
