@@ -28,6 +28,7 @@
     &__img {
         position: absolute;
         top: 0;
+        width: 100%;
     }
     &__info {
         position: absolute;
@@ -79,5 +80,11 @@
         margin-top: 21px;
         transform: translateY(200%);
         transition: all .4s ease;
+    }
+}
+
+@media (max-width: 1200px) {
+    .grid-item {
+        width: 100%;
     }
 }

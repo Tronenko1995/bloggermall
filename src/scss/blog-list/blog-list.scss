@@ -1,8 +1,10 @@
 .blog-list {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin-top: 80px;
     margin-bottom: 100px;
+    position: relative;
     &__wrap {
         width: 1171px;
     }
@@ -40,6 +42,91 @@
             column-gap: 30px;
             .grid-item {
                 margin-top: 30px;
+            }
+        }
+    }
+    &__circle {
+        position: absolute;
+        bottom: -450px;
+        left: 0;
+        z-index: -1;
+    }
+    &__controlls {
+        display: flex;
+        justify-content: center;
+    }
+    &__more {
+        background: #69DDCA;
+        border-radius: 30px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 22px 106px 21px 106px;
+        margin-top: 63px;
+        color: #363636;
+        cursor: pointer;
+    }
+    @media (max-width: 1200px) {
+        .blog-list {
+            &__wrap {
+                width: 100%;
+                padding: 0 15px;
+            }
+            &__circle {
+                display: none;
+            }
+            &__list {
+                &--first {
+                    column-gap: 4%;
+                    row-gap: 30px;
+                    .grid-item {
+                        &:nth-child(1) {
+                            width: 100%;
+                            height: 564px;
+                            grid-row-start: 1;
+                            grid-row-end: 3;
+                        }
+                        &:nth-child(2) {
+                            grid-row-start: 1;
+                            grid-row-end: 2;
+                        }
+                        &:nth-child(3) {
+                            grid-row-start: 2;
+                            grid-row-end: 3;
+                        }
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            width: 100%;
+                            height: 267px;
+                        }
+                        &__img {
+                            width: 100%;
+                        }
+                    }
+                }
+                &--second {
+                    grid-template-columns: repeat(2, 48%);
+                    column-gap: 4%;
+                }
+            }
+        }
+    }
+    @media (max-width: 1000px) {
+        .blog-list {
+            &__list {
+                &--first {
+                    .grid-item {
+                        &:nth-child(1) {
+                            height: auto;
+                        }
+                        &:nth-child(2),
+                        &:nth-child(3) {
+                            height: 230px;
+                        }
+                    }
+                }
             }
         }
     }

@@ -57,6 +57,21 @@
         line-height: 120%;
         margin-top: 133px;
     }
+    &__circle {
+        position: absolute;
+        margin-top: -300px;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 1200px) {
+    @media (max-width: 1200px) {
+        .blog-list-head {
+            &__circle {
+                display: none;
+            }
+        }
+    }
 }
 
 @media (max-width: 1100px) {
