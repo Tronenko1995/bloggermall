@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #ffe600;
+    // background-color: #ffe600;
     overflow: hidden;
     position: relative;
     &::before {
@@ -31,7 +31,7 @@
     }
     &__wrap {
         width: 768px;
-        margin: 180px 0 200px 0;
+        margin: 215px 0 200px 0;
     }
     &__row {
         display: flex;
@@ -42,36 +42,70 @@
         &--second {
         }
     }
+    &__photo {
+        width: 368px;
+        // height: 368px;
+    }
     &__image {
-        width: 418px;
-        height: 418px;
+        width: 368px;
+        height: 368px;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &::after {
+            content: '';
+            width: 368px;
+            height: 368px;
+            border-width: 5px;
+            border-style: solid;
+            box-sizing: border-box;
+            position: absolute;
+            left: 0;
+            border-radius: 50%;
+        }
     }
     &__info {
         width: 370px;
-        padding: 38px 0 0 0;
-        font-family: 'SF Pro Display', Arial;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 30px;
+        margin-top: 10px;
         color: #363636;
+        &-title {
+            font-family: 'SF Pro Display', Arial;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 160%;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            &:after {
+                content: '';
+                position: absolute;
+                left: -12px;
+                top: -3px;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+        &-text {
+            font-family: 'SF Pro Display', Arial;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 160%;
+        }
     }
     &__name {
-        font-family: 'SF Pro Display', Arial;
+        font-family: 'SF Pro Display',Arial;
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
         line-height: 30px;
         text-align: center;
-        color: #FF009E;
-        position: absolute;
-        bottom: -11px;
-        left: 50%;
-        transform: translateX(-50%);
-        &--second {
-            color:#69DDCA;
-        }
+        margin-top: 11px;
     }
 }
 

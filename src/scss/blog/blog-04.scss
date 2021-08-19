@@ -1,0 +1,48 @@
+.blog-04 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 56px 0;
+    position: relative;
+    // overflow: hidden;
+
+    &__wrap {
+        width: 770px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #363636;
+    }
+    &__content {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .blog-04  {
+        &__wrap {
+            width: 90%;
+        }
+        &__info {
+            width: auto;
+        }
+        &__title {
+            font-size: 21px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+}

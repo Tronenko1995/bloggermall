@@ -1,0 +1,80 @@
+.turquoise {
+    &--bg {
+        background-color: #69ddca !important;
+        &-after {
+            &:after {
+                background-color: #69ddca !important;
+            }
+        }
+    }
+    &--border {
+        &-after {
+            &:after {
+                border-color: #69ddca !important;
+            }
+        }
+    }
+    &--color {
+        color: #69ddca !important;
+    }
+}
+.yellow {
+    &--bg {
+        background-color: #ffe600 !important;
+        &-after {
+            &:after {
+                background-color: #ffe600 !important;
+            }
+        }
+    }
+    &--border {
+        &-after {
+            &:after {
+                border-color: #ffe600 !important;
+            }
+        }
+    }
+    &--color {
+        color: #ffe600 !important;
+    }
+}
+.white {
+    &--bg {
+        background-color: #fff !important;
+        &-after {
+            &:after {
+                background-color: #fff !important;
+            }
+        }
+    }
+    &--border {
+        &-after {
+            &:after {
+                border-color: #fff !important;
+            }
+        }
+    }
+    &--color {
+        color: #fff !important;
+    }
+}
+.pink {
+    &--bg {
+        background-color: #FF009E !important;
+        &-after {
+            &:after {
+                background-color: #FF009E !important;
+            }
+        }
+    }
+    &--border {
+        &-after {
+            &:after {
+                border-color: #FF009E !important;
+            }
+        }
+    }
+    &--color {
+        color: #FF009E !important;
+    }
+}
