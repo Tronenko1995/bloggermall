@@ -88,3 +88,11 @@
         width: 100%;
     }
 }
+
+@media (max-width: 550px) {
+    .grid-item {
+        &__img {
+            object-fit: cover;
+        }
+    }
+}
