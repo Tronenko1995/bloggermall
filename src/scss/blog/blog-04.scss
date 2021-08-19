@@ -7,7 +7,6 @@
     // overflow: hidden;
 
     &__wrap {
-        width: 770px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -22,14 +21,70 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #363636;
+        width: 770px;
     }
-    &__content {
+    &__table-wrap {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+    &__table {
         margin-top: 60px;
+        thead {
+            & > tr {
+                & > td {
+                    padding: 14px 26px 14px 20px;
+                    font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 130%;
+                    color: #363636;
+                    &:first-child {
+                        border-radius: 5px 0 0 0;
+                    }
+                    &:last-child {
+                        border-radius: 0 5px 0 0;
+                    }
+                }
+            }
+        }
+        tbody {
+            & > tr {
+                background-color: #F4F4F4;
+                &:nth-child(2n) {
+                    background-color: #fff;
+                }
+                &:last-child {
+                    color: #363636;
+                    & > td {
+                        &:first-child {
+                            border-radius: 0 0 0 5px;
+                        }
+                        &:last-child {
+                            border-radius: 0 0 5px 0;
+                        }
+                    }
+                }
+                & > td {
+                    padding: 14px 26px 14px 20px;
+                    font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 130%;
+                    color: #363636;
+                    &:first-child {
+                        font-weight: 600;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
     }
 }
 
 @media (max-width: 1000px) {
-
     .blog-04  {
         &__wrap {
             width: 90%;
@@ -42,6 +97,21 @@
         }
         &__text {
             font-size: 14px;
+        }
+    }
+}
+@media (max-width: 770px) {
+    .blog-04 {
+        &__title {
+            width: auto;
+        }
+    }
+}
+@media (max-width: 600px) {
+
+    .blog-04  {
+        &__table-wrap {
+            overflow-y: auto;
         }
     }
 

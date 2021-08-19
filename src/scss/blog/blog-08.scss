@@ -123,6 +123,7 @@
             }
             &-title {
                 font-size: 24px;
+                width: 400px;
             }
             &-text {
                 font-size: 17px;
@@ -138,7 +139,17 @@
         }
     }
 }
-
+@media (max-width: 800px) {
+    .blog-08 {
+        &__block {
+            &-right {
+                &::after {
+                    right: 0;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 760px) {
     .blog-08 {
         &__block {

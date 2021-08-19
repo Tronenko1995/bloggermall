@@ -36,10 +36,17 @@
     &__row {
         display: flex;
         justify-content: space-between;
-        &--first {
-            margin-bottom: 90px;
+        margin-bottom: 90px;
+        &:nth-child(2n) {
+            .blog-03__photo {
+                order: 2
+            }
+            .blog-03__info {
+                order: 1
+            }
         }
-        &--second {
+        &:last-child {
+            margin-bottom: 0;
         }
     }
     &__photo {
@@ -70,6 +77,7 @@
         width: 370px;
         margin-top: 10px;
         color: #363636;
+        max-width: 770px;
         &-title {
             font-family: 'SF Pro Display', Arial;
             font-style: normal;
@@ -117,18 +125,22 @@
         &__info {
             width: auto;
             align-items: center;
+            order: 2;
         }
         &__row {
             flex-direction: column;
             align-items: center;
-            &--first {
-                .blog-03__image {
-                    order: 2;
+            &:nth-child(2n) {
+                .blog-03__photo {
+                    order: 1
                 }
                 .blog-03__info {
-                    order: 1;
+                    order: 2
                 }
             }
+        }
+        &__photo {
+            order: 1;
         }
         &__image {
             display: flex;
@@ -137,24 +149,35 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .blog-03 {
+        &__wrap {
+            width: 90%;
+        }
+    }
+}
+
 @media (max-width: 500px) {
     .blog-03 {
+        &__name {
+            margin-top: 30px;
+        }
         &__row {
-            &--first {
-                margin-bottom: 20px;
-                .blog-03__image {
-                    width: 100%;
-                    height: auto;
-                }
-            }
+            // &--first {
+            //     margin-bottom: 20px;
+            //     .blog-03__image {
+            //         width: 100%;
+            //         height: auto;
+            //     }
+            // }
         }
         &__image {
             width: 100%;
             height: auto;
         }
         &__img {
-            width: 100%;
-            height: auto;
+            width: 314px;
+            height: 314px;
         }
         &__info {
             font-size: 14px;
