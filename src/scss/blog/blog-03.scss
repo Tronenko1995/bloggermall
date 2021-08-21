@@ -73,6 +73,9 @@
             border-radius: 50%;
         }
     }
+    &__img {
+        object-fit: cover;
+    }
     &__info {
         width: 370px;
         margin-top: 10px;
@@ -104,6 +107,31 @@
             font-weight: normal;
             font-size: 16px;
             line-height: 160%;
+            a {
+                color: #FF009E;
+            }
+        }
+        &-link {
+            font-family: 'SF Pro Display', Arial;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 160%;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 11px 62px 11px 63px;
+            margin-top: 24px;
+            display: block;
+            max-width: 215px;
+            border-radius: 100px;
+            border-width :1px;
+            border-style: solid;
+            transition: .3s ease-in-out;
+            &:hover {
+                color: #363636;
+                background-color: transparent !important;
+                transform: scale(.9);
+            }
         }
     }
     &__name {

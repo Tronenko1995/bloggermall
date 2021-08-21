@@ -5,7 +5,7 @@
 
     &__wrap {
         width: 1024px;
-        margin: 30px 0px 120px 0px;
+        margin: 90px 0px 146px 0px;
     }
     &__block {
         background-color: #FF0099;
@@ -99,6 +99,8 @@
             border: 1px solid #69ddca;
             cursor: pointer;
             outline: none;
+            text-align: center;
+            display: block;
             &:hover,
             &:focus {
                 color: #363636;
@@ -193,6 +195,19 @@
             }
             &-button {
                 margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .blog-08 {
+        &__block {
+            &-text {
+                &::after {
+                    left: 0;
+                    top: -8px;
+                }
             }
         }
     }

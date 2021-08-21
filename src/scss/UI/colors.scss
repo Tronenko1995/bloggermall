@@ -2,14 +2,15 @@
     &--bg {
         background-color: #69ddca !important;
         &-after {
-            &:after {
+            &::after {
                 background-color: #69ddca !important;
             }
         }
     }
     &--border {
+        border-color: #69ddca !important;
         &-after {
-            &:after {
+            &::after {
                 border-color: #69ddca !important;
             }
         }
@@ -17,19 +18,25 @@
     &--color {
         color: #69ddca !important;
     }
+    &--thead {
+        thead {
+            background-color: #69ddca !important;
+        }
+    }
 }
 .yellow {
     &--bg {
         background-color: #ffe600 !important;
         &-after {
-            &:after {
+            &::after {
                 background-color: #ffe600 !important;
             }
         }
     }
     &--border {
+        border-color: #ffe600 !important;
         &-after {
-            &:after {
+            &::after {
                 border-color: #ffe600 !important;
             }
         }
@@ -37,19 +44,25 @@
     &--color {
         color: #ffe600 !important;
     }
+    &--thead {
+        thead {
+            background-color: #ffe600 !important;
+        }
+    }
 }
 .white {
     &--bg {
         background-color: #fff !important;
         &-after {
-            &:after {
+            &::after {
                 background-color: #fff !important;
             }
         }
     }
     &--border {
+        border-color: #fff !important;
         &-after {
-            &:after {
+            &::after {
                 border-color: #fff !important;
             }
         }
@@ -57,24 +70,35 @@
     &--color {
         color: #fff !important;
     }
+    &--thead {
+        thead {
+            background-color: #fff !important;
+        }
+    }
 }
 .pink {
     &--bg {
         background-color: #FF009E !important;
         &-after {
-            &:after {
+            &::after {
                 background-color: #FF009E !important;
             }
         }
     }
     &--border {
+        border-color: #FF009E !important;
         &-after {
-            &:after {
+            &::after {
                 border-color: #FF009E !important;
             }
         }
     }
     &--color {
         color: #FF009E !important;
+    }
+    &--thead {
+        thead {
+            background-color: #FF009E !important;
+        }
     }
 }
