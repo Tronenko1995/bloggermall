@@ -36,8 +36,9 @@
     }
     &__img {
         width: 645px;
-        height: 556px;
+        height: 645px;
         object-fit: cover;
+        border-radius: 50%;
     }
     &__title {
         color: #363636;
@@ -139,7 +140,7 @@
         }
         &__img {
             width: 387px;
-            height: 334px;
+            height: 387px;
         }
     }
 }

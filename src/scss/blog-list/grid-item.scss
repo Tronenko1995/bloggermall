@@ -74,6 +74,9 @@
         margin-top: 10px;
     }
     &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 57px;
         height: 57px;
         background: #FFFFFF;
