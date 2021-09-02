@@ -53,6 +53,17 @@
 .white {
     &--bg {
         background-color: #fff !important;
+        &::after,
+        &::before {
+            display: none;
+        }
+        .blog-02__wrap,
+        .blog-03__wrap,
+        .blog-04__wrap,
+        .blog-07__wrap,
+        .blog-05__wrap {
+            margin: unset;
+        }
         &-after {
             &::after {
                 background-color: #fff !important;
