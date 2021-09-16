@@ -30,6 +30,11 @@
                 border-radius: 50%;
                 // z-index: 0;
             }
+            &--inverse {
+                &::before {
+                    border-color: #FFE600;
+                }
+            }
         }
         &-right {
             position: relative;
@@ -43,6 +48,11 @@
                 width: 100px;
                 height: 100px;
                 border-radius: 50%;
+            }
+            &--inverse {
+                &::after {
+                    border-color: #FFE600;
+                }
             }
         }
         &-title {
@@ -71,6 +81,11 @@
                 border-radius: 50%;
                 z-index: 0;
             }
+            &--inverse {
+                &::after {
+                    border-color: #FFE600;
+                }
+            }
         }
         &-button {
             font-family: 'SF Pro Display', 'Arial', 'sans-serif';
@@ -87,6 +102,10 @@
             border: 1px solid #FAE61D;
             cursor: pointer;
             outline: none;
+            &--inverse {
+                background-color: #69ddca;
+                border-color: #69ddca;
+            }
             &:hover,
             &:focus {
                 color: #363636;
