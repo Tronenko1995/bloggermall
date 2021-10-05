@@ -35,7 +35,7 @@
     }
     &__title {
         color: #363636;
-        font-family: "SF Pro Display",Sans-serif;
+        
         font-size: 30px;
         font-weight: 700;
         text-transform: none;
@@ -99,7 +99,7 @@
     }
     &__item {
         color: #363636;
-        font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+        
         font-size: 16px;
         counter-increment: 'advertiser-instruction-ol-counter';
         position: relative;
@@ -109,7 +109,7 @@
         font-weight: 400;
         &::before {
             content: counter(advertiser-instruction-ol-counter);
-            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            
             font-weight: 900;
             font-size: 27px;
             position: absolute;
@@ -122,7 +122,7 @@
         }
     }
     &__button {
-        font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+        
         font-size: 16px;
         font-weight: 700;
         color: #363636;

@@ -13,7 +13,7 @@
         flex-direction: column;
     }
     &__title {
-        font-family: "SF Pro Display", Arial, sans-serif;
+
         font-size: 22px;
         line-height: 27px;
         font-weight: 600;
@@ -28,7 +28,7 @@
             flex: 3 1 auto;
         }
         &-title {
-            font-family: "SF Pro Display", "Arial", sans-serif;
+            
             font-size: 30px;
             line-height: 30px;
             font-weight: 700;
@@ -36,7 +36,7 @@
             color: #ff0099;
         }
         &-text {
-            font-family: "SF Pro Display", "Arial", sans-serif;
+            
             margin-top: 10px;
             font-size: 14px;
             line-height: 18px;
@@ -45,7 +45,7 @@
         }
         &-descr {
             margin-top: 50px;
-            font-family: "SF Pro Display", "Arial", sans-serif;
+            
             font-size: 14px;
             line-height: 18px;
             font-weight: 300;
@@ -78,7 +78,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: "SF Pro Display", "Arial", sans-serif;
+            
             font-size: 14px;
             line-height: 21px;
             font-weight: 400;
@@ -100,7 +100,7 @@
             border-top: 2px solid #eaeaea;
         }
         &-name {
-            font-family: "SF Pro Display", "Arial", sans-serif;
+            
             font-size: 16px;
             line-height: 21px;
             font-weight: 500;
@@ -108,7 +108,7 @@
         }
         &-status {
             margin-top: 20px;
-            font-family: "SF Pro Display", "Arial", sans-serif;
+            
             font-size: 14px;
             line-height: 21px;
             font-weight: 300;
@@ -121,7 +121,7 @@
             width: 75%;
         }
         &-grade {
-            font-family: "SF Pro Display", "Arial", sans-serif;
+            
             margin-top: 5px;
             font-size: 14px;
             line-height: 21px;
@@ -141,7 +141,7 @@
         display: flex;
         justify-content: space-between;
 
-        font-family: "SF Pro Display", "Arial", sans-serif;
+        
         margin-bottom: 10px;
         font-size: 14px;
         line-height: 21px;
@@ -162,7 +162,7 @@
         width: 80%;
     }
     &__more {
-        font-family: "SF Pro Display", "Arial", sans-serif;
+        
         margin-top: 5px;
         font-size: 16px;
         line-height: 21px;

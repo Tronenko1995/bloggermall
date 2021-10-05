@@ -37,7 +37,7 @@
         align-items: center;
     }
     &__title {
-        font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+        
         font-style: normal;
         font-weight: bold;
         font-size: 30px;
@@ -55,7 +55,7 @@
         align-items: flex-start;
         padding: 17px 0;
         h2, h3 {
-            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            
             font-style: normal;
             font-weight: bold;
             font-size: 30px;
@@ -91,7 +91,7 @@
             &::before {
                 content: counter(advertiser-instruction-ol-counter);
                 color: #FF009E;
-                font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+                
                 font-weight: 900;
                 font-size: 27px;
                 position: absolute;
@@ -105,7 +105,7 @@
         }
         li {
             color: #363636;
-            font-family: 'SF Pro Display', 'Arial', 'sans-serif';
+            
             font-size: 16px;
             position: relative;
             padding-left: 28px;

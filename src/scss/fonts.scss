@@ -1,135 +1,72 @@
 @font-face {
     font-family: 'SF Pro Display';
     font-display: swap;
-    // src: url('../fonts/SFProDisplay-Thin.ttf') format('truetype');
-    src: url('../fonts/SFProDisplay-Thin.woff2') format('woff2'),
-         url('../fonts/SFProDisplay-Thin.woff') format('woff');
+    src: local('SFProDisplay-Thin'),
+         url('../fonts/SFProDisplay-Thin.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
 }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-ThinItalic.ttf') format('truetype');
-//     font-weight: 100;
-//     font-style: italic;
-// }
 @font-face {
     font-family: 'SF Pro Display';
     font-display: swap;
-    src: url('../fonts/SFProDisplay-Ultralight.woff2') format('woff2'),
-          url('../fonts/SFProDisplay-Ultralight.woff') format('woff');
+    src: local('SFProDisplay-Ultralight'),
+         url('../fonts/SFProDisplay-Ultralight.woff2') format('woff2');
     font-weight: 200;
     font-style: normal;
 }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-UltralightItalic.ttf') format('truetype');
-//     font-weight: 200;
-//     font-style: italic;
-// }
 @font-face {
     font-family: 'SF Pro Display';
     font-display: swap;
-    src: url('../fonts/SFProDisplay-Light.woff2') format('woff2'),
-          url('../fonts/SFProDisplay-Light.woff') format('woff');
+    src: local('SFProDisplay-Light'),
+         url('../fonts/SFProDisplay-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
 }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-LightItalic.ttf') format('truetype');
-//     font-weight: 300;
-//     font-style: italic;
-// }
 @font-face {
     font-family: 'SF Pro Display';
     font-display: swap;
-    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
-          url('../fonts/SFProDisplay-Regular.woff') format('woff');
+    src: local('SFProDisplay-Regular'),
+         url('../fonts/SFProDisplay-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-RegularItalic.ttf') format('truetype');
-//     font-weight: normal;
-//     font-style: italic;
-// }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
-//          url('../fonts/SFProDisplay-Medium.woff') format('woff');
-//     font-weight: 500;
-//     font-style: normal;
-// }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-MediumItalic.ttf') format('truetype');
-//     font-weight: 500;
-//     font-style: italic;
-// }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
-//     font-weight: 600;
-//     font-style: normal;
-// }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-SemiboldItalic.ttf') format('truetype');
-//     font-weight: 600;
-//     font-style: italic;
-// }
 @font-face {
     font-family: 'SF Pro Display';
     font-display: swap;
-    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
-          url('../fonts/SFProDisplay-Bold.woff') format('woff');
+    src: local('SFProDisplay-Medium'),
+         url('../fonts/SFProDisplay-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-display: swap;
+    src: local('SFProDisplay-Semibold'),
+         url('../fonts//SFProDisplay-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF Pro Display';
+    font-display: swap;
+    src: local('SFProDisplay-Bold'),
+         url('../fonts//SFProDisplay-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-BoldItalic.ttf') format('truetype');
-//     font-weight: bold;
-//     font-style: italic;
-// }
 @font-face {
     font-family: 'SF Pro Display';
     font-display: swap;
-    src: url('../fonts/SFProDisplay-Heavy.woff2') format('woff2'),
-        url('../fonts/SFProDisplay-Heavy.woff') format('woff');
+    src: local('SFProDisplay-Heavy'),
+         url('../fonts//SFProDisplay-Heavy.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
 }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-HeavyItalic.ttf') format('truetype');
-//     font-weight: 800;
-//     font-style: italic;
-// }
-// @font-face {
-//     font-family: 'SF Pro Display';
-//     font-display: swap;
-//     src: url('../fonts/SFProDisplay-BlackItalic.ttf') format('truetype');
-//     font-weight: 900;
-//     font-style: italic;
-// }
 @font-face {
     font-family: 'SF Pro Display';
     font-display: swap;
-    src: url('../fonts/SFProDisplay-Black.woff2') format('woff2'),
-          url('../fonts/SFProDisplay-Black.woff') format('woff');
+    src: local('SFProDisplay-Black'),
+         url('../fonts//SFProDisplay-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
 }
@@ -177,89 +114,19 @@
 //     font-weight: 300;
 //     font-style: italic;
 // }
-@font-face {
-    font-family: 'Poppins';
-    font-display: swap;
-    src: url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
-         url('../fonts/poppins-v15-latin-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 // @font-face {
 //     font-family: 'Poppins';
 //     font-display: swap;
-//     src: url('../fonts/Poppins-RegularItalic.ttf') format('truetype');
+//     src: url('../fonts/poppins-v15-latin-regular.woff2') format('woff2'),
+//          url('../fonts/poppins-v15-latin-regular.woff') format('woff');
 //     font-weight: normal;
-//     font-style: italic;
-// }
-// @font-face {
-//     font-family: 'Poppins';
-//     font-display: swap;
-//     src: url('../fonts/Poppins-Medium.ttf') format('truetype');
-//     font-weight: 400;
 //     font-style: normal;
 // }
 // @font-face {
 //     font-family: 'Poppins';
 //     font-display: swap;
-//     src: url('../fonts/Poppins-MediumItalic.ttf') format('truetype');
-//     font-weight: 400;
-//     font-style: italic;
-// }
-// @font-face {
-//     font-family: 'Poppins';
-//     font-display: swap;
-//     src: url('../fonts/Poppins-Semibold.ttf') format('truetype');
-//     font-weight: 700;
-//     font-style: normal;
-// }
-// @font-face {
-//     font-family: 'Poppins';
-//     font-display: swap;
-//     src: url('../fonts/Poppins-SemiboldItalic.ttf') format('truetype');
-//     font-weight: 700;
-//     font-style: italic;
-// }
-@font-face {
-    font-family: 'Poppins';
-    font-display: swap;
-    src: url('../fonts/poppins-v15-latin-700.woff2') format('woff2');
-    src: url('../fonts/poppins-v15-latin-700.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-// @font-face {
-//     font-family: 'Poppins';
-//     font-display: swap;
-//     src: url('../fonts/Poppins-BoldItalic.ttf') format('truetype');
+//     src: url('../fonts/poppins-v15-latin-700.woff2') format('woff2');
+//     src: url('../fonts/poppins-v15-latin-700.woff') format('woff');
 //     font-weight: bold;
-//     font-style: italic;
-// }
-// @font-face {
-//     font-family: 'Poppins';
-//     font-display: swap;
-//     src: url('../fonts/Poppins-Heavy.ttf') format('truetype');
-//     font-weight: 800;
-//     font-style: normal;
-// }
-// @font-face {
-//     font-family: 'Poppins';
-//     font-display: swap;
-//     src: url('../fonts/Poppins-HeavyItalic.ttf') format('truetype');
-//     font-weight: 800;
-//     font-style: italic;
-// }
-// @font-face {
-//     font-family: 'Poppins';
-//     font-display: swap;
-//     src: url('../fonts/Poppins-BlackItalic.ttf') format('truetype');
-//     font-weight: 900;
-//     font-style: italic;
-// }
-// @font-face {
-//     font-family: 'Poppins';
-//     font-display: swap;
-//     src: url('../fonts/Poppins-Black.ttf') format('truetype');
-//     font-weight: 900;
 //     font-style: normal;
 // }
