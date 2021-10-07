@@ -1,0 +1,27 @@
+.hightlights {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 30px;
+    .info {
+        display: none !important;
+    }
+}
+#zuck-modal {
+    .time {
+        display: none !important;
+    }
+    .previous,
+    .next {
+        z-index: 10 !important;
+        cursor: pointer;
+    }
+    .close {
+        margin-right: 20px !important;
+        line-height: 10px !important;
+    }
+}
+@media (max-width: 768px) {
+    .hightlights {
+        width: calc(100vw - 60px);
+    }
+}
