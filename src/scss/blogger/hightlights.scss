@@ -15,9 +15,24 @@
         z-index: 10 !important;
         cursor: pointer;
     }
+    .left > {
+        .back {
+            display: none !important;
+        }
+    }
     .close {
         margin-right: 20px !important;
         line-height: 10px !important;
+        display: block !important;
+    }
+}
+
+@media (max-width: 1048px) {
+    #zuck-modal {
+        .close {
+            margin-right: 0 !important;
+            line-height: 48px !important;
+        }
     }
 }
 @media (max-width: 768px) {
